@@ -196,3 +196,13 @@ p{
     line-height: var(--line-height-body-small);
     letter-spacing: var(--letter-spacing-body-small); 
 }
+
+a{
+    color:var(--color-accent-red-500);
+    text-transform: uppercase;
+    font-size: var(--font-size-body);
+}
+
+a:hover{
+    border-bottom: var(--color-accent-red-500) 2px solid;
+}

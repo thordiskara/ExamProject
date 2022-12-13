@@ -1,0 +1,54 @@
+---
+import Logo from '../svg/logo/logo.svg'
+import Search from '../svg/header-icons/search.svg'
+import User from '../svg/header-icons/user.svg'
+import Cart from '../svg/header-icons/cart.svg'
+import "../styles/global.css"
+import LogoMobile from '../svg/logo/logo-mobile.svg'
+import Burger from '../svg/header-icons/burger.svg'
+
+
+
+---
+<header class="px-[1.25rem] py-[2rem]">
+
+
+    <div class="desktop-header hidden lg:flex lg:justify-between lg:w-full lg:items-center">
+        <div class="pr-20">
+            <img src={Logo} alt="logo"/>
+        </div>
+    
+        <div>
+            <nav>
+                <ul class="flex gap-10">
+                    <li><a href="Shop.astro">Shop</a></li>
+                    <li><a href="WineTasting.astro">Wine Tasting</a></li>
+                    <li><a href="WineSubscriptions.astro">Wine Subscriptions</a></li>
+                    <li><a href="About.astro">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="header-icons flex gap-4">
+            <img class="w-[1.375rem]" src={Search} alt="search"/>
+            <img class="w-[2.5rem]" src={User} alt="user"/>
+            <img class="w-[1.875rem]" src={Cart} alt="cart"/>
+        </div>
+    </div>
+
+
+    <div class="mobile-header lg:hidden flex justify-between w-full items-center">
+        <div>
+            <img src={LogoMobile} alt="logo mobile"/>
+        </div>
+
+        <div class="header-icons flex">
+            <img class="w-[2.25rem]" src={Burger} alt="burger menu"/>
+        </div>
+    
+    </div>
+</header>
+
+<style>
+
+</style>
