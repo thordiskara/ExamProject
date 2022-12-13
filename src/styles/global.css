@@ -220,7 +220,7 @@ h6{
 
 p{
     font-family: var(--body-font);
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-body-btn);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-body);
     letter-spacing: var(--letter-spacing-body); 
@@ -250,7 +250,7 @@ footer{
 }
 
 a{
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-body-btn);
 }
 
 
