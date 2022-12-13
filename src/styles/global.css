@@ -1,0 +1,198 @@
+:root {
+
+    /* FONT WEIGHT */
+    --font-weight-button: 500;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+
+    /* COLORS */
+
+    /* WINE COLORS */
+    --color-rose-wine-secondary: #9B4033;
+    --color-rose-wine-primary: #F3E0D3;
+    --color-sparkling-wine-secondary: #2F6475;
+    --color-sparkling-wine-primary: #DBEAF0;
+    --color-white-wine-secondary: #69391E;
+    --color-white-wine-primary: #F5ECC9;
+    --color-red-wine-secondary: #FEE3E2;
+    --color-red-wine-primary: #B8221D;
+
+    /* PAGE COLORS */
+    --color-product-list-grey: #F2F1F1;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+    /* BUTTON COLORS */
+    --color-button-dark-grey: #303030;
+    --color-primary-button-grey: #F3F3F3;
+    --color-primary-button-blue: #438EE7;
+    
+    /* ACCENT RED COLORS */
+    --color-accent-red-900: #7E211E;
+    --color-accent-red-800: #98201C;
+    --color-accent-red-700: #B8221D;
+    --color-accent-red-600: #DB2D27;
+    --color-accent-red-500: #F0615C;
+    --color-accent-red-400: #F77672;
+    --color-accent-red-300: #FBA9A6;
+    --color-accent-red-200: #FECCCA;
+    --color-accent-red-100: #FEE3E2;
+    --color-accent-red-50: #FEF2F2;
+
+    /* ACCENT BLUE COLORS */
+    --color-accent-blue-900: #424C66;
+    --color-accent-blue-800: #4F5A7E;
+    --color-accent-blue-700: #5C6C99;
+    --color-accent-blue-600: #687CA8;
+    --color-accent-blue-500: #7A91B7;
+    --color-accent-blue-400: #94AAC6;
+    --color-accent-blue-300: #B7C7D9;
+    --color-accent-blue-200: #CBD6E4;
+    --color-accent-blue-100: #E7ECF2;
+    --color-accent-blue-50: #F4F7FA;
+
+
+    /* FONTS */
+    --font-family-headings: 'Gill Sans';
+    --font-family-body: 'Proxima Nova';
+
+    /* FONT SIZES DESKTOP */
+    --font-size-overline: 0.781rem;
+    --font-size-button-small: 0.938rem;
+    --font-size-button: 1.125rem;
+    --font-size-body-small: 0.938rem;
+    --font-size-body: 1.125rem;
+    --font-size-h6: 1.375rem;
+    --font-size-h5: 1.688rem;
+    --font-size-h4: 2rem;
+    --font-size-h3: 2.438rem;
+    --font-size-h2: 2.938rem;
+    --font-size-h1: 3.563rem;
+
+    /* FONT SIZES MOBILE */
+    --font-size-overline-mobile: 0.625rem;
+    --font-size-button-small-mobile: 0.875rem;
+    --font-size-button-mobile: 1rem;
+    --font-size-body-small-mobile: 0.875rem;
+    --font-size-body-mobile: 1rem;
+    --font-size-h6-mobile: 1.125rem;
+    --font-size-h5-mobile: 1.25rem;
+    --font-size-h4-mobile: 1.406rem;
+    --font-size-h3-mobile: 1.625rem;
+    --font-size-h2-mobile: 1.875rem;
+    --font-size-h1-mobile: 2.125rem;
+
+    /* LETTER SPACING */
+    --letter-spacing-overline: 0.09375em;
+    --letter-spacing-button: 0.07813em;
+    --letter-spacing-body-small: 0.01563em;
+    --letter-spacing-body: 0.03125em;
+    --letter-spacing-h4: 0.01563em;
+    --letter-spacing-h6: 0.00938em;
+
+    /* LINE HEIGHT DESKTOP */
+    --line-height-overline: 0.938rem;
+    --line-height-button-small: 1.125rem;
+    --line-height-button: 1.375rem;
+    --line-height-body-small: 1.125rem;
+    --line-height-body: 1.625rem;
+    --line-height-h6: 1.688rem;
+    --line-height-h5: 2.063rem;
+    --line-height-h4: 2.313rem;
+    --line-height-h3: 2.813rem;
+    --line-height-h2: 3.375rem;
+    --line-height-h1: 4.063rem;
+
+    /* LINE HEIGHT MOBILE */
+    --line-height-overline-mobile: 0.75rem;
+    --line-height-button-small-mobile: 1.063rem;
+    --line-height-button-mobile: 1.188rem;
+    --line-height-body-small-mobile: 1.063rem;
+    --line-height-body-mobile: 1.625rem;
+    --line-height-h6-mobile: 1.375rem;
+    --line-height-h5-mobile: 1.5rem;
+    --line-height-h4-mobile: 1.625rem;
+    --line-height-h3-mobile: 1.875rem;
+    --line-height-h2-mobile: 2.125rem;
+    --line-height-h1-mobile: 2.438rem;
+
+    /* ALIASES */
+    --heading-gill-sans: var(--font-family-headings);
+    --heading-proxima-nova: var(--font-family-body);
+    --body-font: var(--font-family-body);
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TYPESCALE */
+
+h1{
+    font-family: var(--heading-gill-sans);
+    font-size: var(--font-size-h1);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-h1);
+}
+
+h2{
+    font-family: var(--heading-gill-sans);
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-h2);
+}
+
+h3{
+    font-family: var(--heading-gill-sans);
+    font-size: var(--font-size-h3);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-h3);
+}
+
+h4{
+    font-family: var(--heading-gill-sans);
+    font-size: var(--font-size-h4);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-h4);
+    letter-spacing: var(--letter-spacing-h4);
+}
+
+h5{
+    font-family: var(--heading-proxima-nova);
+    font-size: var(--font-size-h5);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-h5);
+}
+
+h6{
+    font-family: var(--heading-proxima-nova);
+    font-size: var(--font-size-h6);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-h6);
+    letter-spacing: var(--letter-spacing-h6);
+}
+
+p{
+    font-family: var(--body-font);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body); 
+}
+
+.bodySmall{
+    font-family: var(--body-font);
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body-small);
+    letter-spacing: var(--letter-spacing-body-small); 
+}
