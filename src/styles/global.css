@@ -143,6 +143,8 @@
     --body-font: var(--font-family-body);
     --footer-x-padding: var(--space-2xl-3xl);
     --footer-y-padding: var(--space-xl-2xl);
+    --footer-h6-padding-bottom: var(--space-xs-s);
+    --footer-gaps: var(--space-m-l);
     }
 
 

@@ -6,6 +6,8 @@ module.exports = {
 			spacing:{
 				"footer-x": "var(--footer-x-padding)",
 				"footer-y": "var(--footer-y-padding)",
+				"footer-h6-pb": "var(--footer-h6-padding-bottom)",
+				"footer-gaps": "var(--footer-gaps)",
 			}
 		},
 	},
