@@ -56,7 +56,7 @@
     --font-family-headings: 'Gill Sans';
     --font-family-body: 'Proxima Nova';
 
-    /* FONT SIZES DESKTOP */
+    /* FONT SIZES DESKTOP
     --font-size-overline: 0.781rem;
     --font-size-button-small: 0.938rem;
     --font-size-button: 1.125rem;
@@ -70,7 +70,7 @@
     --font-size-h1: 3.563rem;
 
     /* FONT SIZES MOBILE */
-    --font-size-overline-mobile: 0.625rem;
+    /* --font-size-overline-mobile: 0.625rem;
     --font-size-button-small-mobile: 0.875rem;
     --font-size-button-mobile: 1rem;
     --font-size-body-small-mobile: 0.875rem;
@@ -80,7 +80,19 @@
     --font-size-h4-mobile: 1.406rem;
     --font-size-h3-mobile: 1.625rem;
     --font-size-h2-mobile: 1.875rem;
-    --font-size-h1-mobile: 2.125rem;
+    --font-size-h1-mobile: 2.125rem;  */
+    /* FONT SIZES */
+    --font-size-overline-mobile: clamp(0.65rem, calc(0.72rem + -0.09vw), 0.70rem);
+    --font-size-overline: clamp(0.78rem, calc(0.79rem + -0.02vw), 0.79rem);
+    --font-size-body-small: clamp(0.89rem, calc(0.87rem + 0.09vw), 0.94rem);
+    --font-size-body-btn: clamp(1.00rem, calc(0.95rem + 0.23vw), 1.13rem);
+    --font-size-h6: clamp(1.13rem, calc(1.03rem + 0.42vw), 1.35rem);
+    --font-size-h5: clamp(1.27rem, calc(1.11rem + 0.66vw), 1.62rem);
+    --font-size-h4: clamp(1.42rem, calc(1.20rem + 0.96vw), 1.94rem);
+    --font-size-h3: clamp(1.60rem, calc(1.29rem + 1.35vw), 2.33rem);
+    --font-size-h2: clamp(1.80rem, calc(1.37rem + 1.85vw), 2.80rem);
+    --font-size-h1: clamp(2.03rem, calc(1.45rem + 2.46vw), 3.36rem);
+
 
     /* LETTER SPACING */
     --letter-spacing-overline: 0.09375em;
@@ -238,3 +250,8 @@ footer{
 a{
     font-size: var(--font-size-body);
 }
+
+
+/*  COMPONENTS  */
+
+/* BUTTONS */
