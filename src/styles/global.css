@@ -157,6 +157,8 @@
     --footer-y-padding: var(--space-xl-2xl);
     --footer-h6-padding-bottom: var(--space-xs-s);
     --footer-gaps: var(--space-m-l);
+    --header-x-padding: var(--space-s-m);
+    --header-y-padding: var(--space-m-l);
     }
 
 
@@ -237,16 +239,6 @@ p{
 footer{
     color: var(--color-white);
     background-color: var(--color-accent-blue-900);
-}
-
-.navigation{
-    color:var(--color-accent-red-500);
-    text-transform: uppercase;
-    font-size: var(--font-size-body);
-}
-
-.navigation:hover{
-    border-bottom: var(--color-accent-red-500) 2px solid;
 }
 
 a{

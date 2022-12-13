@@ -8,7 +8,20 @@ module.exports = {
 				"footer-y": "var(--footer-y-padding)",
 				"footer-h6-pb": "var(--footer-h6-padding-bottom)",
 				"footer-gaps": "var(--footer-gaps)",
+				"header-x": "var(--header-x-padding)",
+				"header-y": "var(--header-y-padding)",
+				"burger-padding": "var(--space-s-m)"
+			},
+
+			gridTemplateColumns:{
+				"burger-grid": "5fr 1fr",
+			},
+
+			colors:{
+				"accent-red-main": "var(--color-accent-red-500)",
+				"burger-blue": "var(--color-accent-blue-100)",
 			}
+
 		},
 	},
 	plugins: [],

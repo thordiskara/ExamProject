@@ -6,12 +6,18 @@ import Cart from '../svg/header-icons/cart.svg'
 import "../styles/global.css"
 import LogoMobile from '../svg/logo/logo-mobile.svg'
 import Burger from '../svg/header-icons/burger.svg'
+import BurgerMenu from '../components/BurgerMenu.astro'
 
 
 
 ---
-<header class="px-[1.25rem] py-[2rem]">
+<header class="px-header-x py-header-y relative">
 
+    <div class="language hidden absolute lg:flex right-4 top-4 gap-1">
+        <a href="">En</a>
+        <p>/</p>
+        <a href="">Da</a>
+    </div>
 
     <div class="desktop-header hidden lg:flex lg:justify-between lg:w-full lg:items-center">
         <div class="pr-20">
@@ -22,8 +28,8 @@ import Burger from '../svg/header-icons/burger.svg'
             <nav>
                 <ul class="flex gap-10">
                     <li><a class="navigation" href="Shop.astro">Shop</a></li>
-                    <li><a class="navigation"  href="WineTasting.astro">Wine Tasting</a></li>
-                    <li><a class="navigation"  href="WineSubscriptions.astro">Wine Subscriptions</a></li>
+                    <li><a class="navigation"  href="WineTasting.astro">Wine Tastings</a></li>
+                    <li><a class="navigation"  href="WineSubscriptions.astro">Wine Subscription</a></li>
                     <li><a class="navigation"  href="About.astro">About</a></li>
                 </ul>
             </nav>
@@ -43,8 +49,26 @@ import Burger from '../svg/header-icons/burger.svg'
         </div>
 
         <div class="header-icons flex">
-            <img class="w-[2.25rem]" src={Burger} alt="burger menu"/>
+            <img class="w-[2.25rem] hamburger" src={Burger} alt="burger menu"/>
         </div>
+
+        <BurgerMenu />
     
     </div>
 </header>
+
+<style>
+    a{
+    color:var(--color-accent-red-500);
+    text-transform: uppercase;
+    font-size: var(--font-size-body);
+}
+
+a:hover{
+    border-bottom: var(--color-accent-red-500) 2px solid;
+}
+
+.language{
+    color:var(--color-accent-red-500);
+}
+</style>
