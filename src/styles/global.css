@@ -157,6 +157,7 @@
     --footer-y-padding: var(--space-xl-2xl);
     --footer-h6-padding-bottom: var(--space-xs-s);
     --footer-gaps: var(--space-m-l);
+    --button-x-padding: var()
     }
 
 
@@ -257,3 +258,12 @@ a{
 /*  COMPONENTS  */
 
 /* BUTTONS */
+.btn{
+    letter-spacing: var(--letter-spacing-button);
+    line-height: var(--line-height-button);
+    font-weight: var(--font-weight-button);
+    font-size: var(--font-size-body-btn);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
