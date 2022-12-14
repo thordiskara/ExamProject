@@ -21,6 +21,7 @@ module.exports = {
 				"space-xs": "var(--space-xs)",
 				"space-2xs": "var(--space-2xs)",
 				"space-3xs": "var(--space-3xs)",
+				"space-xl": "var(--space-xl)",
 			},
 
 			gridTemplateColumns:{
@@ -30,6 +31,7 @@ module.exports = {
 			colors:{
 				"accent-red-main": "var(--color-accent-red-500)",
 				"burger-blue": "var(--color-accent-blue-100)",
+				"accent-grey":"var(--color-primary-button-grey)",
 				"red-wine-primary": "var(--color-red-wine-primary)",
 				"red-wine-secondary": "var(--color-red-wine-secondary)",
 				"white-wine-primary": "var(--color-white-wine-primary)",

@@ -258,19 +258,7 @@ a{
     text-transform: uppercase;
 }
 
-/* CONTAINERS */
-.container-xl{
-    width: 100vw;
-    height: auto;
-}
-.container-lg{
-    width: 50vw;
-    height: auto;
-}
-.container-m{
-    width: 25vw;
-    height: auto;
-}
+
 
 
 /* DETAILS PLUS MINUS */
