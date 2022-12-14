@@ -10,16 +10,21 @@ module.exports = {
 				"footer-gaps": "var(--footer-gaps)",
 				"header-x": "var(--header-x-padding)",
 				"header-y": "var(--header-y-padding)",
-				"burger-padding": "var(--space-s-m)"
-			},
+				"burger-padding": "var(--space-s-m)",
+				"productcard-p": "var(--productlist-padding)",
+
+				},
+
 
 			gridTemplateColumns:{
 				"burger-grid": "5fr 1fr",
+				"productlist": "2fr 6fr",
 			},
 
 			colors:{
 				"accent-red-main": "var(--color-accent-red-500)",
 				"burger-blue": "var(--color-accent-blue-100)",
+				"product-list": "var(--color-product-list-grey)"
 			}
 
 		},

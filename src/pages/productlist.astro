@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import BurgerMenu from "../components/BurgerMenu.astro"
+import RedWineCard from "../components/RedWineCard.astro"
+---
+
+<Layout>
+    <Header/>
+
+    <div class="w-full grid grid-cols-productlist">
+        <aside class="">
+            <h6>Filters</h6>
+        </aside>
+        <div class="flex flex-wrap gap-[8px]">
+            <div class="france flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
+                <h4 class="text-white">French <br> wines</h4>
+            </div>
+            <RedWineCard/>
+            <RedWineCard/>
+            <RedWineCard/>
+            <RedWineCard/>
+            <RedWineCard/>
+            <div class="italy flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
+                <h4 class="text-white">Italian <br> wines</h4>
+            </div>
+            <RedWineCard/>
+            <RedWineCard/>
+            <RedWineCard/>
+            <RedWineCard/>
+            <RedWineCard/>
+            <div class="spain flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
+                <h4 class="text-white">Spanish <br> wines</h4>
+            </div>
+            <RedWineCard/>
+            <RedWineCard/>
+            <RedWineCard/>
+        </div>
+    </div>
+
+    <Footer/>
+    <BurgerMenu/>
+</Layout>
+
+<style>
+ /* .products{
+    grid-template-columns: repeat( auto-fill, minmax(16rem, 1fr) );
+    grid-template-columns: repeat( 4, minmax(16rem, 1fr) );
+ } */
+
+ .france{
+    background-image: url("../img/wines-france.webp")
+ }
+
+ .italy{
+    background-image: url("../img/wines-italy.webp")
+ }
+
+ .spain{
+    background-image: url("../img/wines-spain.webp")
+ }
+</style>
