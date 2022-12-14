@@ -149,6 +149,13 @@
     --space-xl-2xl: clamp(3.00rem, calc(2.45rem + 2.34vw), 4.50rem);
     --space-2xl-3xl: clamp(4.00rem, calc(2.99rem + 4.29vw), 6.75rem);
 
+    /* CUSTOM SPACING */
+   --space-s-2xl: clamp(1.00rem, calc(-0.28rem + 5.46vw), 4.50rem);
+   --space-m-xl: clamp(1.50rem, calc(0.81rem + 2.93vw), 3.38rem);
+
+    /* BORDER */
+    --line-width: 2px;
+
     /* ALIASES */
     --heading-gill-sans: var(--font-family-headings);
     --heading-proxima-nova: var(--font-family-body);
@@ -163,6 +170,8 @@
     --primary-btn-y-padding: var(--space-xl-2xl);
     --secondary-btn-x-padding: var(--space-xs);
     --secondary-btn-y-padding: var(--space-l);
+    --product-view-padding-x: var(--space-s-2xl);
+    --breadcrumbs-padding-y: var(--space-m-l);
     }
 
 
@@ -239,7 +248,12 @@ p{
     line-height: var(--line-height-body-small);
     letter-spacing: var(--letter-spacing-body-small); 
 }
-
+.overlineText{
+    font-size: var(--font-size-overline-mobile);
+    line-height: var(--line-height-overline-mobile);
+    letter-spacing: var(--letter-spacing-overline);
+    text-transform: uppercase;
+}
 footer{
     color: var(--color-white);
     background-color: var(--color-accent-blue-900);
@@ -248,7 +262,6 @@ footer{
 a{
     font-size: var(--font-size-body-btn);
 }
-
 
 /*  COMPONENTS  */
 
@@ -262,3 +275,28 @@ a{
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/* CONTAINERS */
+.container-xl{
+    width: 100vw;
+    height: auto;
+}
+.container-lg{
+    width: 50vw;
+    height: auto;
+}
+.container-m{
+    width: 25vw;
+    height: auto;
+}
+
+
+
+
+/* media queries */
+ @media screen and (min-width: 928px){
+.overlineText{
+    font-size: var(--font-size-overline);
+    line-height: var(--line-height-overline);
+}
+ }

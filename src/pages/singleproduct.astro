@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import BurgerMenu from "../components/BurgerMenu.astro"
+import Button1 from "../components/Button1.astro"
+import Button2 from "../components/Button2.astro"
+---
+
+<Layout>
+<Header />
+<!-- breadcrumbs -->
+<div class="flex gap-breadcrumbs-gap px-breadcrumbs-x py-breadcrumbs-y">
+    <a href="#" class="overlineText">Shop</a>
+    <p class="overlineText">/</p>
+    <a href="#" class="overlineText">Red wines</a>
+    <p class="overlineText">/</p>
+    <a href="#" class="overlineText">Product name</a>
+</div>
+<section class="flex flex-column sm:flex-row">
+<div class="container-xl">
+    <img src="../images-wine/LeDomaineDuGrandJacquet.webp" alt="">
+</div>
+</section>
+<Footer />
+<BurgerMenu />
+</Layout>

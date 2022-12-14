@@ -10,7 +10,10 @@ module.exports = {
 				"footer-gaps": "var(--footer-gaps)",
 				"header-x": "var(--header-x-padding)",
 				"header-y": "var(--header-y-padding)",
-				"burger-padding": "var(--space-s-m)"
+				"burger-padding": "var(--space-s-m)",
+				"breadcrumbs-gap": "var(--space-3xs)",
+				"breadcrumbs-x": "var(--product-view-padding-x)",
+				"breadcrumbs-y": "var(--breadcrumbs-padding-y)"
 			},
 
 			gridTemplateColumns:{
