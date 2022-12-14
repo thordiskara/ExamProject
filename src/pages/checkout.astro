@@ -1,0 +1,166 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
+import Plus from "../svg/icons/plus.svg";
+import Minus from "../svg/icons/minus.svg";
+---
+
+<Layout>
+  <Header />
+  <section class="px-5">
+    <h3 class="border-b-2 border-line-checkout pt-1rem">checkout</h3>
+    <div class="details flex justify-between border-b-2 border-line-checkou">
+      <h4 class="">1. shipping details</h4>
+      <img src={Minus} alt="minus" />
+    </div>
+
+    <form action="" autocomplete="on" class="shipping-details">
+      <div class="grid">
+        <label for="Fname"> First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          placeholder="Please enter first name"
+          required
+        />
+        <label for="Lname"> last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          placeholder="Please enter last name"
+          required
+        />
+      </div>
+      <input type="submit" value="Continue" class="btn continue-one" />
+    </form>
+  </section>
+
+  <section class="px-5">
+    <div class="details flex justify-between border-b-2 border-line-checkou">
+      <h4 class="">2. payment</h4>
+      <img src={Plus} alt="plus" />
+    </div>
+    <form action="" autocomplete="on" class="payment hidden">
+      <div class="grid">
+        <label for="Fname"> First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          placeholder="Please enter first name"
+          required
+        />
+        <label for="Lname"> last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          placeholder="Please enter last name"
+          required
+        />
+      </div>
+      <input type="submit" value="Continue" class="btn continue-two" />
+    </form>
+  </section>
+
+  <section class="px-5">
+    <div class="details flex justify-between border-b-2 border-line-checkou">
+      <h4 class="">3. Review and order</h4>
+      <img src={Plus} alt="plus" />
+    </div>
+    <form action="" autocomplete="on" class="order hidden">
+      <div class="grid">
+        <label for="Fname"> First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          placeholder="Please enter first name"
+          required
+        />
+        <label for="Lname"> last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          placeholder="Please enter last name"
+          required
+        />
+      </div>
+      <input type="submit" value="Continue" class="btn continue-three" />
+    </form>
+  </section>
+
+  <Footer />
+  <BurgerMenu />
+</Layout>
+
+<style>
+  summary {
+    font-family: var(--heading-gill-sans);
+    font-size: var(--font-size-h4);
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+  }
+  label {
+    font-family: var(--heading-proxima-nova);
+    font-size: var(--font-size-h6);
+    text-transform: uppercase;
+    color: var(--form-inputandlabel);
+    padding-bottom: var(--space-3xs);
+    padding-top: var(--space-m-l);
+  }
+  input {
+    border: solid 2px;
+    border-color: var(--form-inputandlabel);
+    font-size: var(--font-size-body-small);
+    padding: var(--space-s);
+  }
+  input:focus {
+    outline: none;
+  }
+  .details {
+    padding-top: var(--space-xl);
+  }
+  .btn {
+    color: var(--color-white);
+    background-color: var(--color-button-dark-grey);
+    padding: var(--secondary-btn-x-padding) var(--secondary-btn-y-padding);
+    letter-spacing: var(--letter-spacing-button);
+    line-height: var(--line-height-button);
+    font-weight: var(--font-weight-button);
+    font-size: var(--font-size-body-btn);
+    cursor: pointer;
+    margin-top: var(--space-xl-2xl);
+  }
+  .btn:hover {
+    background-color: var(--color-black);
+    transition: 0.4s ease-in-out;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", myclick);
+  document.addEventListener("DOMContentLoaded", myclickTwo);
+
+  function myclick() {
+    document.querySelector(".continue-one").addEventListener("click", myfunk);
+  }
+
+  function myfunk() {
+    document.querySelector(".payment").classList.remove("hidden");
+    document.querySelector(".shipping-details").classList.add("hidden");
+  }
+
+  function myclickTwo() {
+    document
+      .querySelector(".continue-two")
+      .addEventListener("click", myfunkTwo);
+  }
+
+  function myfunkTwo() {
+    document.querySelector(".payment").classList.add("hidden");
+    document.querySelector(".order").classList.remove("hidden");
+  }
+</script>
