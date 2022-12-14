@@ -23,14 +23,14 @@ import Minus from "../svg/icons/minus.svg";
       onsubmit="signup(event)"
     >
       <div class="grid">
-        <label for="Fname"> First Name</label>
+        <label for="Fname"> First Name*</label>
         <input
           type="text"
           name="firstname"
           placeholder="Please enter first name"
           required
         />
-        <label for="Lname"> last Name</label>
+        <label for="Lname"> last Name*</label>
         <input
           type="text"
           name="lastname"
@@ -45,8 +45,28 @@ import Minus from "../svg/icons/minus.svg";
           required
         />
 
-        <label for="Lname"> last Name*</label>
+        <label for="Lname">phone (optional)</label>
         <input type="number" name="phonenumber" placeholder="+45 00 00 00" />
+        <label for="Lname">adress*</label>
+        <input type="text" name="adress" placeholder="Home adress" />
+        <label for="Lname">second adress (optional)</label>
+        <input
+          type="text"
+          name="secondadress"
+          placeholder="Flor, Apartment, etc."
+        />
+        <label for="Lname">city*</label>
+        <input type="text" name="city" placeholder="Please enter your city" />
+        <label for="Lname">Region*</label>
+        <input
+          type="text"
+          name="region"
+          placeholder="Please enter your region"
+        />
+        <label for="Lname">Postcode*</label>
+        <input type="text" name="post code" placeholder="00 00" />
+        <label for="Lname">Country</label>
+        <input type="text" name="country" placeholder="Denmark" />
       </div>
       <input type="submit" value="Continue" class="btn continue-one" />
     </form>
