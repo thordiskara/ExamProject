@@ -12,6 +12,7 @@ module.exports = {
 				"header-y": "var(--header-y-padding)",
 				"burger-padding": "var(--space-s-m)",
 				"productcard-p": "var(--productlist-padding)",
+				"red-wine-card": "var(--red-wine-card-hover)",
 
 				},
 

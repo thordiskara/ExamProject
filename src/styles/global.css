@@ -164,6 +164,10 @@
     --secondary-btn-x-padding: var(--space-xs);
     --secondary-btn-y-padding: var(--space-l);
     --productlist-padding: var(--space-xs);
+    --red-wine-card-hover: var(--color-accent-red-400);
+    --white-wine-card-hover: var(--color-white-wine-primary);
+    --sparkling-wine-card-hover:var(--color-sparkling-wine-primary);
+    --rose-wine-card-hover:var(--color-rose-wine-primary);
     }
 
 
