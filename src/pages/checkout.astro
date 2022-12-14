@@ -9,14 +9,19 @@ import Minus from "../svg/icons/minus.svg";
 
 <Layout>
   <Header />
-  <section class="px-5">
-    <h3 class="border-b-2 border-line-checkout pt-1rem">checkout</h3>
-    <div class="details flex justify-between border-b-2 border-line-checkou">
+  <section class="px-5 pt-10">
+    <h3 class="border-b-2 border-line-checkout pb-2">checkout</h3>
+    <div class="details flex justify-between border-b-2 border-line-checkout">
       <h4 class="">1. shipping details</h4>
       <img src={Minus} alt="minus" />
     </div>
 
-    <form action="" autocomplete="on" class="shipping-details">
+    <form
+      action=""
+      autocomplete="on"
+      class="shipping-details"
+      onsubmit="signup(event)"
+    >
       <div class="grid">
         <label for="Fname"> First Name</label>
         <input
@@ -32,6 +37,16 @@ import Minus from "../svg/icons/minus.svg";
           placeholder="Please enter last name"
           required
         />
+        <label for="Lname"> e-mail*</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+
+        <label for="Lname"> last Name*</label>
+        <input type="number" name="phonenumber" placeholder="+45 00 00 00" />
       </div>
       <input type="submit" value="Continue" class="btn continue-one" />
     </form>
@@ -70,14 +85,14 @@ import Minus from "../svg/icons/minus.svg";
     </div>
     <form action="" autocomplete="on" class="order hidden">
       <div class="grid">
-        <label for="Fname"> First Name</label>
+        <label for="Fname"> First Name*</label>
         <input
           type="text"
           name="firstname"
           placeholder="Please enter first name"
           required
         />
-        <label for="Lname"> last Name</label>
+        <label for="Lname"> last Name*</label>
         <input
           type="text"
           name="lastname"
@@ -94,12 +109,6 @@ import Minus from "../svg/icons/minus.svg";
 </Layout>
 
 <style>
-  summary {
-    font-family: var(--heading-gill-sans);
-    font-size: var(--font-size-h4);
-    text-transform: uppercase;
-    border-bottom: 2px solid;
-  }
   label {
     font-family: var(--heading-proxima-nova);
     font-size: var(--font-size-h6);
@@ -141,25 +150,21 @@ import Minus from "../svg/icons/minus.svg";
 </style>
 
 <script is:inline>
-  document.addEventListener("DOMContentLoaded", myclick);
-  document.addEventListener("DOMContentLoaded", myclickTwo);
+  /*document.addEventListener("DOMContentLoaded", check);
 
-  function myclick() {
-    document.querySelector(".continue-one").addEventListener("click", myfunk);
-  }
+  function check(event) {
+    event.preventDefault();
+  }*/
 
-  function myfunk() {
+  document.querySelector(".continue-one").addEventListener("click", nextOne);
+  document.querySelector(".continue-two").addEventListener("click", nextTwo);
+
+  function nextOne() {
     document.querySelector(".payment").classList.remove("hidden");
     document.querySelector(".shipping-details").classList.add("hidden");
   }
 
-  function myclickTwo() {
-    document
-      .querySelector(".continue-two")
-      .addEventListener("click", myfunkTwo);
-  }
-
-  function myfunkTwo() {
+  function nextTwo() {
     document.querySelector(".payment").classList.add("hidden");
     document.querySelector(".order").classList.remove("hidden");
   }
