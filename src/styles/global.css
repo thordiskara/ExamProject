@@ -157,7 +157,10 @@
     --footer-y-padding: var(--space-xl-2xl);
     --footer-h6-padding-bottom: var(--space-xs-s);
     --footer-gaps: var(--space-m-l);
-    --button-x-padding: var()
+    --primary-btn-x-padding: var(--space-xs-s);
+    --primary-btn-y-padding: var(--space-xl-2xl);
+    --secondary-btn-x-padding: var(--space-xs);
+    --secondary-btn-y-padding: var(--space-l);
     }
 
 
