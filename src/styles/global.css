@@ -159,6 +159,10 @@
     --footer-gaps: var(--space-m-l);
     --header-x-padding: var(--space-s-m);
     --header-y-padding: var(--space-m-l);
+    --primary-btn-x-padding: var(--space-xs-s);
+    --primary-btn-y-padding: var(--space-xl-2xl);
+    --secondary-btn-x-padding: var(--space-xs);
+    --secondary-btn-y-padding: var(--space-l);
     }
 
 
@@ -249,3 +253,12 @@ a{
 /*  COMPONENTS  */
 
 /* BUTTONS */
+.btn{
+    letter-spacing: var(--letter-spacing-button);
+    line-height: var(--line-height-button);
+    font-weight: var(--font-weight-button);
+    font-size: var(--font-size-body-btn);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}

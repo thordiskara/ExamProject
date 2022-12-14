@@ -1,0 +1,17 @@
+---
+const { text, link} = Astro.props
+---
+
+<a href={link} class="btn">{text}</a>
+
+<style>
+    a{
+        color: var(--color-white);
+        background-color: var(--color-button-dark-grey) ;
+        padding: var(--secondary-btn-x-padding) var(--secondary-btn-y-padding);
+    }
+    a:hover{
+        background-color: var(--color-black);
+        transition: 0.4s ease-in-out;
+    }
+</style>
