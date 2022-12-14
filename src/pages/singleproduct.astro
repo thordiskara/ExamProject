@@ -3,8 +3,14 @@ import Layout from "../layouts/Layout.astro"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
-import Button1 from "../components/Button1.astro"
 import Button2 from "../components/Button2.astro"
+import WinePic from "../images-wine/LeDomaineDuGrandJacquet.webp"
+import Lamb from "../svg/wine-icons/red-mobile/sheep.svg"
+import Sweet from "../svg/wine-icons/red-mobile/sweet.svg"
+import Vegetable from "../svg/wine-icons/red-mobile/vegetable.svg"
+import Pork from "../svg/wine-icons/red-mobile/pork.svg"
+import Beef from "../svg/wine-icons/red-mobile/beef.svg"
+import RedWine2 from "../images-wine/redwine.webp"
 ---
 
 <Layout>
@@ -17,10 +23,91 @@ import Button2 from "../components/Button2.astro"
     <p class="overlineText">/</p>
     <a href="#" class="overlineText">Product name</a>
 </div>
-<section class="flex flex-column sm:flex-row">
-<div class="container-xl">
-    <img src="../images-wine/LeDomaineDuGrandJacquet.webp" alt="">
+<section class="flex flex-col md:flex-row">
+<div class="container-xl md:container-lg border-y-2 border-y-red-wine-primary">
+    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class="m-auto py-wine-padding-y">
 </div>
+<div class="flex flex-col md:border-t-2 md:border-l-2 border-red-wine-primary">
+    <div class=" bg-red-wine-secondary  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-red-wine-primary text-red-wine-primary">
+    <div class="flex flex-col gap-space-3xs">
+        <h4>Rendez-vous sous le chêne rouge</h4>
+        <p class="overlineText">France, Ventoux</p>
+    </div>
+    <div class="">
+        <p>A juicy, smooth and well-balanced wine, with cherry, black currant, black pepper and cocoa flavours. 
+         </p>
+         <p>It has a deep ruby colour and a wonderful bouquet and the palate is fruity, rich, round and smooth with velvety tannins and a pleasant acidity.
+        </p>
+    </div>
+    <div class="flex justify-between">
+        <h5>165 DKK</h5>
+        <div class="flex flex-col gap-space-xs">
+            <input type="number" min="1" name="quantity" value="1" inputmode="numeric" class="self-end text-black p-2 w-24 text-center border border-black">
+            <Button2 text="Add to cart" />
+        </div>
+    </div>
+    </div>
+<div class="flex">
+        <div class="md:w-[50%] bg-red-wine-secondary text-red-wine-primary border-b-2 border-red-wine-primary flex flex-col gap-space-m px-body-padding-x md:px-space-m items-center py-space-l">
+            <div class="flex md:flex-col gap-space-m md:gap-0">
+                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
+                    <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Red</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>Le Domaine Du Grand Jacquet</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>Grenache noir, Syrah</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>15-17 degrees</p>
+                </div>
+                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
+                    <p class="bodySmall"><span class="font-bold pr-1">Size:</span>75 cl</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>14%</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Winemaking:</span>Manual harvest</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Certified Organic, Biodynamic methods</p>
+                </div>
+            </div>
+            <div class="flex gap-space-xs">
+                <img src={Lamb} alt="Lamb icon">
+                <img src={Sweet} alt="Sweet icon">
+                <img src={Vegetable} alt="Vegetable icon">
+                <img src={Pork} alt="Porkicon">
+                <img src={Beef} alt="Beef icon">
+            </div>
+        </div>
+        <img src={RedWine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-red-wine-primary object-cover">
+    </div>
+</div>
+</section>
+<section>
+    <details class="border-b-2 border-red-wine-primary px-body-padding-x">
+        <summary class="py-space-xs flex">
+            <h4>About the winery</h4>
+        </summary>
+        <div class="py-space-xs flex flex-col gap-space-xs">
+            <p>Le Domaine Du Grand Jacquet is located between Carpentras and Mazan municiplities, on the slopes of the Ventoux mountain in the Rhône valley. 
+                The domain is owned by Patricia and Joël Jacquet who cultivate only 15 hectares of organic vines divided into small plots located in the middle of the wild scrubland, 
+                pines, truffle oaks and olive trees and a multitude of flowers and aromatic plants growing at the foot of the vines. The soil is rich in clay and limestone, which cools the soil and keeps its moisture in the hot climate. 
+            </p>
+            <p>Patricia and Joël take care of each plot separately in accordance to the seasons and the Maria Thun Biodynamic Lunar Calendar. 
+                The Maria Thun Biodynamic Lunar Calendar is an approach to agriculture and horticulture which uses the waxing and
+                 waning of the moon and the position of the planets and constellations to determine when to sow and harvest.
+                </p>
+        </div>
+    </details>
+    <details class="border-b-2 border-red-wine-primary px-body-padding-x">
+        <summary class="py-space-xs flex">
+            <h4>Shipping</h4>
+        </summary>
+        <div class="py-space-xs flex flex-col gap-space-xs">
+            <p>We offer FREE SHIPPING in Denmark for purchases over 500,- kr.
+                For orders under that the shipping costs 59,- kr.
+            </p>
+            <h6 >Click and collect</h6>
+            <p>You can choose to pick up your order in our wine store on 
+                Kompagnistræde 28 in Copenhagen.
+                </p>
+                <p>For more details, international shipping and the full shipping 
+                    and returns policy, please read more on <a href="#">Shipping & Returns</a>.
+                </p>
+        </div>
+    </details>
 </section>
 <Footer />
 <BurgerMenu />
