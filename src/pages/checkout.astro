@@ -52,12 +52,40 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
         <img src={LogoMobile} alt="logo mobile" />
       </div>
 
-      <a class="navigation" href="/productlist/">Shop</a>
+      <a class="navigation underline uppercase" href="/productlist/"
+        >Continue shopping</a
+      >
     </div>
   </header>
 
   <section class="px-body-padding-x pt-body-padding-y">
     <h3 class="border-b-2 border-line-checkout pb-2">checkout</h3>
+
+    <div>
+      <h5 class="pt-space-m-l pb-space-review-order">order summary</h5>
+      <div
+        class="border-t-2 border-line-checkout flex pt-space-m-l pb-space-review-order justify-between"
+      >
+        <p>Mompirone Barbera d’Ast Superiore</p>
+        <h6>200 DKK</h6>
+      </div>
+      <div class="flex pb-space-review-order justify-between">
+        <p>Mompirone Barbera d’Ast Superiore</p>
+        <h6>200 DKK</h6>
+      </div>
+      <div class="flex pb-space-review-order justify-between">
+        <h6>Shipping</h6>
+        <h6>59 dkk</h6>
+      </div>
+      <div
+        class="border-t-2 border-line-checkout flex pt-space-m-l justify-between"
+      >
+        <h6>total value</h6>
+        <h6>459 dkk</h6>
+      </div>
+      <p>INC. TAX</p>
+    </div>
+
     <div class="details flex justify-between border-b-2 border-line-checkout">
       <h4 class="">1. shipping details</h4>
       <img src={Minus} alt="minus" />
