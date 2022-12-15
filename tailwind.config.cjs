@@ -18,6 +18,7 @@ module.exports = {
 				"breadcrumbs-y": "var(--breadcrumbs-padding-y)",
 				"wine-padding-y": "var(--wine-padding-y)",
 				"body-padding-x": "var(--body-padding-x)",
+				"space-s": "var(--space-s)",
 				"space-m": "var(--space-m)",
 				"space-l": "var(--space-l)",
 				"space-xs": "var(--space-xs)",
@@ -28,7 +29,7 @@ module.exports = {
 
       			gridTemplateColumns: {
         		"burger-grid": "5fr 1fr",
-        		"productlist": "2fr 6fr",
+        		"productlist": "1fr 6fr",
       		},
 
 

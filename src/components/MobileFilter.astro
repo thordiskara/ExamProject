@@ -1,19 +1,283 @@
-<details>
-    <summary><h6>Product Type</h6></summary>
-    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-  </details>
+---
+import Plus from '../svg/icons/plus.svg'
+import Close from '../svg/icons/close.svg'
+---
+<div class="filterbox flex-col gap-space-m hidden h-[300%] absolute w-full z-[20] bg-white top-0 px-body-padding-x pt-space-xl">
+    <div class="flex justify-end pb-space-l"><img class="leave w-[2rem]" src={Close} alt="close"/></div>
 
-  <details>
-    <summary><h6>Country</h6></summary>
-    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-  </details>
+    <details class="pb-space-l">
+        <summary class="flex justify-between">
+            <h6>Product Type</h6>
+            <img src={Plus} alt="plus"/>
+        </summary>
+        <form>
+            <label><input class="regular-checkbox" type="checkbox" name="type" value="all" id="all" /> All</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="type" value="red" id="red" /> Red</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="type" value="white" id="white" /> White</label><br> 
+            <label><input class="regular-checkbox" type="checkbox" name="type" value="rose" id="rose" /> Rosé</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="type" value="sparkling" id="sparkling" /> Sparkling</label>
+          </form> 
+      </details>
+    
+      <details class="pb-space-l">
+        <summary class="flex justify-between">
+            <h6>Country</h6>
+            <img src={Plus} alt="plus"/>
+        </summary>
+        <form>
+            <label><input class="regular-checkbox" type="checkbox" name="country" value="France" id="france" /> France</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="country" value="Italy" id="italy" /> Italy</label><br> 
+            <label><input class="regular-checkbox" type="checkbox" name="country" value="Spain" id="spain" /> Spain</label><br>                     
+            <label><input class="regular-checkbox" type="checkbox" name="country" value="Germany" id="germany" /> Germany</label>
+          </form>
+      </details>
+    
+      
+       <details class="pb-space-l">
+            <summary class="flex justify-between">
+                <h6>Price</h6>
+                <img src={Plus} alt="plus"/>
+            </summary>
+            <div class="w-[14rem]">
+                <div class="flex justify-between">
+                    <p>Min</p>
+                    <p>Max</p>
+                </div>
+                <div class="price-input">
+                    <div class="field min">
+                      <input type="number" class="input-min" value="0">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field max">
+                      <input type="number" class="input-max" value="1000">
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="1000" value="0" step="100">
+                    <input type="range" class="range-max" min="0" max="1000" value="1000" step="100">
+                  </div>
+                </div>
+       </details>
+      
+    
+      <details class="pb-space-l">
+        <summary class="flex justify-between">
+            <h6>Winery</h6>
+            <img src={Plus} alt="plus"/>
+        </summary>
+        <form>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="africa" id="africa" /> Azienda Agraria Guerrieri </label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="europe" id="europe" />
+              Bodegas Finca Sandoval</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="asia" id="asia" />
+              Cascina Vèngore</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" />
+              Champagne Christophe Lefévre</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="south-america" id="south-america" />
+              Château La Grave </label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="antarctica" id="antarctica" />
+              Château Pouilly</label> <br>   
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" />
+              Château Saint Estève d'Uchaux</label> <br> 
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="africa" id="africa" /> Cornelio Dinastía </label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="europe" id="europe" />
+              Domaine de la Patience</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="asia" id="asia" />
+              Domaine des Païssels</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" />
+              François Lipp et Fils</label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="south-america" id="south-america" />
+              Guerrieri </label><br>
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="antarctica" id="antarctica" />
+              Jérôme Bougnaud & El Regajal</label>  <br>  
+            <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" />
+              Joly-Champagne</label> <br>
+          <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" /> Le Domaine Du Grand Jacquet</label><br>
+          <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="south-america" id="south-america" /> Montirius </label><br>
+          <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="antarctica" id="antarctica" /> Piera 1899</label>   <br> 
+          <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" /> Pithon-Paillé</label> <br>
+          <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" /> Quinta Sardonia</label> <br>
+          <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" /> Weingut Eymann</label><br>
+          </form>
+      </details>
+</div>
 
-  <details>
-    <summary><h6>Price</h6></summary>
-    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-  </details>
+<style>
+.regular-checkbox {
+	-webkit-appearance: none;
+	background-color: white;
+	border: 1.5px solid black;
+	padding: 10px;
+	display: inline-block;
+	position: relative;
+    margin-top: 5px;
+}
 
-  <details>
-    <summary><h6>Winery</h6></summary>
-    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-  </details>
+.regular-checkbox:checked {
+	background-color: var(--color-accent-red-500);
+	border: 1.5px solid var(--color-accent-red-500);
+}
+
+.regular-checkbox:checked:after {
+	content: url("../svg/icons/checked.svg");
+	position: absolute;
+	bottom: 0px;
+	left: 3px;
+}
+
+label{
+    font-size: var(--font-size-body-small);
+    font-family: var(--font-family-body);
+    text-transform: uppercase;
+}
+
+p{
+    font-size: var(--font-size-body-btn);
+    text-transform: uppercase;
+}
+
+/* PRICE SLIDER */
+
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 0.5rem 0 2rem ;
+}
+.price-input .field {
+  display: flex;
+  width: 100%;
+  height: 30px;
+
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  -moz-appearance: textfield;
+  font-size: var(--font-size-body-small);
+  font-family: var(--font-family-body);
+}
+
+.min input{
+    text-align: start; 
+}
+
+.max input{
+    text-align: end; 
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator {
+  width: 100px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 1%;
+  right: 1%;
+  position: absolute;
+  border-radius: 5px;
+  background: var(--color-accent-red-500);
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: var(--color-accent-red-500);
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-accent-red-500);
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+
+details > summary {
+    list-style-type: url(../svg/icons/plus.svg);
+}
+
+details[open] > summary {
+    list-style-type: url(../svg/icons/minus.svg);
+}
+
+</style>
+
+<script is:inline>
+    const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".price-input input"),
+  range = document.querySelector(".slider .progress");
+let priceGap = 100;
+
+priceInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minPrice = parseInt(priceInput[0].value),
+      maxPrice = parseInt(priceInput[1].value);
+
+    if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+      if (e.target.className === "input-min") {
+        rangeInput[0].value = minPrice;
+        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+      } else {
+        rangeInput[1].value = maxPrice;
+        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+      }
+    }
+  });
+});
+
+rangeInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minVal = parseInt(rangeInput[0].value),
+      maxVal = parseInt(rangeInput[1].value);
+
+    if (maxVal - minVal < priceGap) {
+      if (e.target.className === "range-min") {
+        rangeInput[0].value = maxVal - priceGap;
+      } else {
+        rangeInput[1].value = minVal + priceGap;
+      }
+    } else {
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
+</script>
