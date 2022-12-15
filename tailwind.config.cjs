@@ -38,7 +38,7 @@ module.exports = {
 				"burger-blue": "var(--color-accent-blue-100)",
 				"product-list": "var(--color-product-list-grey)",
 				"accent-grey":"var(--color-primary-button-grey)",
-				"red-wine-primary": "var(--color-red-wine-primary",
+				"red-wine-primary": "var(--color-red-wine-primary)",
 				"red-wine-secondary": "var(--color-red-wine-secondary)",
 				"white-wine-primary": "var(--color-white-wine-primary)",
 				"white-wine-secondary": "var(--color-white-wine-secondary)",
