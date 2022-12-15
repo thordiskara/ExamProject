@@ -17,7 +17,7 @@ import Filters from "../components/Filters.astro"
         <aside class="">
             <Filters/>
         </aside>
-        <div class="flex flex-wrap gap-[8px]">
+        <div class="wines flex flex-wrap gap-[8px]">
             <div class="france flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
                 <h4 class="text-white">French <br> wines</h4>
             </div>
@@ -61,3 +61,16 @@ import Filters from "../components/Filters.astro"
     background-image: url("../img/wines-spain.webp")
  }
 </style>
+
+<script is:inline>
+
+function ingenforestillinger(){
+          const wines = document.querySelectorAll('.wine.hidden').length;
+          if(skjulteforestillinger === 7){
+            document.querySelector(".wine").classList.remove("hidden");
+          } else {
+            document.querySelector(".wine").classList.add("hidden");
+          }          
+        }  
+        
+</script>
