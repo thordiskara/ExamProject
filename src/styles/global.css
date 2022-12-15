@@ -56,31 +56,6 @@
     --font-family-headings: 'Gill Sans';
     --font-family-body: 'Proxima Nova';
 
-    /* FONT SIZES DESKTOP
-    --font-size-overline: 0.781rem;
-    --font-size-button-small: 0.938rem;
-    --font-size-button: 1.125rem;
-    --font-size-body-small: 0.938rem;
-    --font-size-body: 1.125rem;
-    --font-size-h6: 1.375rem;
-    --font-size-h5: 1.688rem;
-    --font-size-h4: 2rem;
-    --font-size-h3: 2.438rem;
-    --font-size-h2: 2.938rem;
-    --font-size-h1: 3.563rem;
-
-    /* FONT SIZES MOBILE */
-    /* --font-size-overline-mobile: 0.625rem;
-    --font-size-button-small-mobile: 0.875rem;
-    --font-size-button-mobile: 1rem;
-    --font-size-body-small-mobile: 0.875rem;
-    --font-size-body-mobile: 1rem;
-    --font-size-h6-mobile: 1.125rem;
-    --font-size-h5-mobile: 1.25rem;
-    --font-size-h4-mobile: 1.406rem;
-    --font-size-h3-mobile: 1.625rem;
-    --font-size-h2-mobile: 1.875rem;
-    --font-size-h1-mobile: 2.125rem;  */
     /* FONT SIZES */
     --font-size-overline-mobile: clamp(0.65rem, calc(0.72rem + -0.09vw), 0.70rem);
     --font-size-overline: clamp(0.78rem, calc(0.79rem + -0.02vw), 0.79rem);
@@ -149,6 +124,14 @@
     --space-xl-2xl: clamp(3.00rem, calc(2.45rem + 2.34vw), 4.50rem);
     --space-2xl-3xl: clamp(4.00rem, calc(2.99rem + 4.29vw), 6.75rem);
 
+    /* CUSTOM SPACING */
+   --space-s-2xl: clamp(1.00rem, calc(-0.28rem + 5.46vw), 4.50rem);
+   --space-m-2xl: clamp(1.50rem, calc(0.40rem + 4.68vw), 4.50rem);
+   --space-m-xl: clamp(1.50rem, calc(0.81rem + 2.93vw), 3.38rem);
+
+    /* BORDER */
+    --line-width: 2px;
+
     /* ALIASES */
     --heading-gill-sans: var(--font-family-headings);
     --heading-proxima-nova: var(--font-family-body);
@@ -168,6 +151,14 @@
     --white-wine-card-hover: var(--color-white-wine-primary);
     --sparkling-wine-card-hover:var(--color-sparkling-wine-primary);
     --rose-wine-card-hover:var(--color-rose-wine-primary);
+    --body-padding-x: var(--space-m-2xl);
+    --breadcrumbs-padding-x:var(--space-s-2xl);
+    --breadcrumbs-padding-y: var(--space-m-l);
+    
+    /* Single product view */
+    --wine-padding-y: var(--space-2xl-3xl);
+
+
     }
 
 
@@ -244,7 +235,12 @@ p{
     line-height: var(--line-height-body-small);
     letter-spacing: var(--letter-spacing-body-small); 
 }
-
+.overlineText{
+    font-size: var(--font-size-overline-mobile);
+    line-height: var(--line-height-overline-mobile);
+    letter-spacing: var(--letter-spacing-overline);
+    text-transform: uppercase;
+}
 footer{
     color: var(--color-white);
     background-color: var(--color-accent-blue-900);
@@ -253,7 +249,6 @@ footer{
 a{
     font-size: var(--font-size-body-btn);
 }
-
 
 /*  COMPONENTS  */
 
@@ -267,3 +262,30 @@ a{
     text-decoration: none;
     text-transform: uppercase;
 }
+
+
+
+
+/* DETAILS PLUS MINUS */
+
+details > summary {
+    list-style-type: "+";
+  }
+
+  details[open] > summary {
+    list-style-type: "-";
+  }
+
+/* media queries */
+ @media screen and (min-width: 928px){
+.overlineText{
+    font-size: var(--font-size-overline);
+    line-height: var(--line-height-overline);
+}
+ }
+
+ @media screen and (max-width: 728px){
+    .mobileNoShow{
+        display: none;
+    }
+     }
