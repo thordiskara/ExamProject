@@ -280,7 +280,11 @@ a {
 }
 
 
-
+/* Containers */
+.container-lg{
+    width: 50vw;
+    height: auto;
+}
 
 /* DETAILS PLUS MINUS */
 

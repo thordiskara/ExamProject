@@ -46,7 +46,7 @@ module.exports = {
 				"rose-wine-secondary": "var(--color-rose-wine-secondary)",
 				"sparkling-wine-primary": "var(--color-sparkling-wine-primary)",
 				"sparkling-wine-secondary": "var(--color-sparkling-wine-secondary)",
-				"line-checkout": "var( --color-accent-blue-500)",
+				"line-checkout": "var(--color-accent-blue-500)",
 			}
 
 		},
