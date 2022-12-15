@@ -32,6 +32,10 @@ module.exports = {
         		"productlist": "2fr 6fr",
       		},
 
+			fontSize: {
+				"body-small": "var(--font-size-body-small)",
+			},
+
 
 
 			colors:{
@@ -50,6 +54,7 @@ module.exports = {
 				"line-checkout": "var(--color-accent-blue-500)",
 				"bg-grey": "var(--color-bg-grey)",
 				"display-blue": "var( --color-accent-blue-900)",
+				"form-bg-": "var( --color-accent-blue-200)",
 			},
 
 		},

@@ -39,9 +39,44 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
            <div class="px-body-padding-x"> <a href="#" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
 </section>
 <!-- Product section -->
-<section class="py-landing-padding-y px-body-padding-x">
+<section class="py-landing-padding-y px-body-padding-x border-b-2 border-line-checkout">
 </section>
 <!-- Wine club section -->
+<section class="flex flex-col md:flex-row min-h-screen">
+    <div class="benefits py-landing-padding-y px-body-padding-x flex flex-col gap-space-xl">
+        <h2>Wine club benefits</h2>
+       <div> 
+        <h4 class="pb-space-2xs">Free</h4>
+        <p>It's completely free of charge to join our wine club!</p>
+    </div>
+    <div> 
+        <h4 class="pb-space-2xs">Exclusive events</h4>
+        <p>Get invited to members-only wine tastings where you will get an insight into our delicious wines, 
+            and the opportunity to buy wines at a discounted price.. The events will either cost a small fee or be completely FREE.</p>
+    </div>
+    <div> 
+        <h4 class="pb-space-2xs">Stay up to date</h4>
+        <p>Be the first to receive great offers, info about events, and other exciting news about The Great Wine Experience.
+        </p>
+    </div>
+    </div>
+    <div class="border-y-2 border-line-checkout py-landing-padding-y px-body-padding-x text-display-blue bg-form-bg-">
+        <form action="" autocomplete="on" class="flex flex-col justify-center">
+            <h2 class="text-center mx-16">Join our wine club</h2>
+        <div class="py-landing-padding-y flex flex-col gap-space-l">
+                <div class="flex flex-col gap-space-3xs">
+                    <label for="full name"><h6>name</h6></label>
+                    <input type="text" name="full name" placeholder="Please enter your full name" required class="border border-display-blue p-space-xs text-body-small">
+                </div>
+                <div class="flex flex-col gap-space-3xs">
+                    <label for="email"><h6>Email</h6></label>
+                    <input type="text" name="email" placeholder="example@mail.com" required class="border border-display-blue p-space-xs text-body-small">
+                </div>
+        </div>
+            <button type="submit" class="btn mx-16">Join</button>
+        </form>
+    </div>
+</section>
     <Footer/>
     <BurgerMenu/>
 </Layout>
@@ -55,4 +90,21 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
 .hoverLink:hover  {
 letter-spacing: 0.2rem;
 }
+
+button.btn{
+        color:  var(--color-primary-button-blue);
+        background-color: var(--color-primary-button-grey);
+        padding: var(--primary-btn-x-padding) var(--primary-btn-y-padding);
+        border: 1.5px solid var(--color-primary-button-blue);
+
+    }
+    button:hover{
+        background-color: var(--color-white);
+        transition: 0.4s ease-in-out;
+    }
+    input:focus{
+        outline-color: var(--color-primary-button-blue);
+        outline-style: solid;
+        border-color: var(--color-primary-button-blue);
+    }
 </style>
