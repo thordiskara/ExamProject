@@ -1,263 +1,512 @@
 <div class="wine-filters">
-    <h6>Filters</h6>
+  <h6>Filters</h6>
 
-    <br>
+  <br />
 
-    <p>Product Type</p>
-    <form>
-      <label><input class="regular-checkbox" type="checkbox" name="type" value="all" id="all" /> All</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="type" value="red" id="red" /> Red</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="type" value="white" id="white" /> White</label><br> 
-      <label><input class="regular-checkbox" type="checkbox" name="type" value="rose" id="rose" /> Rosé</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="type" value="sparkling" id="sparkling" /> Sparkling</label>
-    </form> 
+  <p>Product Type</p>
+  <form>
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="type"
+        value="all"
+        id="all"
+      /> All</label
+    ><br />
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="type"
+        value="red"
+        id="red"
+      /> Red</label
+    ><br />
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="type"
+        value="white"
+        id="white"
+      /> White</label
+    ><br />
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="type"
+        value="rose"
+        id="rose"
+      /> Rosé</label
+    ><br />
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="type"
+        value="sparkling"
+        id="sparkling"
+      /> Sparkling</label
+    >
+  </form>
 
-    <br>
-   
-    <p>Country</p>
-    <form>
-      <label><input class="regular-checkbox" type="checkbox" name="country" value="France" id="france" /> France</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="country" value="Italy" id="italy" /> Italy</label><br> 
-      <label><input class="regular-checkbox" type="checkbox" name="country" value="Spain" id="spain" /> Spain</label><br>                     
-      <label><input class="regular-checkbox" type="checkbox" name="country" value="Germany" id="germany" /> Germany</label>
-    </form>
+  <br />
 
-    <br>
+  <p>Country</p>
+  <form>
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="country"
+        value="France"
+        id="france"
+      /> France</label
+    ><br />
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="country"
+        value="Italy"
+        id="italy"
+      /> Italy</label
+    ><br />
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="country"
+        value="Spain"
+        id="spain"
+      /> Spain</label
+    ><br />
+    <label
+      ><input
+        class="regular-checkbox"
+        type="checkbox"
+        name="country"
+        value="Germany"
+        id="germany"
+      /> Germany</label
+    >
+  </form>
 
-    <p>Price</p>
-    <div class="w-[14rem]">
-        <div class="flex justify-between">
-            <p>Min</p>
-            <p>Max</p>
-        </div>
-        <div class="price-input">
-            <div class="field min">
-              <input type="number" class="input-min" value="0">
-            </div>
-            <div class="separator">-</div>
-            <div class="field max">
-              <input type="number" class="input-max" value="1000">
-            </div>
-          </div>
-          <div class="slider">
-            <div class="progress"></div>
-          </div>
-          <div class="range-input">
-            <input type="range" class="range-min" min="0" max="1000" value="0" step="100">
-            <input type="range" class="range-max" min="0" max="1000" value="1000" step="100">
-          </div>
-        </div>
+  <br />
+
+  <p>Price</p>
+  <div class="w-[14rem]">
+    <div class="flex justify-between">
+      <p>Min</p>
+      <p>Max</p>
     </div>
-
-    <br>
-
-    <p>Winery</p>
-    <form>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="africa" id="africa" /> Azienda Agraria Guerrieri </label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="europe" id="europe" />
-        Bodegas Finca Sandoval</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="asia" id="asia" />
-        Cascina Vèngore</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" />
-        Champagne Christophe Lefévre</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="south-america" id="south-america" />
-        Château La Grave </label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="antarctica" id="antarctica" />
-        Château Pouilly</label> <br>   
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" />
-        Château Saint Estève d'Uchaux</label> <br> 
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="africa" id="africa" /> Cornelio Dinastía </label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="europe" id="europe" />
-        Domaine de la Patience</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="asia" id="asia" />
-        Domaine des Païssels</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" />
-        François Lipp et Fils</label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="south-america" id="south-america" />
-        Guerrieri </label><br>
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="antarctica" id="antarctica" />
-        Jérôme Bougnaud & El Regajal</label>  <br>  
-      <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" />
-        Joly-Champagne</label> <br>
-    <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" /> Le Domaine Du Grand Jacquet</label><br>
-    <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="south-america" id="south-america" /> Montirius </label><br>
-    <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="antarctica" id="antarctica" /> Piera 1899</label>   <br> 
-    <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" /> Pithon-Paillé</label> <br>
-    <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="australasia" id="australasia" /> Quinta Sardonia</label> <br>
-    <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="north-america" id="north-america" /> Weingut Eymann</label><br>
-    </form>
+    <div class="price-input">
+      <div class="field min">
+        <input type="number" class="input-min" value="0" />
+      </div>
+      <div class="separator">-</div>
+      <div class="field max">
+        <input type="number" class="input-max" value="1000" />
+      </div>
+    </div>
+    <div class="slider">
+      <div class="progress"></div>
+    </div>
+    <div class="range-input">
+      <input
+        type="range"
+        class="range-min"
+        min="0"
+        max="1000"
+        value="0"
+        step="100"
+      />
+      <input
+        type="range"
+        class="range-max"
+        min="0"
+        max="1000"
+        value="1000"
+        step="100"
+      />
+    </div>
   </div>
+</div>
+
+<br />
+
+<p>Winery</p>
+<form>
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="africa"
+      id="africa"
+    /> Azienda Agraria Guerrieri
+  </label><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="europe"
+      id="europe"
+    />
+    Bodegas Finca Sandoval</label
+  ><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="asia"
+      id="asia"
+    />
+    Cascina Vèngore</label
+  ><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="north-america"
+      id="north-america"
+    />
+    Champagne Christophe Lefévre</label
+  ><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="south-america"
+      id="south-america"
+    />
+    Château La Grave
+  </label><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="antarctica"
+      id="antarctica"
+    />
+    Château Pouilly</label
+  >
+  <br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="australasia"
+      id="australasia"
+    />
+    Château Saint Estève d'Uchaux</label
+  >
+  <br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="africa"
+      id="africa"
+    /> Cornelio Dinastía
+  </label><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="europe"
+      id="europe"
+    />
+    Domaine de la Patience</label
+  ><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="asia"
+      id="asia"
+    />
+    Domaine des Païssels</label
+  ><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="north-america"
+      id="north-america"
+    />
+    François Lipp et Fils</label
+  ><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="south-america"
+      id="south-america"
+    />
+    Guerrieri
+  </label><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="antarctica"
+      id="antarctica"
+    />
+    Jérôme Bougnaud & El Regajal</label
+  >
+  <br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="australasia"
+      id="australasia"
+    />
+    Joly-Champagne</label
+  >
+  <br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="north-america"
+      id="north-america"
+    /> Le Domaine Du Grand Jacquet</label
+  ><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="south-america"
+      id="south-america"
+    /> Montirius
+  </label><br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="antarctica"
+      id="antarctica"
+    /> Piera 1899</label
+  >
+  <br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="australasia"
+      id="australasia"
+    /> Pithon-Paillé</label
+  >
+  <br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="australasia"
+      id="australasia"
+    /> Quinta Sardonia</label
+  >
+  <br />
+  <label
+    ><input
+      class="regular-checkbox"
+      type="checkbox"
+      name="fl-cont"
+      value="north-america"
+      id="north-america"
+    /> Weingut Eymann</label
+  ><br />
+</form>
 
 <style>
-    .regular-checkbox {
-	-webkit-appearance: none;
-	background-color: white;
-	border: 1.5px solid black;
-	padding: 10px;
-	display: inline-block;
-	position: relative;
+  .regular-checkbox {
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1.5px solid black;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
     margin-top: 5px;
+  }
 
-}
-
-    /* .regular-checkbox:active, .regular-checkbox:checked:active {
+  /* .regular-checkbox:active, .regular-checkbox:checked:active {
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 } */
 
-.regular-checkbox:checked {
-	background-color: var(--color-accent-red-500);
-	border: 1.5px solid var(--color-accent-red-500);
-}
+  .regular-checkbox:checked {
+    background-color: var(--color-primary-button-blue);
+    border: 1.5px solid var(--color-primary-button-blue);
+  }
 
-.regular-checkbox:checked:after {
-	content: url("../svg/icons/checked.svg");
-	position: absolute;
-	bottom: 0px;
-	left: 3px;
-}
+  .regular-checkbox:checked:after {
+    content: url("../svg/icons/checked.svg");
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+  }
 
-label{
+  label {
     font-size: var(--font-size-body-small);
     font-family: var(--font-family-body);
     text-transform: uppercase;
-}
+  }
 
-p{
+  p {
     font-size: var(--font-size-body-btn);
     text-transform: uppercase;
-}
+  }
 
-/* PRICE SLIDER */
+  /* PRICE SLIDER */
 
-.price-input {
-  width: 100%;
-  display: flex;
-  margin: 0.5rem 0 2rem ;
-}
-.price-input .field {
-  display: flex;
-  width: 100%;
-  height: 30px;
+  .price-input {
+    width: 100%;
+    display: flex;
+    margin: 0.5rem 0 2rem;
+  }
+  .price-input .field {
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  .field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 19px;
+    -moz-appearance: textfield;
+    font-size: var(--font-size-body-small);
+    font-family: var(--font-family-body);
+  }
 
-}
-.field input {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  font-size: 19px;
-  -moz-appearance: textfield;
-  font-size: var(--font-size-body-small);
-  font-family: var(--font-family-body);
-}
+  .min input {
+    text-align: start;
+  }
 
-.min input{
-    text-align: start; 
-}
+  .max input {
+    text-align: end;
+  }
 
-.max input{
-    text-align: end; 
-}
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .price-input .separator {
+    width: 100px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .slider .progress {
+    height: 100%;
+    left: 1%;
+    right: 1%;
+    position: absolute;
+    border-radius: 5px;
+    background: var(--color-accent-red-500);
+  }
+  .range-input {
+    position: relative;
+  }
+  .range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-.price-input .separator {
-  width: 100px;
-  display: flex;
-  font-size: 19px;
-  align-items: center;
-  justify-content: center;
-}
-.slider {
-  height: 5px;
-  position: relative;
-  background: #ddd;
-  border-radius: 5px;
-}
-.slider .progress {
-  height: 100%;
-  left: 1%;
-  right: 1%;
-  position: absolute;
-  border-radius: 5px;
-  background: var(--color-accent-red-500);
-}
-.range-input {
-  position: relative;
-}
-.range-input input {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: -5px;
-  background: none;
-  pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
+  input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: var(--color-accent-red-500);
+    pointer-events: auto;
+    -webkit-appearance: none;
+  }
 
-input[type="range"]::-webkit-slider-thumb {
-  height: 17px;
-  width: 17px;
-  border-radius: 50%;
-  background: var(--color-accent-red-500);
-  pointer-events: auto;
-  -webkit-appearance: none;
-}
-
-input[type="range"]::-moz-range-thumb {
-  height: 17px;
-  width: 17px;
-  border: none;
-  border-radius: 50%;
-  background: var(--color-accent-red-500);
-  pointer-events: auto;
-  -moz-appearance: none;
-}
-
+  input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-accent-red-500);
+    pointer-events: auto;
+    -moz-appearance: none;
+  }
 </style>
 
 <script is:inline>
-    const rangeInput = document.querySelectorAll(".range-input input"),
-  priceInput = document.querySelectorAll(".price-input input"),
-  range = document.querySelector(".slider .progress");
-let priceGap = 100;
+  const rangeInput = document.querySelectorAll(".range-input input"),
+    priceInput = document.querySelectorAll(".price-input input"),
+    range = document.querySelector(".slider .progress");
+  let priceGap = 100;
 
-priceInput.forEach((input) => {
-  input.addEventListener("input", (e) => {
-    let minPrice = parseInt(priceInput[0].value),
-      maxPrice = parseInt(priceInput[1].value);
+  priceInput.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let minPrice = parseInt(priceInput[0].value),
+        maxPrice = parseInt(priceInput[1].value);
 
-    if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
-      if (e.target.className === "input-min") {
-        rangeInput[0].value = minPrice;
-        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-      } else {
-        rangeInput[1].value = maxPrice;
-        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+      if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+        if (e.target.className === "input-min") {
+          rangeInput[0].value = minPrice;
+          range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+        } else {
+          rangeInput[1].value = maxPrice;
+          range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+        }
       }
-    }
+    });
   });
-});
 
-rangeInput.forEach((input) => {
-  input.addEventListener("input", (e) => {
-    let minVal = parseInt(rangeInput[0].value),
-      maxVal = parseInt(rangeInput[1].value);
+  rangeInput.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let minVal = parseInt(rangeInput[0].value),
+        maxVal = parseInt(rangeInput[1].value);
 
-    if (maxVal - minVal < priceGap) {
-      if (e.target.className === "range-min") {
-        rangeInput[0].value = maxVal - priceGap;
+      if (maxVal - minVal < priceGap) {
+        if (e.target.className === "range-min") {
+          rangeInput[0].value = maxVal - priceGap;
+        } else {
+          rangeInput[1].value = minVal + priceGap;
+        }
       } else {
-        rangeInput[1].value = minVal + priceGap;
+        priceInput[0].value = minVal;
+        priceInput[1].value = maxVal;
+        range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+        range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
       }
-    } else {
-      priceInput[0].value = minVal;
-      priceInput[1].value = maxVal;
-      range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
-      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-    }
+    });
   });
-});
 </script>

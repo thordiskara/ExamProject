@@ -137,7 +137,8 @@
   --secondary-btn-y-padding: var(--space-l);
   --productlist-padding: var(--space-xs);
   --form-inputandlabel: var(--color-accent-blue-900);
-  --alert-color: var(--color-accent-red-600: );
+  --alert-color: var(--color-accent-red-600);
+  --bg-blue: var( --color-accent-blue-200);
 
 
     /* CUSTOM SPACING */
@@ -170,6 +171,7 @@
     --body-padding-x: var(--space-m-2xl);
     --breadcrumbs-padding-x:var(--space-s-2xl);
     --breadcrumbs-padding-y: var(--space-m-l);
+    --body-padding-y: var(--space-2xl-3xl)
     
     /* Single product view */
     --wine-padding-y: var(--space-2xl-3xl);
