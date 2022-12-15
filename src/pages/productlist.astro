@@ -7,6 +7,7 @@ import RedWineCard from "../components/RedWineCard.astro"
 import WhiteWineCard from "../components/WhiteWineCard.astro"
 import SparklingWineCard from "../components/SparklingWineCard.astro"
 import RoseWineCard from "../components/RoseWineCard.astro"
+import Filters from "../components/Filters.astro"
 ---
 
 <Layout>
@@ -14,7 +15,7 @@ import RoseWineCard from "../components/RoseWineCard.astro"
 
     <div class="w-full grid grid-cols-productlist">
         <aside class="">
-            <h6>Filters</h6>
+            <Filters/>
         </aside>
         <div class="flex flex-wrap gap-[8px]">
             <div class="france flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
