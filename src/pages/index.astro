@@ -4,14 +4,55 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Button1 from "../components/Button1.astro"
-import Button2 from "../components/Button2.astro"
-
+import WineTLeft from "../images-wine/wineTastingleft.webp"
+import Arrow from "../svg/icons/Arrow-a.svg"
+import RedWineCard from "../components/RedWineCard.astro"
+import WhiteWineCard from "../components/WhiteWineCard.astro"
+import RoseWineCard from "../components/RoseWineCard.astro"
+import SparklingWineCard from "../components/SparklingWineCard.astro"
 ---
 
 <Layout>
     <Header/>
-    <Button1 text="Shop" link="#"  />
-    <Button2 text="continue" link="#" />
+    <!-- Hero section mobile -->
+<section class="md:hidden bg-bg-grey h-[80vh] border-b-2 border-line-checkout">
+<div class="heroSectionMobile flex flex-col items-center justify-between pt-space-l pb-space-xl">
+    <h1 class="text-center text-display-blue">The great wine experience</h1>
+    <Button1 text="shop wine" />
+</div>
+</section>
+<!-- Wine Tasting section -->
+<section class="py-landing-padding-y border-b-2 border-line-checkout">
+    <h2 class="pb-space-m px-body-padding-x" >Wine tastings</h2>
+    <p class="pb-space-m px-body-padding-x">Choose from any of your four different wine tasting experiences to best fit your pallet and desires.</p>
+        <img src={WineTLeft} alt="Glasses with various wines" class="h-80 w-screen object-cover pb-space-m">
+        <div class="flex gap-space-m px-body-padding-x justify-center pb-space-xl">
+            <a href="#" class="overlineText border-b border-black">exclusive</a>
+            <a href="#" class="overlineText border-b border-black">deluxe</a>
+            <a href="#" class="overlineText border-b border-black">Bespoke</a>
+            <a href="#" class="overlineText border-b border-black">virtual</a>
+        </div>
+        <p class="px-body-padding-x pb-space-m">At The Great Wine Experience we offer a variety of different wine tastings led by Sommelier Natalie Noryd. 
+            We create a fun and highly informative experience for our customers that match their requirements as well as their budget.</p>
+            <p class="px-body-padding-x pb-space-m">The wine tastings can take place at any preferred location or at our exquisite wine shop at Kompagnistræde 28 in central Copenhagen.</p>
+            <p class="px-body-padding-x pb-space-xl">Wine tastings can also be combined with a whole dinner, gourmet cakes or with a pop-up wine bar with live jazz music at any location. </p>
+           <div class="px-body-padding-x"> <a href="#" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+</section>
+<!-- Product section -->
+<section class="py-landing-padding-y px-body-padding-x">
+</section>
+<!-- Wine club section -->
     <Footer/>
     <BurgerMenu/>
 </Layout>
+
+
+<style>
+.hoverLink {
+    transition: all 500ms;
+}
+    
+.hoverLink:hover  {
+letter-spacing: 0.2rem;
+}
+</style>

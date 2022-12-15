@@ -24,6 +24,7 @@ module.exports = {
 				"space-2xs": "var(--space-2xs)",
 				"space-3xs": "var(--space-3xs)",
 				"space-xl": "var(--space-xl)",
+				"landing-padding-y": "var(--landing-padding-y)",
 			},
 
       			gridTemplateColumns: {
@@ -47,7 +48,9 @@ module.exports = {
 				"sparkling-wine-primary": "var(--color-sparkling-wine-primary)",
 				"sparkling-wine-secondary": "var(--color-sparkling-wine-secondary)",
 				"line-checkout": "var(--color-accent-blue-500)",
-			}
+				"bg-grey": "var(--color-bg-grey)",
+				"display-blue": "var( --color-accent-blue-900)",
+			},
 
 		},
 	},
