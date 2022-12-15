@@ -291,11 +291,16 @@ a {
     background-repeat: no-repeat;
 }
 
-/* Wine club */
+/* Background images */
 .benefits{
     background-image: url("../images-wine/bg-WC.webp");
     width: auto;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.wineTright{
+    background-image: url("../images-wine/winebottlesrack.webp");
     background-position: center;
     background-size: cover;
 }

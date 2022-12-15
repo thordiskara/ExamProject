@@ -24,6 +24,7 @@ module.exports = {
 				"space-2xs": "var(--space-2xs)",
 				"space-3xs": "var(--space-3xs)",
 				"space-xl": "var(--space-xl)",
+				"space-3xl": "var(--space-3xl)",
 				"landing-padding-y": "var(--landing-padding-y)",
 			},
 
@@ -55,6 +56,7 @@ module.exports = {
 				"bg-grey": "var(--color-bg-grey)",
 				"display-blue": "var( --color-accent-blue-900)",
 				"form-bg-": "var( --color-accent-blue-200)",
+				"landing-grey": "var(--color-bg-grey)",
 			},
 
 		},
