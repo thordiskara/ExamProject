@@ -1,60 +1,58 @@
 :root {
+  /* FONT WEIGHT */
+  --font-weight-button: 500;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
 
-    /* FONT WEIGHT */
-    --font-weight-button: 500;
-    --font-weight-regular: 400;
-    --font-weight-semibold: 600;
+  /* COLORS */
 
-    /* COLORS */
+  /* WINE COLORS */
+  --color-rose-wine-secondary: #9b4033;
+  --color-rose-wine-primary: #f3e0d3;
+  --color-sparkling-wine-secondary: #2f6475;
+  --color-sparkling-wine-primary: #dbeaf0;
+  --color-white-wine-secondary: #69391e;
+  --color-white-wine-primary: #f5ecc9;
+  --color-red-wine-secondary: #fee3e2;
+  --color-red-wine-primary: #b8221d;
 
-    /* WINE COLORS */
-    --color-rose-wine-secondary: #9B4033;
-    --color-rose-wine-primary: #F3E0D3;
-    --color-sparkling-wine-secondary: #2F6475;
-    --color-sparkling-wine-primary: #DBEAF0;
-    --color-white-wine-secondary: #69391E;
-    --color-white-wine-primary: #F5ECC9;
-    --color-red-wine-secondary: #FEE3E2;
-    --color-red-wine-primary: #B8221D;
+  /* PAGE COLORS */
+  --color-product-list-grey: #f2f1f1;
+  --color-black: #000000;
+  --color-white: #ffffff;
 
-    /* PAGE COLORS */
-    --color-product-list-grey: #F2F1F1;
-    --color-black: #000000;
-    --color-white: #FFFFFF;
+  /* BUTTON COLORS */
+  --color-button-dark-grey: #303030;
+  --color-primary-button-grey: #f3f3f3;
+  --color-primary-button-blue: #438ee7;
 
-    /* BUTTON COLORS */
-    --color-button-dark-grey: #303030;
-    --color-primary-button-grey: #F3F3F3;
-    --color-primary-button-blue: #438EE7;
-    
-    /* ACCENT RED COLORS */
-    --color-accent-red-900: #7E211E;
-    --color-accent-red-800: #98201C;
-    --color-accent-red-700: #B8221D;
-    --color-accent-red-600: #DB2D27;
-    --color-accent-red-500: #F0615C;
-    --color-accent-red-400: #F77672;
-    --color-accent-red-300: #FBA9A6;
-    --color-accent-red-200: #FECCCA;
-    --color-accent-red-100: #FEE3E2;
-    --color-accent-red-50: #FEF2F2;
+  /* ACCENT RED COLORS */
+  --color-accent-red-900: #7e211e;
+  --color-accent-red-800: #98201c;
+  --color-accent-red-700: #b8221d;
+  --color-accent-red-600: #db2d27;
+  --color-accent-red-500: #f0615c;
+  --color-accent-red-400: #f77672;
+  --color-accent-red-300: #fba9a6;
+  --color-accent-red-200: #feccca;
+  --color-accent-red-100: #fee3e2;
+  --color-accent-red-50: #fef2f2;
 
-    /* ACCENT BLUE COLORS */
-    --color-accent-blue-900: #424C66;
-    --color-accent-blue-800: #4F5A7E;
-    --color-accent-blue-700: #5C6C99;
-    --color-accent-blue-600: #687CA8;
-    --color-accent-blue-500: #7A91B7;
-    --color-accent-blue-400: #94AAC6;
-    --color-accent-blue-300: #B7C7D9;
-    --color-accent-blue-200: #CBD6E4;
-    --color-accent-blue-100: #E7ECF2;
-    --color-accent-blue-50: #F4F7FA;
+  /* ACCENT BLUE COLORS */
+  --color-accent-blue-900: #424c66;
+  --color-accent-blue-800: #4f5a7e;
+  --color-accent-blue-700: #5c6c99;
+  --color-accent-blue-600: #687ca8;
+  --color-accent-blue-500: #7a91b7;
+  --color-accent-blue-400: #94aac6;
+  --color-accent-blue-300: #b7c7d9;
+  --color-accent-blue-200: #cbd6e4;
+  --color-accent-blue-100: #e7ecf2;
+  --color-accent-blue-50: #f4f7fa;
 
-
-    /* FONTS */
-    --font-family-headings: 'Gill Sans';
-    --font-family-body: 'Proxima Nova';
+  /* FONTS */
+  --font-family-headings: "Gill Sans";
+  --font-family-body: "Proxima Nova";
 
     /* FONT SIZES */
     --font-size-overline-mobile: clamp(0.65rem, calc(0.72rem + -0.09vw), 0.70rem);
@@ -68,61 +66,79 @@
     --font-size-h2: clamp(1.80rem, calc(1.37rem + 1.85vw), 2.80rem);
     --font-size-h1: clamp(2.03rem, calc(1.45rem + 2.46vw), 3.36rem);
 
+  /* LETTER SPACING */
+  --letter-spacing-overline: 0.09375em;
+  --letter-spacing-button: 0.07813em;
+  --letter-spacing-body-small: 0.01563em;
+  --letter-spacing-body: 0.03125em;
+  --letter-spacing-h4: 0.01563em;
+  --letter-spacing-h6: 0.00938em;
 
-    /* LETTER SPACING */
-    --letter-spacing-overline: 0.09375em;
-    --letter-spacing-button: 0.07813em;
-    --letter-spacing-body-small: 0.01563em;
-    --letter-spacing-body: 0.03125em;
-    --letter-spacing-h4: 0.01563em;
-    --letter-spacing-h6: 0.00938em;
+  /* LINE HEIGHT DESKTOP */
+  --line-height-overline: 0.938rem;
+  --line-height-button-small: 1.125rem;
+  --line-height-button: 1.375rem;
+  --line-height-body-small: 1.125rem;
+  --line-height-body: 1.625rem;
+  --line-height-h6: 1.688rem;
+  --line-height-h5: 2.063rem;
+  --line-height-h4: 2.313rem;
+  --line-height-h3: 2.813rem;
+  --line-height-h2: 3.375rem;
+  --line-height-h1: 4.063rem;
 
-    /* LINE HEIGHT DESKTOP */
-    --line-height-overline: 0.938rem;
-    --line-height-button-small: 1.125rem;
-    --line-height-button: 1.375rem;
-    --line-height-body-small: 1.125rem;
-    --line-height-body: 1.625rem;
-    --line-height-h6: 1.688rem;
-    --line-height-h5: 2.063rem;
-    --line-height-h4: 2.313rem;
-    --line-height-h3: 2.813rem;
-    --line-height-h2: 3.375rem;
-    --line-height-h1: 4.063rem;
+  /* LINE HEIGHT MOBILE */
+  --line-height-overline-mobile: 0.75rem;
+  --line-height-button-small-mobile: 1.063rem;
+  --line-height-button-mobile: 1.188rem;
+  --line-height-body-small-mobile: 1.063rem;
+  --line-height-body-mobile: 1.625rem;
+  --line-height-h6-mobile: 1.375rem;
+  --line-height-h5-mobile: 1.5rem;
+  --line-height-h4-mobile: 1.625rem;
+  --line-height-h3-mobile: 1.875rem;
+  --line-height-h2-mobile: 2.125rem;
+  --line-height-h1-mobile: 2.438rem;
 
-    /* LINE HEIGHT MOBILE */
-    --line-height-overline-mobile: 0.75rem;
-    --line-height-button-small-mobile: 1.063rem;
-    --line-height-button-mobile: 1.188rem;
-    --line-height-body-small-mobile: 1.063rem;
-    --line-height-body-mobile: 1.625rem;
-    --line-height-h6-mobile: 1.375rem;
-    --line-height-h5-mobile: 1.5rem;
-    --line-height-h4-mobile: 1.625rem;
-    --line-height-h3-mobile: 1.875rem;
-    --line-height-h2-mobile: 2.125rem;
-    --line-height-h1-mobile: 2.438rem;
+  /* SPACING */
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.1vw), 0.31rem);
+  --space-2xs: clamp(0.5rem, calc(0.48rem + 0.1vw), 0.56rem);
+  --space-xs: clamp(0.75rem, calc(0.7rem + 0.2vw), 0.88rem);
+  --space-s: clamp(1rem, calc(0.95rem + 0.2vw), 1.13rem);
+  --space-m: clamp(1.5rem, calc(1.43rem + 0.29vw), 1.69rem);
+  --space-l: clamp(2rem, calc(1.91rem + 0.39vw), 2.25rem);
+  --space-xl: clamp(3rem, calc(2.86rem + 0.59vw), 3.38rem);
+  --space-2xl: clamp(4rem, calc(3.82rem + 0.78vw), 4.5rem);
+  --space-3xl: clamp(6rem, calc(5.73rem + 1.17vw), 6.75rem);
 
-    /* SPACING */
-    --space-3xs: clamp(0.25rem, calc(0.23rem + 0.10vw), 0.31rem);
-    --space-2xs: clamp(0.50rem, calc(0.48rem + 0.10vw), 0.56rem);
-    --space-xs: clamp(0.75rem, calc(0.70rem + 0.20vw), 0.88rem);
-    --space-s: clamp(1.00rem, calc(0.95rem + 0.20vw), 1.13rem);
-    --space-m: clamp(1.50rem, calc(1.43rem + 0.29vw), 1.69rem);
-    --space-l: clamp(2.00rem, calc(1.91rem + 0.39vw), 2.25rem);
-    --space-xl: clamp(3.00rem, calc(2.86rem + 0.59vw), 3.38rem);
-    --space-2xl: clamp(4.00rem, calc(3.82rem + 0.78vw), 4.50rem);
-    --space-3xl: clamp(6.00rem, calc(5.73rem + 1.17vw), 6.75rem);
+  /* ONE-UP PAIRS SPACING */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.14rem + 0.49vw), 0.56rem);
+  --space-2xs-xs: clamp(0.5rem, calc(0.36rem + 0.59vw), 0.88rem);
+  --space-xs-s: clamp(0.75rem, calc(0.61rem + 0.59vw), 1.13rem);
+  --space-s-m: clamp(1rem, calc(0.75rem + 1.07vw), 1.69rem);
+  --space-m-l: clamp(1.5rem, calc(1.23rem + 1.17vw), 2.25rem);
+  --space-l-xl: clamp(2rem, calc(1.5rem + 2.15vw), 3.38rem);
+  --space-xl-2xl: clamp(3rem, calc(2.45rem + 2.34vw), 4.5rem);
+  --space-2xl-3xl: clamp(4rem, calc(2.99rem + 4.29vw), 6.75rem);
 
-    /* ONE-UP PAIRS SPACING */
-    --space-3xs-2xs: clamp(0.25rem, calc(0.14rem + 0.49vw), 0.56rem);
-    --space-2xs-xs: clamp(0.50rem, calc(0.36rem + 0.59vw), 0.88rem);
-    --space-xs-s: clamp(0.75rem, calc(0.61rem + 0.59vw), 1.13rem);
-    --space-s-m: clamp(1.00rem, calc(0.75rem + 1.07vw), 1.69rem);
-    --space-m-l: clamp(1.50rem, calc(1.23rem + 1.17vw), 2.25rem);
-    --space-l-xl: clamp(2.00rem, calc(1.50rem + 2.15vw), 3.38rem);
-    --space-xl-2xl: clamp(3.00rem, calc(2.45rem + 2.34vw), 4.50rem);
-    --space-2xl-3xl: clamp(4.00rem, calc(2.99rem + 4.29vw), 6.75rem);
+  /* ALIASES */
+  --heading-gill-sans: var(--font-family-headings);
+  --heading-proxima-nova: var(--font-family-body);
+  --body-font: var(--font-family-body);
+  --footer-x-padding: var(--space-2xl-3xl);
+  --footer-y-padding: var(--space-xl-2xl);
+  --footer-h6-padding-bottom: var(--space-xs-s);
+  --footer-gaps: var(--space-m-l);
+  --header-x-padding: var(--space-s-m);
+  --header-y-padding: var(--space-m-l);
+  --primary-btn-x-padding: var(--space-xs-s);
+  --primary-btn-y-padding: var(--space-xl-2xl);
+  --secondary-btn-x-padding: var(--space-xs);
+  --secondary-btn-y-padding: var(--space-l);
+  --productlist-padding: var(--space-xs);
+  --form-inputandlabel: var(--color-accent-blue-900);
+  --alert-color: var(--color-accent-red-600: );
+
 
     /* CUSTOM SPACING */
    --space-s-2xl: clamp(1.00rem, calc(-0.28rem + 5.46vw), 4.50rem);
@@ -170,70 +186,70 @@
 
 /* TYPESCALE */
 
-h1{
-    font-family: var(--heading-gill-sans);
-    font-size: var(--font-size-h1);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-h1);
+h1 {
+  font-family: var(--heading-gill-sans);
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-h1);
 }
 
-h2{
-    font-family: var(--heading-gill-sans);
-    font-size: var(--font-size-h2);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-h2);
+h2 {
+  font-family: var(--heading-gill-sans);
+  font-size: var(--font-size-h2);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-h2);
 }
 
-h3{
-    font-family: var(--heading-gill-sans);
-    font-size: var(--font-size-h3);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-h3);
+h3 {
+  font-family: var(--heading-gill-sans);
+  font-size: var(--font-size-h3);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-h3);
 }
 
-h4{
-    font-family: var(--heading-gill-sans);
-    font-size: var(--font-size-h4);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-h4);
-    letter-spacing: var(--letter-spacing-h4);
+h4 {
+  font-family: var(--heading-gill-sans);
+  font-size: var(--font-size-h4);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-h4);
+  letter-spacing: var(--letter-spacing-h4);
 }
 
-h5{
-    font-family: var(--heading-proxima-nova);
-    font-size: var(--font-size-h5);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-h5);
+h5 {
+  font-family: var(--heading-proxima-nova);
+  font-size: var(--font-size-h5);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-h5);
 }
 
-h6{
-    font-family: var(--heading-proxima-nova);
-    font-size: var(--font-size-h6);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-h6);
-    letter-spacing: var(--letter-spacing-h6);
+h6 {
+  font-family: var(--heading-proxima-nova);
+  font-size: var(--font-size-h6);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-h6);
+  letter-spacing: var(--letter-spacing-h6);
 }
 
-p{
-    font-family: var(--body-font);
-    font-size: var(--font-size-body-btn);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-body);
-    letter-spacing: var(--letter-spacing-body); 
+p {
+  font-family: var(--body-font);
+  font-size: var(--font-size-body-btn);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
 }
 
-.bodySmall{
-    font-family: var(--body-font);
-    font-size: var(--font-size-body-small);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-body-small);
-    letter-spacing: var(--letter-spacing-body-small); 
+.bodySmall {
+  font-family: var(--body-font);
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-small);
+  letter-spacing: var(--letter-spacing-body-small);
 }
 .overlineText{
     font-size: var(--font-size-overline-mobile);
@@ -246,8 +262,8 @@ footer{
     background-color: var(--color-accent-blue-900);
 }
 
-a{
-    font-size: var(--font-size-body-btn);
+a {
+  font-size: var(--font-size-body-btn);
 }
 
 /*  COMPONENTS  */

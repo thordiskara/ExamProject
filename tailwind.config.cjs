@@ -24,13 +24,14 @@ module.exports = {
 				"space-2xs": "var(--space-2xs)",
 				"space-3xs": "var(--space-3xs)",
 				"space-xl": "var(--space-xl)",
-
-				},
-
-			gridTemplateColumns:{
-				"burger-grid": "5fr 1fr",
-				"productlist": "2fr 6fr",
 			},
+
+      			gridTemplateColumns: {
+        		"burger-grid": "5fr 1fr",
+        		"productlist": "2fr 6fr",
+      		},
+
+
 
 			colors:{
 				"accent-red-main": "var(--color-accent-red-500)",
@@ -44,10 +45,12 @@ module.exports = {
 				"rose-wine-primary": "var(--color-rose-wine-primary)",
 				"rose-wine-secondary": "var(--color-rose-wine-secondary)",
 				"sparkling-wine-primary": "var(--color-sparkling-wine-primary)",
-				"sparkling-wine-secondary": "var(--color-sparkling-wine-secondary)"
+				"sparkling-wine-secondary": "var(--color-sparkling-wine-secondary)",
+				"line-checkout": "var( --color-accent-blue-500)",
 			}
 
 		},
 	},
-	plugins: [],
-}
+
+  plugins: [],
+};
