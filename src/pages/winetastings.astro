@@ -4,11 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import BurgerMenu from "../components/BurgerMenu.astro";
 import Arrow from "../svg/icons/Arrow-a.svg";
-import BgDeluxe from "../images-wine/bg-bubblesandcake.webp";
-import BgEdda from "../images-wine/bg-edda.webp";
-import Bg56 from "../images-wine/bg-56grader.webp";
-import BgExclusive from "../images-wine/bg-exclusive.webp";
-import BgExclusive1 from "../images-wine/bg-winetasting.webp";
+
 ---
 
 <Layout />
@@ -25,35 +21,42 @@ import BgExclusive1 from "../images-wine/bg-winetasting.webp";
          and we will be more than happy to tailor a bespoke wine tasting especially for you!
     </p>
 </section>
-<section class="flex flex-col px-body-padding-x">
+<section class="flex flex-col gap-[8px] px-body-padding-x">
     <div class="bg-background-blue px-body-padding-x py-space-m">
         <h5 class="pb-padding-headers">Deluxe bubbles & cake experience</h5>
         <p class="">The perfect choice for the customer who would like to explore pairings of delicious bubbles and exquisite pastries. </p>
         <p class="pb-padding-paragraphs">The experience can be enjoyed either at a location of your choosing or at EDDA Studio, a Nordic design showroom located in Nordhavn.</p>
         <div> <a href="/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
     </div>
-    <div class="flex">
-        <a href="/" class="bubbles1 h-16">
-        <h6 class="text-white">Your preferred location</h6>
+    <div class="flex gap-[8px]">
+        <a href="/" class="deluxeL h-64 w-[50%] p-space-xs">
+            <h6 class="text-white text-right">your preferred location</h6>
         </a>
-        <a href="/" class="bubbles2"></a>
+        <a  href="/" class="deluxeR h-64 w-[50%] p-space-xs">
+            <h6 class="text-white text-right">Edda studio</h6> 
+        </a>
     </div>
 </section>
 <BurgerMenu />
 <Footer />
 
 <style>
+
+.deluxeL{
+    background-image: url("../images-wine/bg-bubblesandcake.webp");
+    background-size: cover;
+}
+.deluxeR{
+    background-image: url("../images-wine/bg-edda.webp");
+    background-size: cover;
+}
 .hoverLink {
     transition: all 500ms;
 }
-    
+
 .hoverLink:hover  {
 letter-spacing: 0.2rem;
 }
 
-.bubbles1 {
-    background-image: url("../images-wines/bg-bubblesandcake.webp");
-    background-size: cover;
-}
 
 </style>
