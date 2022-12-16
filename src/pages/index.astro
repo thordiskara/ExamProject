@@ -81,25 +81,27 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
     </div>
 </section>
 <!-- Product section -->
-<section class="py-landing-padding-y px-body-padding-x md:px-space-xl border-b-2 border-line-checkout grid justify-center gap-[8px]">
-    <div class=" gap-[8px] justify-center grid grid-cols-2 md:grid-cols-5">
-        <RedWineCard />
-        <div class="bg-burger-blue flex flex-col md:w-[16rem] h-auto min-h-[7%] justify-end p-productcard-p">
+<section class="py-landing-padding-y px-body-padding-x lg:px-space-xl border-b-2 border-line-checkout grid justify-center gap-[8px]">
+    <div class=" gap-[8px] justify-center grid grid-cols-2 lg:grid-cols-5">
+         <RedWineCard  />
+        <div class="bg-burger-blue flex flex-col lg:w-[16rem] h-auto min-h-[7%] justify-end p-productcard-p">
             <h4>Top <br> Products</h4>
         </div>
         <WhiteWineCard />
         <RoseWineCard />
+        <div class="mobileNoShow"></div>
+        <div class="mobileNoShow"></div>
       <SparklingWineCard />
         <RedWineCard />
-        <div class="wineSub flex flex-col h-[14rem] md:h-auto p-space-xs justify-between col-span-2">
-            <h5 class="text-white">We also have <br>wine subscriptions</h5>
+        <div class="wineSub flex flex-col h-[14rem] lg:h-auto p-space-xs justify-between col-span-2">
+            <h4 class="text-white">We also have <br>wine subscriptions</h4>
             <div class="self-end"> <a href="#" class="btn flex hoverLink text-white"><span class="pr-space-xs">read more </span><img src={ArrowWhite} alt="Arrow right"></a></div>
         </div>
     </div>
 </section>
 <!-- Wine club section -->
-<section class="flex flex-col md:flex-row min-h-screen">
-    <div class="benefits py-landing-padding-y px-body-padding-x md:pl-space-3xl flex flex-col gap-space-xl md:border-b-2 md:border-r-2 border-line-checkout text-center md:text-left">
+<section class="flex flex-col lg:flex-row min-h-screen">
+    <div class="benefits py-landing-padding-y px-body-padding-x md:pl-space-3xl flex flex-col gap-space-xl lg:border-b-2 lg:border-r-2 border-line-checkout text-center md:text-left">
         <h2>Wine club benefits</h2>
        <div> 
         <h4 class="pb-space-2xs">Free</h4>
@@ -117,7 +119,7 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
     </div>
     </div>
  
-        <div class="border-y-2 md:border-t-0 md:w-[100vw] border-line-checkout py-landing-padding-y px-body-padding-x text-display-blue bg-form-bg- ">
+        <div class="border-y-2 lg:border-t-0 md:w-[100vw] border-line-checkout py-landing-padding-y px-body-padding-x text-display-blue bg-form-bg- ">
             <form action="" autocomplete="on" class="flex flex-col justify-center">
                 <h2 class="text-center justify-self-center mx-16">Join our wine club</h2>
             <div class="py-landing-padding-y flex flex-col gap-space-l">
