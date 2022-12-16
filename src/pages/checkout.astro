@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import BurgerMenu from "../components/BurgerMenu.astro";
 import Plus from "../svg/icons/plus.svg";
@@ -39,7 +38,7 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
     </div>
   </header>
   <div>
-    <section class="px-body-padding-x pt-[8.6rem] lg:grid lg:grid-cols-3">
+    <section class="px-body-padding-x lg:pt-[8.6rem] lg:grid lg:grid-cols-3">
       <h3 class="border-b-2 border-line-checkout pb-2 lg:col-span-3">
         checkout
       </h3>
@@ -198,7 +197,7 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
               id="month"
               maxlength="2"
               pattern="[0-9]*"
-              inputmode="numerical"
+              inputmode="numeric"
               placeholder="MM"
               type="text"
               data-pattern-validate
@@ -209,7 +208,7 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
               id="year"
               maxlength="2"
               pattern="[0-9]*"
-              inputmode="numerical"
+              inputmode="numeric"
               placeholder="YY"
               type="text"
               data-pattern-validate
@@ -218,7 +217,7 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
 
           <label for="ccv">ccv*</label>
           <input
-            type="ccv"
+            type="text"
             name="CCV"
             placeholder="CCV"
             maxlength="3"
