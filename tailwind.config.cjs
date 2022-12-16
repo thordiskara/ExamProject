@@ -30,6 +30,8 @@ module.exports = {
       			gridTemplateColumns: {
         		"burger-grid": "5fr 1fr",
         		"productlist": "1fr 6fr",
+				"winesubscriptions-deluxe": "1fr 1.3fr",
+				"winesubscriptions-premium": "1.3fr 1fr",
       		},
 
 

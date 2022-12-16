@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import BurgerMenu from "../components/BurgerMenu.astro"
+import Perks from "../img/wine-subscription/perks.webp"
+---
+<Layout>
+    <Header/>
+<div class="px-body-padding-x">
+    <h2>Wine Subscriptions</h2>
+    <p>The Great Wine Experience is delighted to offer convenient monthly wine club subscriptions of our top-quality range of hand-picked artisanal wines. 
+    </p>
+    <p>Below you can read further about the benefits of a wine box subscriptions.</p>
+</div>
+
+<div class=" grid grid-cols-winesubscriptions-deluxe">
+    <div class="deluxe">
+        <h5 class="px-body-padding-x">The Deluxe</h5>
+    </div>
+
+    <div class="bg-product-list px-body-padding-x">
+        <h5>Six bottles for 695 DKK per month</h5>
+        <p>A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
+        <a href="">View box</a>
+    </div>
+</div>
+
+<div class=" grid grid-cols-winesubscriptions-premium border-b-2 border-line-checkout">
+    <div class="bg-product-list px-body-padding-x">
+        <h5>Six bottles for 695 DKK per month</h5>
+        <p>A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
+        <a href="">View box</a>
+    </div>
+
+    <div class="premium">
+        <h5 class="px-body-padding-x">The Premium</h5>
+    </div>
+</div>
+
+<div class="md:hidden">
+    <div class="perks">
+        <p class="overlineText">Benefits</p>
+        <h3>Prek up your palate!</h3>
+    </div>
+    <div>
+        <h6>25% off + Free shipping</h6>
+        <p>Get at least 25% off on each wine and free shipping across Denmark or you can choose to pick up your tasting box at our wine shop in Nordhavn.</p>
+        <h6>Tailor your subscription</h6>
+        <p>Customize the selection of wines to your taste - a choice of all reds, all whites, or a mix. The selection also reflects the seasons, and can include rosés, sparkling or port wines.</p>
+        <h6>Free to cancel or pause subscription</h6>
+        <p>Your subscription is non-binding, you can choose to cancel or take a break as it suits you.</p>
+    </div>
+</div>
+
+<div class="hidden md:grid md:grid-cols-2">
+    <div>
+        <p class="overlineText">Benefits</p>
+        <h3>Prek up your palate!</h3>
+        <h6>25% off + Free shipping</h6>
+        <p>Get at least 25% off on each wine and free shipping across Denmark or you can choose to pick up your tasting box at our wine shop in Nordhavn.</p>
+        <h6>Tailor your subscription</h6>
+        <p>Customize the selection of wines to your taste - a choice of all reds, all whites, or a mix. The selection also reflects the seasons, and can include rosés, sparkling or port wines.</p>
+        <h6>Free to cancel or pause subscription</h6>
+        <p>Your subscription is non-binding, you can choose to cancel or take a break as it suits you.</p>
+    </div>
+    <div>
+        <img class="h-[100vh] w-full object-cover" src={Perks} alt="perks"/>
+    </div>
+</div>
+
+<Footer/>
+    <BurgerMenu/>
+</Layout>
+
+<style>
+    .deluxe{
+    background-image: url("../img/wine-subscription/winebox1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+ .premium{
+    background-image: url("../img/wine-subscription/winebox1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+ .perks{
+    background-image: url("../img/wine-subscription/perks.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+ .perks:before {
+  content: "";
+  position: absolute;
+  left: 0; 
+  right: 0;
+  top: 0; 
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+</style>
