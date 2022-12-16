@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
+---
+
+<Layout>
+  <Header />
+  <div
+    class="bg-background-blue border-y-2 border-line-checkout text-center py-32 px-body-padding-x text-form-inputandlabel"
+  >
+    <h2 class="px-body-padding-x pb-space-m-l">Thank you for your order!</h2>
+    <p class="pb-space-m-l pt-space-m-l xl:px-96">
+      Your order was completed successfully. <br /> An order confirmation has been
+      sent to your e-mail, including all details about your order & tracking information.
+    </p>
+    <h6 class="pt-space-m-l">
+      Sit back and relax, amazing wine coming your way!
+    </h6>
+  </div>
+
+  <Footer />
+  <BurgerMenu />
+</Layout>

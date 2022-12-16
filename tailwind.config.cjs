@@ -18,16 +18,20 @@ module.exports = {
 				"breadcrumbs-y": "var(--breadcrumbs-padding-y)",
 				"wine-padding-y": "var(--wine-padding-y)",
 				"body-padding-x": "var(--body-padding-x)",
+				"body-padding-y": "var(--body-padding-y)",
 				"space-s": "var(--space-s)",
 				"space-m": "var(--space-m)",
+				"space-m-l": "var(--space-m-l)",
 				"space-l": "var(--space-l)",
 				"space-xs": "var(--space-xs)",
 				"space-2xs": "var(--space-2xs)",
 				"space-3xs": "var(--space-3xs)",
 				"space-xl": "var(--space-xl)",
+				"space-xl-2xl": "var(--space-xl-2xl)",
 				"space-2xl": "var(--space-2xl)",
 				"space-3xl": "var(--space-3xl)",
 				"landing-padding-y": "var(--landing-padding-y)",
+				"space-review-order": "var(--space-2xs-xs)",
 			},
 
       			gridTemplateColumns: {
@@ -68,10 +72,12 @@ module.exports = {
 				"display-blue": "var( --color-accent-blue-900)",
 				"form-bg-": "var( --color-accent-blue-200)",
 				"landing-grey": "var(--color-bg-grey)",
+				"line-checkout": "var( --color-accent-blue-500)",
+        		"form-inputandlabel": "var(--form-inputandlabel)",
+        		"background-blue": "var(--bg-blue)",
 			},
 
 		},
 	},
-
   plugins: [],
 };

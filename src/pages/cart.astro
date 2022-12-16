@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
+import Button2 from "../components/Button2.astro";
+import WineImg from "../img/wine1.png";
+---
+
+<Layout>
+  <Header />
+  <section class="px-body-padding-x">
+    <h5 class="border-b-2 border-line-checkout pb-space-2xs">cart (2)</h5>
+    <div class="grid grid-cols-2 border-b-2 border-line-checkout py-space-m-l">
+      <img
+        class="w-[8rem] h-[14rem] object-contain p-space-xs"
+        src={WineImg}
+        alt="red wine"
+      />
+      <div class="flex flex-col justify-between p-space-xs">
+        <h6>LE domaine du grand jacquet</h6>
+        <div>
+          <input
+            type="number"
+            min="1"
+            name="quantity"
+            value="1"
+            inputmode="numeric"
+            class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
+          />
+          <h6 class="pt-space-xs">200 dkk</h6>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 border-b-2 border-line-checkout py-space-m-l">
+      <img
+        class="w-[8rem] h-[14rem] object-contain p-space-xs"
+        src={WineImg}
+        alt="red wine"
+      />
+      <div class="flex flex-col justify-between p-space-xs">
+        <h6>LE domaine du grand jacquet</h6>
+        <div>
+          <input
+            type="number"
+            min="1"
+            name="quantity"
+            value="1"
+            inputmode="numeric"
+            class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
+          />
+          <h6 class="pt-space-xs">200 dkk</h6>
+        </div>
+      </div>
+    </div>
+    <div class="py-space-xs">
+      <input type="text" placeholder="ADD A NOTE" />
+    </div>
+  </section>
+  <section>
+    <h5>order summary</h5>
+    <div>
+      <h6>order value</h6>
+      <h6>400 dkk</h6>
+    </div>
+    <input type="text" />
+    <div>
+      <h6>total value</h6>
+      <h6>400 dkk</h6>
+    </div>
+  </section>
+  <BurgerMenu />
+  <Footer />
+</Layout>
+
+<style>
+  input:focus {
+    outline: none;
+  }
+
+  input {
+    border: solid 2px;
+    border-color: var(--color-accent-blue-500);
+    font-size: var(--font-size-body);
+    padding: var(--space-l);
+  }
+</style>
