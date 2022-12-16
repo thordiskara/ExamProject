@@ -25,12 +25,18 @@ module.exports = {
 				"space-2xs": "var(--space-2xs)",
 				"space-3xs": "var(--space-3xs)",
 				"space-xl": "var(--space-xl)",
+				"space-3xl": "var(--space-3xl)",
+				"landing-padding-y": "var(--landing-padding-y)",
 			},
 
       			gridTemplateColumns: {
         		"burger-grid": "5fr 1fr",
         		"productlist": "1fr 6fr",
       		},
+
+			fontSize: {
+				"body-small": "var(--font-size-body-small)",
+			},
 
 
 
@@ -47,8 +53,12 @@ module.exports = {
 				"rose-wine-secondary": "var(--color-rose-wine-secondary)",
 				"sparkling-wine-primary": "var(--color-sparkling-wine-primary)",
 				"sparkling-wine-secondary": "var(--color-sparkling-wine-secondary)",
-				"line-checkout": "var( --color-accent-blue-500)",
-			}
+				"line-checkout": "var(--color-accent-blue-500)",
+				"bg-grey": "var(--color-bg-grey)",
+				"display-blue": "var( --color-accent-blue-900)",
+				"form-bg-": "var( --color-accent-blue-200)",
+				"landing-grey": "var(--color-bg-grey)",
+			},
 
 		},
 	},

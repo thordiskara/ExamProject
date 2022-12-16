@@ -4,13 +4,13 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Button2 from "../components/Button2.astro"
-import WinePic from "../images-wine/LeDomaineDuGrandJacquet.webp"
-import Lamb from "../svg/wine-icons/red-mobile/sheep.svg"
-import Sweet from "../svg/wine-icons/red-mobile/sweet.svg"
-import Vegetable from "../svg/wine-icons/red-mobile/vegetable.svg"
-import Pork from "../svg/wine-icons/red-mobile/pork.svg"
-import Beef from "../svg/wine-icons/red-mobile/beef.svg"
-import RedWine2 from "../images-wine/redwine.webp"
+import WinePic from "../images-wine/selexione-di-piera.webp"
+import Lamb from "../svg/wine-icons/sparkling-mobile/sheep.svg"
+import Sweet from "../svg/wine-icons/sparkling-mobile/sweet.svg"
+import Vegetable from "../svg/wine-icons/sparkling-mobile/vegetable.svg"
+import Pork from "../svg/wine-icons/sparkling-mobile/pork.svg"
+import Beef from "../svg/wine-icons/sparkling-mobile/beef.svg"
+import Sparklingwine2 from "../images-wine/Sparkling2.webp"
 ---
 
 <Layout>
@@ -24,11 +24,11 @@ import RedWine2 from "../images-wine/redwine.webp"
     <a href="#" class="overlineText border-b border-black">RENDEZ-VOUS SOUS LE CHÊNE ROUGE</a>
 </div>
 <section class="flex flex-col md:flex-row">
-<div class=" md:w-[100vw] border-y-2 md:border-r border-red-wine-primary flex justify-center">
-    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y">
+<div class="md:w-[100vw] border-y-2 md:border-r border-sparkling-wine-secondary flex justify-center">
+    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y ">
 </div> 
-<div class="flex flex-col md:border-t-2 md:border-l border-red-wine-primary md:w-[50vw]">
-    <div class=" bg-red-wine-secondary  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-red-wine-primary text-red-wine-primary">
+<div class="flex flex-col md:border-t-2 md:border-l border-sparkling-wine-secondary md:w-[50vw]">
+    <div class=" bg-sparkling-wine-primary  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-sparkling-wine-secondary text-sparkling-wine-secondary">
     <div class="flex flex-col gap-space-3xs">
         <h4>Rendez-vous sous le chêne rouge</h4>
         <p class="overlineText">France, Ventoux</p>
@@ -48,7 +48,7 @@ import RedWine2 from "../images-wine/redwine.webp"
     </div>
     </div>
 <div class="flex">
-        <div class="md:w-[50vw] bg-red-wine-secondary text-red-wine-primary border-b-2 border-red-wine-primary flex flex-col gap-space-m px-body-padding-x md:px-space-m items-center py-space-l">
+        <div class="md:w-[50vw] bg-sparkling-wine-primary text-sparkling-wine-secondary border-b-2 border-sparkling-wine-secondary flex flex-col gap-space-m px-body-padding-x md:px-space-m items-center py-space-l">
             <div class="flex md:flex-col gap-space-m md:gap-0">
                 <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
                     <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Red</p>
@@ -71,13 +71,13 @@ import RedWine2 from "../images-wine/redwine.webp"
                 <img src={Beef} alt="Beef icon">
             </div>
         </div>
-        <img src={RedWine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-red-wine-primary object-cover">
+        <img src={Sparklingwine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-sparkling-wine-secondary object-contain">
     </div>
 </div>
 </section>
 <!-- Details desktop  -->
 <section class="flex mobileNoShow">
-    <div class="w-[50vw] bg-accent-grey px-body-padding-x py-space-xl border-r border-red-wine-primary">
+    <div class="w-[50vw] bg-accent-grey px-body-padding-x py-space-xl border-r border-sparkling-wine-secondary">
         <h4 class="pb-space-l">About the winery</h4>
         <p class="pb-space-xs">Le Domaine Du Grand Jacquet is located between Carpentras and Mazan municiplities, 
             on the slopes of the Ventoux mountain in the Rhône valley.</p>
@@ -89,7 +89,7 @@ import RedWine2 from "../images-wine/redwine.webp"
                         The grapes are then fermented individually with respect to each terroir as closely as possible. </p>
                         <p class="pb-space-xs">The couple’s passionate, hard work shines through in the personality and quality of their wines. </p>
     </div>
-    <div class="w-[50vw] px-body-padding-x py-space-xl border-l border-red-wine-primary">
+    <div class="w-[50vw] px-body-padding-x py-space-xl border-l border-sparkling-wine-secondary">
         <h4 class="pb-space-l">Shipping</h4>
         <p class="pb-space-xs">We offer FREE SHIPPING in Denmark for purchases over 500,- kr.
             For orders under that the shipping costs 59,- kr.</p>
@@ -104,8 +104,8 @@ import RedWine2 from "../images-wine/redwine.webp"
 </section>
 <!-- Details mobile-->
 <section class="md:hidden">
-    <details class="border-b-2 border-red-wine-primary px-body-padding-x">
-        <summary class="py-space-xs list-outside">
+    <details class="border-b-2 border-sparkling-wine-secondary px-body-padding-x">
+        <summary class="py-space-xs  list-outside">
             <h4 class="ml-space-xs">About the winery</h4>
         </summary>
         <div class="py-space-xs flex flex-col gap-space-xs">
@@ -119,7 +119,7 @@ import RedWine2 from "../images-wine/redwine.webp"
                 </p>
         </div>
     </details>
-    <details class="border-b-2 border-red-wine-primary px-body-padding-x">
+    <details class="border-b-2 border-sparkling-wine-secondary px-body-padding-x">
         <summary class="py-space-xs list-outside">
             <h4 class="ml-space-xs">Shipping</h4>
         </summary>
@@ -147,12 +147,10 @@ import RedWine2 from "../images-wine/redwine.webp"
         border-bottom: 1px solid black;
         transition: 150ms ease-in-out;
     }
-
     input:focus{
         outline:none;
     }
-
-                /* DETAILS PLUS MINUS */
+            /* DETAILS PLUS MINUS */
 
 details > summary {
     list-style-type: "+";

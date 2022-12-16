@@ -4,14 +4,151 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Button1 from "../components/Button1.astro"
-import Button2 from "../components/Button2.astro"
-
+import WineTLeft from "../images-wine/wineTastingleft.webp"
+import Arrow from "../svg/icons/Arrow-a.svg"
+import HeroWine from "../images-wine/winebottlesmockup.webp"
+import HeroGlas from "../images-wine/heroimage1.webp"
+import RedWineCard from "../components/RedWineCard.astro"
+import WhiteWineCard from "../components/WhiteWineCard.astro"
+import RoseWineCard from "../components/RoseWineCard.astro"
+import SparklingWineCard from "../components/SparklingWineCard.astro"
 ---
 
 <Layout>
     <Header/>
-    <Button1 text="Shop" link="#"  />
-    <Button2 text="continue" link="#" />
+    <!-- Hero section mobile -->
+<!-- <section class="mobileNoShow md:hidden bg-bg-grey h-[80vh] border-b-2 border-line-checkout">
+<div class="heroSectionMobile flex flex-col items-center justify-between pt-space-l pb-space-xl">
+    <h1 class="text-center text-display-blue">The great wine experience</h1>
+    <Button1 text="shop wine" />
+</div>
+</section> -->
+<!-- Hero section desktop -->
+<section class="md:flex md:min-h-screen border-b-2 border-line-checkout ">
+    <div class="mobileNoShow heroLeft w-[50vw] bg-form-bg- border-r border-line-checkout grid py-landing-padding-y">
+        <h1 class="text-center justify-self-center text-display-blue pb-space-m">The great wine experience</h1>
+        <img src={HeroGlas} alt="Wine glasses cheering" class="self-center justify-self-center w-[50%]">
+        <p class="heroText text-center justify-self-center text-display-blue px-space-xl pt-space-m">
+            We provide a wide selection of quality, eco-friendly wines and a variety of exciting and fun wine tasting experiences.
+            <br> We also offer monthly wine subscription to help expand your wine palate.</p>
+    </div>
+    <div class=" heroRight md:w-[50vw] bg-landing-grey md:border-l border-line-checkout grid py-landing-padding-y">
+        <h1 class="text-center text-display-blue px-body-padding-x md:hidden">The great wine experience</h1>
+        <img src={HeroWine} alt="Three wine bottles" class="self-center p-10" >
+      <div class="justify-self-center">  <Button1 text="shop wine" href="" /></div>
+    </div>
+</section>
+<!-- Wine Tasting section mobile-->
+<section class="py-landing-padding-y border-b-2 border-line-checkout md:hidden">
+    <h2 class="pb-space-m px-body-padding-x" >Wine tastings</h2>
+    <p class="pb-space-m px-body-padding-x">Choose from any of your four different wine tasting experiences to best fit your pallet and desires.</p>
+        <img src={WineTLeft} alt="Glasses with various wines" class="h-80 w-screen object-cover pb-space-m">
+        <div class="flex gap-space-m px-body-padding-x justify-center pb-space-xl">
+            <a href="#" class="overlineText border-b border-black">exclusive</a>
+            <a href="#" class="overlineText border-b border-black">deluxe</a>
+            <a href="#" class="overlineText border-b border-black">Bespoke</a>
+            <a href="#" class="overlineText border-b border-black">virtual</a>
+        </div>
+        <p class="px-body-padding-x pb-space-m">At The Great Wine Experience we offer a variety of different wine tastings led by Sommelier Natalie Noryd. 
+            We create a fun and highly informative experience for our customers that match their requirements as well as their budget.</p>
+            <p class="px-body-padding-x pb-space-m">The wine tastings can take place at any preferred location or at our exquisite wine shop at Kompagnistræde 28 in central Copenhagen.</p>
+            <p class="px-body-padding-x pb-space-xl">Wine tastings can also be combined with a whole dinner, gourmet cakes or with a pop-up wine bar with live jazz music at any location. </p>
+           <div class="px-body-padding-x"> <a href="#" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+</section>
+<!-- Wine tasting desktop -->
+<section class="mobileNoShow grid grid-cols-3  border-b-2 border-line-checkout">
+    <div class="col-span-2 flex flex-col gap-space-xl px-body-padding-x pl-space-3xl pt-landing-padding-y">
+<h2>wine tastings</h2>
+<p>Choose from any of your four different wine tasting experiences to best fit your pallet and desires.</p>
+<div class="flex gap-space-m  pb-space-xl">
+    <a href="#" class="overlineText border-b border-black">exclusive</a>
+    <a href="#" class="overlineText border-b border-black">deluxe</a>
+    <a href="#" class="overlineText border-b border-black">Bespoke</a>
+    <a href="#" class="overlineText border-b border-black">virtual</a>
+</div>
+    </div>
+    <div class="wineTright row-span-2 col-start-3"></div>
+    <div class="col-span-2 row-start-2 row-span-2 flex">
+        <img src={WineTLeft} alt="" class="w-[25vw] object-cover">
+        <div class="flex flex-col pb-landing-padding-y">
+            <p class="px-body-padding-x pb-space-m">At The Great Wine Experience we offer a variety of different wine tastings led by Sommelier Natalie Noryd. 
+                We create a fun and highly informative experience for our customers that match their requirements as well as their budget.</p>
+                <p class="px-body-padding-x pb-space-m">The wine tastings can take place at any preferred location or at our exquisite wine shop at Kompagnistræde 28 in central Copenhagen.</p>
+                <p class="px-body-padding-x pb-space-xl">Wine tastings can also be combined with a whole dinner, gourmet cakes or with a pop-up wine bar with live jazz music at any location. </p>
+               <div class="px-body-padding-x"> <a href="#" class="btn flex hoverLink"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+        </div>
+    </div>
+</section>
+<!-- Product section -->
+<section class="py-landing-padding-y px-body-padding-x border-b-2 border-line-checkout">
+</section>
+<!-- Wine club section -->
+<section class="flex flex-col md:flex-row min-h-screen">
+    <div class="benefits py-landing-padding-y px-body-padding-x md:pl-space-3xl flex flex-col gap-space-xl md:border-b-2 md:border-r-2 border-line-checkout text-center md:text-left">
+        <h2>Wine club benefits</h2>
+       <div> 
+        <h4 class="pb-space-2xs">Free</h4>
+        <p>It's completely free of charge to join our wine club!</p>
+    </div>
+    <div> 
+        <h4 class="pb-space-2xs">Exclusive events</h4>
+        <p>Get invited to members-only wine tastings where you will get an insight into our delicious wines, 
+            and the opportunity to buy wines at a discounted price.. The events will either cost a small fee or be completely FREE.</p>
+    </div>
+    <div> 
+        <h4 class="pb-space-2xs">Stay up to date</h4>
+        <p>Be the first to receive great offers, info about events, and other exciting news about The Great Wine Experience.
+        </p>
+    </div>
+    </div>
+ 
+        <div class="border-y-2 md:border-t-0 md:w-[100vw] border-line-checkout py-landing-padding-y px-body-padding-x text-display-blue bg-form-bg- ">
+            <form action="" autocomplete="on" class="flex flex-col justify-center">
+                <h2 class="text-center justify-self-center mx-16">Join our wine club</h2>
+            <div class="py-landing-padding-y flex flex-col gap-space-l">
+                    <div class="flex flex-col gap-space-3xs">
+                        <label for="full name"><h6>name</h6></label>
+                        <input type="text" name="full name" placeholder="Please enter your full name" required class="border border-display-blue p-space-xs text-body-small">
+                    </div>
+                    <div class="flex flex-col gap-space-3xs">
+                        <label for="email"><h6>Email</h6></label>
+                        <input type="text" name="email" placeholder="example@mail.com" required class="border border-display-blue p-space-xs text-body-small">
+                    </div>
+            </div>
+                <button type="submit" class="btn justify-self-center mx-16 md:mx-20">Join now</button>
+            </form>
+        </div>
+
+</section>
     <Footer/>
     <BurgerMenu/>
 </Layout>
+
+
+<style>
+
+.hoverLink {
+    transition: all 500ms;
+}
+    
+.hoverLink:hover  {
+letter-spacing: 0.2rem;
+}
+
+button.btn{
+        color:  var(--color-primary-button-blue);
+        background-color: var(--color-primary-button-grey);
+        padding: var(--primary-btn-x-padding) var(--primary-btn-y-padding);
+        border: 1.5px solid var(--color-primary-button-blue);
+
+    }
+    button:hover{
+        background-color: var(--color-white);
+        transition: 0.4s ease-in-out;
+    }
+    input:focus{
+        outline-color: var(--color-primary-button-blue);
+        outline-style: solid;
+        border-color: var(--color-primary-button-blue);
+    }
+</style>

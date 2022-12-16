@@ -20,6 +20,7 @@
   --color-product-list-grey: #f2f1f1;
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-bg-grey: #e2e2e2;
 
   /* BUTTON COLORS */
   --color-button-dark-grey: #303030;
@@ -138,6 +139,7 @@
   --productlist-padding: var(--space-xs);
   --form-inputandlabel: var(--color-accent-blue-900);
   --alert-color: var(--color-accent-red-600: );
+  --landing-padding-y: var(--space-2xl-3xl);
 
 
     /* CUSTOM SPACING */
@@ -280,7 +282,28 @@ a {
 }
 
 
+/* HERO */
+.heroSectionMobile{
+    height: 100%;
+    background-image: url("../images-wine/winebottlesmockup.webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+/* Background images */
+.benefits{
+    background-image: url("../images-wine/bg-WC.webp");
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.wineTright{
+    background-image: url("../images-wine/winebottlesrack.webp");
+    background-position: center;
+    background-size: cover;
+}
 
 /* DETAILS PLUS MINUS */
 
