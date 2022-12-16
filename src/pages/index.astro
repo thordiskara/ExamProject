@@ -17,26 +17,18 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
 
 <Layout>
     <LandingHeader/>
-    <!-- Hero section mobile -->
-<!-- <section class="mobileNoShow md:hidden bg-bg-grey h-[80vh] border-b-2 border-line-checkout">
-<div class="heroSectionMobile flex flex-col items-center justify-between pt-space-l pb-space-xl">
-    <h1 class="text-center text-display-blue">The great wine experience</h1>
-    <Button1 text="shop wine" />
-</div>
-</section> -->
-<!-- Hero section desktop -->
-<section class="md:flex md:min-h-screen border-b-2 border-line-checkout ">
-    <div class="mobileNoShow heroLeft w-[50vw] bg-form-bg- border-r border-line-checkout grid py-landing-padding-y">
+<section class="md:flex md:min-h-screen border-b-2 border-line-checkout">
+    <div class="mobileNoShow heroLeft w-[50vw] bg-form-bg- border-r border-line-checkout grid py-landing-padding-y md:pt-[10rem]">
         <h1 class="text-center justify-self-center text-display-blue pb-space-m">The great wine experience</h1>
         <img src={HeroGlas} alt="Wine glasses cheering" class="self-center justify-self-center w-[50%]">
         <p class="heroText text-center justify-self-center text-display-blue px-space-xl pt-space-m">
             We provide a wide selection of quality, eco-friendly wines and a variety of exciting and fun wine tasting experiences.
             <br> We also offer monthly wine subscription to help expand your wine palate.</p>
     </div>
-    <div class=" heroRight md:w-[50vw] bg-landing-grey md:border-l border-line-checkout grid py-landing-padding-y">
+    <div class=" heroRight md:w-[50vw] bg-landing-grey md:border-l border-line-checkout grid pb-landing-padding-y pt-[10rem]">
         <h1 class="text-center text-display-blue px-body-padding-x md:hidden">The great wine experience</h1>
         <img src={HeroWine} alt="Three wine bottles" class="self-center p-10" >
-      <div class="justify-self-center">  <Button1 text="shop wine" href="" /></div>
+      <div class="justify-self-center">  <Button1 href="/productlist/"  text="shop wine"/></div>
     </div>
 </section>
 <!-- Wine Tasting section mobile-->
@@ -54,7 +46,7 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
             We create a fun and highly informative experience for our customers that match their requirements as well as their budget.</p>
             <p class="px-body-padding-x pb-space-m">The wine tastings can take place at any preferred location or at our exquisite wine shop at Kompagnistræde 28 in central Copenhagen.</p>
             <p class="px-body-padding-x pb-space-xl">Wine tastings can also be combined with a whole dinner, gourmet cakes or with a pop-up wine bar with live jazz music at any location. </p>
-           <div class="px-body-padding-x"> <a href="#" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+           <div class="px-body-padding-x"> <a href="/winetastings/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
 </section>
 <!-- Wine tasting desktop -->
 <section class="mobileNoShow grid grid-cols-3  border-b-2 border-line-checkout">
@@ -95,7 +87,7 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
         <RedWineCard />
         <div class="wineSub flex flex-col h-[14rem] lg:h-auto p-space-xs justify-between col-span-2">
             <h4 class="text-white">We also have <br>wine subscriptions</h4>
-            <div class="self-end"> <a href="#" class="btn flex hoverLink text-white"><span class="pr-space-xs">read more </span><img src={ArrowWhite} alt="Arrow right"></a></div>
+            <div class="self-end"> <a href="/winesubscriptions/" class="btn flex hoverLink text-white"><span class="pr-space-xs">read more </span><img src={ArrowWhite} alt="Arrow right"></a></div>
         </div>
     </div>
 </section>
