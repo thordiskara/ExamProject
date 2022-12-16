@@ -26,12 +26,12 @@ import Button1 from "../components/Button1.astro"
             <Sort/>
         </div>
     </div>
-    <div class="w-full sm:grid sm:grid-cols-productlist flex">
+    <div class="w-full sm:grid sm:grid-cols-productlist flex justify-center">
         <aside class="hidden sm:block pl-space-l">
             <Filters/>
         </aside>
-        <div class="sm:flex sm:flex-wrap gap-[8px] grid grid-cols-2 px-body-padding-x">
-            <div class="france flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
+        <div class="sm:flex sm:flex-wrap gap-[8px] grid grid-cols-2 px-body-padding-x md:px-space-xl justify-center">
+            <div class="france flex flex-col md:w-[16rem] h-auto min-h-[7%] justify-end p-productcard-p">
                 <h4 class="text-white">French <br> wines</h4>
             </div>
             <RedWineCard/>
@@ -39,7 +39,7 @@ import Button1 from "../components/Button1.astro"
             <SparklingWineCard/>
             <RoseWineCard/>
             <WhiteWineCard/>
-            <div class="italy flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
+            <div class="italy flex flex-col md:w-[16rem] h-auto min-h-[7%]  justify-end p-productcard-p">
                 <h4 class="text-white">Italian <br> wines</h4>
             </div>
             <RedWineCard/>
@@ -47,7 +47,7 @@ import Button1 from "../components/Button1.astro"
             <RoseWineCard/>
             <SparklingWineCard/>
             <RedWineCard/>
-            <div class="spain flex flex-col w-[16rem] h-[24rem] justify-end p-productcard-p">
+            <div class="spain flex flex-col md:w-[16rem] h-auto min-h-[7%]  justify-end p-productcard-p">
                 <h4 class="text-white">Spanish <br> wines</h4>
             </div>
             <RoseWineCard/>
@@ -63,15 +63,18 @@ import Button1 from "../components/Button1.astro"
 <style>
 
  .france{
-    background-image: url("../img/wines-france.webp")
+    background-image: url("../img/wines-france.webp");
+    background-size: cover;
  }
 
  .italy{
-    background-image: url("../img/wines-italy.webp")
+    background-image: url("../img/wines-italy.webp");
+    background-size: cover;
  }
 
  .spain{
-    background-image: url("../img/wines-spain.webp")
+    background-image: url("../img/wines-spain.webp");
+    background-size: cover;
  }
 </style>
 

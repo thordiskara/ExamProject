@@ -5,20 +5,20 @@ import CornerArrow from '../svg/icons/corner-arrow.svg'
 
 
     <a class="bg-product-list sm:w-[16rem]" href="/redwine/">
-        <div class="flex flex-col justify-between p-productcard-p">
-        <div class="flex flex-col items-end align-right pl-[2rem]">
+        <div class="flex flex-col justify-between p-productcard-p gap-[1rem]">
+        <div class="flex flex-col items-end align-right md:pl-[2rem]">
             <h6 class="text-right">Galia Villages 2014</h6>
             <p class="bodySmall">Red, Spain</p>
         </div>
         <div class="w-full flex justify-center">
-            <img class="w-[8rem] h-[14rem] object-contain" src={RedWine} alt="red wine"/>
+            <img class=" h-[8rem] md:h-[14rem] object-contain" src={RedWine} alt="red wine"/>
         </div>
         <div class="flex justify-between">
             <div>
-                <p>75 cl</p>
-                <p>299 DKK</p>
+                <p class="bodySmall">75 cl</p>
+                <p class="bodySmall">299 DKK</p>
             </div>
-            <div class="flex justify-end"><img class="arrow" src={CornerArrow} alt="corner arrow"/></div>
+            <div class="flex justify-end w-[20%]"><img class="arrow" src={CornerArrow} alt="corner arrow"/></div>
         </div>
         </div>
     </a>
