@@ -4,68 +4,201 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Perks from "../img/wine-subscription/perks.webp"
+import Included2 from "../img/wine-subscription/included2.webp"
+import Included1 from "../img/wine-subscription/included1.webp"
+import Included3 from "../img/wine-subscription/included3.webp"
+import Farmer from "../img/wine-subscription/farmer.webp"
+import Grapes from "../img/wine-subscription/grapes.webp"
 ---
 <Layout>
     <Header/>
-<div class="px-body-padding-x">
+<div class="px-body-padding-x lg:hidden">
     <h2>Wine Subscriptions</h2>
-    <p>The Great Wine Experience is delighted to offer convenient monthly wine club subscriptions of our top-quality range of hand-picked artisanal wines. 
+    <p class="pt-space-s">The Great Wine Experience is delighted to offer convenient monthly wine club subscriptions of our top-quality range of hand-picked artisanal wines. 
     </p>
-    <p>Below you can read further about the benefits of a wine box subscriptions.</p>
+    <p class="py-space-m">Every month you'll receive a tasting box with 6 different wines carefully curated by our sommelier Natalie Noryd. In your tasting box, you will always find a wide range of wine styles guaranteeing something for every taste.</p>
+    <p class="pb-space-l">Below you can read further about the benefits of a wine box subscriptions.</p>
 </div>
 
-<div class=" grid grid-cols-winesubscriptions-deluxe">
+<div class=" grid grid-cols-winesubscriptions-deluxe mb-space-s lg:hidden">
     <div class="deluxe">
-        <h5 class="px-body-padding-x">The Deluxe</h5>
+        <h5 class="px-body-padding-x py-space-m">The Deluxe</h5>
     </div>
 
-    <div class="bg-product-list px-body-padding-x">
-        <h5>Six bottles for 695 DKK per month</h5>
-        <p>A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
+    <div class="bg-product-list px-body-padding-x py-space-m">
+        <h6 class="pb-space-s">Six bottles for 695 DKK per month</h6>
+        <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
         <a href="">View box</a>
     </div>
 </div>
 
-<div class=" grid grid-cols-winesubscriptions-premium border-b-2 border-line-checkout">
-    <div class="bg-product-list px-body-padding-x">
-        <h5>Six bottles for 695 DKK per month</h5>
-        <p>A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
+<div class="grid grid-cols-winesubscriptions-premium border-b-2 border-line-checkout pb-space-xl lg:hidden ">
+    <div class="bg-product-list px-body-padding-x py-space-m">
+        <h6 class="pb-space-s">Six bottles for 695 DKK per month</h6>
+        <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
         <a href="">View box</a>
     </div>
 
     <div class="premium">
-        <h5 class="px-body-padding-x">The Premium</h5>
+        <h5 class="px-body-padding-x py-space-m">The Premium</h5>
     </div>
 </div>
 
-<div class="md:hidden">
-    <div class="perks">
+<div class="hidden lg:grid lg:grid-cols-2 lg:px-body-padding-x lg:gap-space-xl border-b-2 border-line-checkout">
+    <div class="pr-space-3xl">
+        <h2>Wine Subscriptions</h2>
+        <p class="pt-space-l">The Great Wine Experience is delighted to offer convenient monthly wine club subscriptions of our top-quality range of hand-picked artisanal wines. 
+        </p>
+        <p class="py-space-m">Every month you'll receive a tasting box with 6 different wines carefully curated by our sommelier Natalie Noryd. In your tasting box, you will always find a wide range of wine styles guaranteeing something for every taste.</p>
+        <p class="pb-space-l">Below you can read further about the benefits of a wine box subscriptions.</p>
+    </div>
+
+    <div>
+        <div class="grid grid-cols-deluxe gap-2 mb-space-m">
+            <div class="deluxe">
+                <h5 class="px-space-m py-space-m">The Deluxe</h5>
+            </div>
+            <div class="bg-product-list px-space-m py-space-m">
+                <h6 class="pb-space-s">Six bottles for 695 DKK per month</h6>
+                <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
+                <a href="">View box</a>
+            </div>
+        </div>
+        <div class="grid grid-cols-premium gap-2 mb-space-2xl">
+            <div class="bg-product-list px-space-m py-space-m">
+                <h6 class="pb-space-s">Six bottles for 695 DKK per month</h6>
+                <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
+                <a href="">View box</a>
+            </div>
+            <div class="premium">
+                <h5 class="px-space-m py-space-m">The Premium</h5>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="md:hidden border-b-2 border-line-checkout">
+    <div class="perks px-body-padding-x pt-space-xl pb-space-m">
         <p class="overlineText">Benefits</p>
         <h3>Prek up your palate!</h3>
     </div>
-    <div>
-        <h6>25% off + Free shipping</h6>
-        <p>Get at least 25% off on each wine and free shipping across Denmark or you can choose to pick up your tasting box at our wine shop in Nordhavn.</p>
-        <h6>Tailor your subscription</h6>
-        <p>Customize the selection of wines to your taste - a choice of all reds, all whites, or a mix. The selection also reflects the seasons, and can include rosés, sparkling or port wines.</p>
-        <h6>Free to cancel or pause subscription</h6>
-        <p>Your subscription is non-binding, you can choose to cancel or take a break as it suits you.</p>
+    <div class="px-body-padding-x">
+        <div class="pt-space-xl flex flex-col gap-space-s">
+            <h6>25% off + Free shipping</h6>
+            <p>Get at least 25% off on each wine and free shipping across Denmark or you can choose to pick up your tasting box at our wine shop in Nordhavn.</p>
+        </div>
+
+        <div class="pt-space-l flex flex-col gap-space-s">
+            <h6>Tailor your subscription</h6>
+            <p>Customize the selection of wines to your taste - a choice of all reds, all whites, or a mix. The selection also reflects the seasons, and can include rosés, sparkling or port wines.</p>
+        </div>
+
+        <div class="pt-space-l flex flex-col gap-space-s pb-space-xl">
+            <h6>Free to cancel or pause subscription</h6>
+            <p>Your subscription is non-binding, you can choose to cancel or take a break as it suits you.</p>
+        </div>
     </div>
 </div>
 
-<div class="hidden md:grid md:grid-cols-2">
-    <div>
-        <p class="overlineText">Benefits</p>
-        <h3>Prek up your palate!</h3>
-        <h6>25% off + Free shipping</h6>
-        <p>Get at least 25% off on each wine and free shipping across Denmark or you can choose to pick up your tasting box at our wine shop in Nordhavn.</p>
-        <h6>Tailor your subscription</h6>
-        <p>Customize the selection of wines to your taste - a choice of all reds, all whites, or a mix. The selection also reflects the seasons, and can include rosés, sparkling or port wines.</p>
-        <h6>Free to cancel or pause subscription</h6>
-        <p>Your subscription is non-binding, you can choose to cancel or take a break as it suits you.</p>
+<div class="hidden md:grid md:grid-cols-2 border-b-2 border-line-checkout">
+    <div class="px-body-padding-x pt-space-3xl lg:pr-space-3xl">
+        <div>
+            <p class="overlineText">Benefits</p>
+            <h3>Prek up your palate!</h3>
+        </div>
+        <div class="pt-space-l flex flex-col gap-space-s">
+            <h6>25% off + Free shipping</h6>
+            <p>Get at least 25% off on each wine and free shipping across Denmark or you can choose to pick up your tasting box at our wine shop in Nordhavn.</p>
+        </div>
+        <div class="pt-space-l flex flex-col gap-space-s">
+            <h6>Tailor your subscription</h6>
+            <p>Customize the selection of wines to your taste - a choice of all reds, all whites, or a mix. The selection also reflects the seasons, and can include rosés, sparkling or port wines.</p>
+        </div>
+        <div class="pt-space-l flex flex-col gap-space-s pb-space-ll">
+            <h6>Free to cancel or pause subscription</h6>
+            <p>Your subscription is non-binding, you can choose to cancel or take a break as it suits you.</p>
+        </div>
     </div>
     <div>
         <img class="h-[100vh] w-full object-cover" src={Perks} alt="perks"/>
+    </div>
+</div>
+
+<div class="md:hidden border-b-2 border-line-checkout">
+    <h3 class="px-body-padding-x pt-space-xl pb-space-m">What's included</h3>
+    <div class="grid grid-cols-included-top">
+        <p class="px-body-padding-x">A typical Premium, or Deluxe Case contains one sparkling wine, two white wines and three red wines, the wines also change month-to-month. </p>
+        <img class="h-[16rem] w-full object-cover" src={Included2} alt="included"/>
+    </div>
+
+    <p class="px-body-padding-x py-space-l">The selection of wines changes according to the season. In the summer you might find a refreshing rosé wine in your case and during the holidays a bottle of festive port.</p>
+
+    <div class="grid grid-cols-included-bottom">
+        <img class="h-[24rem] w-full object-cover" src={Included1} alt="included"/>
+        <p class="px-body-padding-x">Sommelier Natalie also carefully curates your selection to suit all occasions. Your shipment covers wines for all events so could include a fresh aperitif, a light everyday wine, or the perfect wine for your dinner party.</p>
+    </div>
+
+</div>
+
+<div class="md:grid md:grid-cols-included hidden border-b-2 border-line-checkout">
+    <div class="px-body-padding-x py-space-3xl">
+        <h3 class="pb-space-s">What's included</h3>
+        <div class="flex flex-col gap-space-m">
+            <p>A typical Premium, or Deluxe Case contains one sparkling wine, two white wines and three red wines, the wines also change month-to-month. </p>
+            <p>The selection of wines changes according to the season. In the summer you might find a refreshing rosé wine in your case and during the holidays a bottle of festive port.</p>
+            <p>Sommelier Natalie also carefully curates your selection to suit all occasions. Your shipment covers wines for all events so could include a fresh aperitif, a light everyday wine, or the perfect wine for your dinner party.</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 items-center gap-2">
+        <img class="md:h-[24rem] lg:h-[20rem] w-full object-cover" src={Included1} alt="included"/>
+        <img class="md:h-[24rem] lg:h-[20rem] w-full object-cover" src={Included2} alt="included"/>
+        <img class="md:h-[24rem] lg:h-[20rem] w-full object-cover" src={Included3} alt="included"/>
+    </div>
+</div>
+
+<div class=" md:hidden border-b-2 border-line-checkout">
+    <div class="grid grid-cols-2">
+        <div class="px-body-padding-x pt-space-xl">
+            <h3 class="pb-space-m">Winemakers</h3>
+            <p>From grape to glass, winemaking is of the highest quality and fantastic taste is paramount.</p>
+        </div>
+        <img class="h-[16rem] w-full object-cover" src={Farmer} alt="farmer"/>
+    </div>
+
+    <div class="px-body-padding-x py-space-l flex flex-col gap-space-m">
+        <p>We source all our wines from small to medium-sized traditional family wineries in legendary Old and New World wine regions. </p>
+    
+        <p>Each producer is dedicated to crafting wines free from unnecessary pesticides, chemicals and additives.</p>
+    </div>
+
+    <div class="grapes">
+        <h3 class="text-white px-body-padding-x pt-[16rem] pb-space-l">All wines are either organic, biodynamic, produced sustainably, or vegan.</h3>
+    </div>
+</div>
+
+<div class="hidden md:grid md:grid-cols-winemakers">
+
+    <div class="col-span-2 px-body-padding-x pt-space-3xl flex flex-col gap-space-s pb-space-l">
+        <h3>Winemakers</h3>
+        <p>From grape to glass, winemaking is of the highest quality and fantastic taste is paramount.</p>
+    </div>
+
+    <div class="row-span-2">
+        <img class="h-[28rem] w-full object-cover" src={Farmer} alt="farmer"/>
+    </div>
+
+    <div class="row-span-2">
+        <img class="md:h-[28rem] lg:h-[26rem] w-full object-cover" src={Grapes} alt="grapes"/>
+    </div>
+
+    <div class="px-body-padding-x flex flex-col gap-space-m pb-space-3xl">
+        <p>We source all our wines from small to medium-sized traditional family wineries in legendary Old and New World wine regions. </p>
+
+        <p>Each producer is dedicated to crafting wines free from unnecessary pesticides, chemicals and additives.</p>
+
+        <p>All wines are either organic, biodynamic, produced sustainably, or vegan.</p>
     </div>
 </div>
 
@@ -95,13 +228,11 @@ import Perks from "../img/wine-subscription/perks.webp"
     background-size: cover;
  }
 
- .perks:before {
-  content: "";
-  position: absolute;
-  left: 0; 
-  right: 0;
-  top: 0; 
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-}
+ .grapes{
+    background-image: url("../img/wine-subscription/grapes.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
 </style>

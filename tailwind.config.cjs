@@ -25,6 +25,8 @@ module.exports = {
 				"space-2xs": "var(--space-2xs)",
 				"space-3xs": "var(--space-3xs)",
 				"space-xl": "var(--space-xl)",
+				"space-2xl": "var(--space-2xl)",
+				"space-3xl": "var(--space-3xl)",
 			},
 
       			gridTemplateColumns: {
@@ -32,6 +34,13 @@ module.exports = {
         		"productlist": "1fr 6fr",
 				"winesubscriptions-deluxe": "1fr 1.3fr",
 				"winesubscriptions-premium": "1.3fr 1fr",
+				"winemakers": "5fr 10fr 7fr",
+				"included": "8.5fr 10fr",
+				"deluxe": "3fr 2fr",
+				"premium": "2fr 3fr",
+				"included-top": "5fr 4fr",
+				"included-bottom": "4fr 5fr",
+
       		},
 
 
