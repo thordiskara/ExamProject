@@ -4,7 +4,7 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Button2 from "../components/Button2.astro"
-import WinePic from "../images-wine/selexione-di-piera.webp"
+import WinePic from "../img/sparkling.webp"
 import Lamb from "../svg/wine-icons/sparkling-mobile/sheep.svg"
 import Sweet from "../svg/wine-icons/sparkling-mobile/sweet.svg"
 import Vegetable from "../svg/wine-icons/sparkling-mobile/vegetable.svg"
@@ -19,19 +19,19 @@ import Sparklingwine2 from "../images-wine/Sparkling2.webp"
 <div class="flex flex-wrap gap-breadcrumbs-gap px-breadcrumbs-x py-breadcrumbs-y">
     <a href="#" class="overlineText">Shop</a>
     <p class="overlineText">/</p>
-    <a href="#" class="overlineText">Red wines</a>
+    <a href="#" class="overlineText">Sparkling wines</a>
     <p class="overlineText">/</p>
-    <a href="#" class="overlineText border-b border-black">RENDEZ-VOUS SOUS LE CHÊNE ROUGE</a>
+    <a href="#" class="overlineText border-b border-black">Selezione di Piera, Onedis Ribolla Gialla, Millessimato Brut 2020</a>
 </div>
 <section class="flex flex-col md:flex-row">
 <div class="md:w-[100vw] border-y-2 md:border-r border-sparkling-wine-secondary flex justify-center">
-    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y ">
+    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y h-[30rem] md:h-[44rem] ">
 </div> 
 <div class="flex flex-col md:border-t-2 md:border-l border-sparkling-wine-secondary md:w-[50vw]">
     <div class=" bg-sparkling-wine-primary  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-sparkling-wine-secondary text-sparkling-wine-secondary">
     <div class="flex flex-col gap-space-3xs">
-        <h4>Rendez-vous sous le chêne rouge</h4>
-        <p class="overlineText">France, Ventoux</p>
+        <h4>Selezione di Piera, Onedis Ribolla Gialla, Millessimato Brut 2020</h4>
+        <p class="overlineText">Italy, Friuli Venezia-Giulia</p>
     </div>
     <div class="">
         <p>A juicy, smooth and well-balanced wine, with cherry, black currant, black pepper and cocoa flavours. 
@@ -40,7 +40,7 @@ import Sparklingwine2 from "../images-wine/Sparkling2.webp"
         </p>
     </div>
     <div class="flex justify-between">
-        <h5>165 DKK</h5>
+        <h5>215 DKK</h5>
         <div class="flex flex-col md:flex-row gap-space-xs">
             <input type="number" min="1" name="quantity" value="1" inputmode="numeric" class="self-end text-black p-2 md:p-3 w-24 text-center border border-black">
             <Button2 text="Add to cart" />
@@ -51,16 +51,16 @@ import Sparklingwine2 from "../images-wine/Sparkling2.webp"
         <div class="md:w-[50vw] bg-sparkling-wine-primary text-sparkling-wine-secondary border-b-2 border-sparkling-wine-secondary flex flex-col gap-space-m px-body-padding-x md:px-space-m items-center py-space-l">
             <div class="flex md:flex-col gap-space-m md:gap-0">
                 <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
-                    <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Red</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>Le Domaine Du Grand Jacquet</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>Grenache noir, Syrah</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>15-17 degrees</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Sparkling</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>Piera 1899</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>Ribolla Gialla</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>6-8 degrees</p>
                 </div>
-                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
+                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full md:pt-space-2xs">
                     <p class="bodySmall"><span class="font-bold pr-1">Size:</span>75 cl</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>14%</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Winemaking:</span>Manual harvest</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Certified Organic, Biodynamic methods</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>12%</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Winemaking:</span>The grapes are gently pressed then the must naturally decants </p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Sustainable</p>
                 </div>
             </div>
             <div class="flex gap-space-xs">
@@ -71,7 +71,7 @@ import Sparklingwine2 from "../images-wine/Sparkling2.webp"
                 <img src={Beef} alt="Beef icon">
             </div>
         </div>
-        <img src={Sparklingwine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-sparkling-wine-secondary object-contain">
+        <img src={Sparklingwine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-sparkling-wine-secondary object-conver">
     </div>
 </div>
 </section>

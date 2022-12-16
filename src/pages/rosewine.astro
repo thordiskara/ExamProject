@@ -4,7 +4,7 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Button2 from "../components/Button2.astro"
-import WinePic from "../images-wine/francois-lipp-rose.webp"
+import WinePic from "../img/rose.webp"
 import Lamb from "../svg/wine-icons/rose-mobile/sheep.svg"
 import Sweet from "../svg/wine-icons/rose-mobile/sweet.svg"
 import Vegetable from "../svg/wine-icons/rose-mobile/vegetable.svg"
@@ -19,19 +19,19 @@ import Rosewine2 from "../images-wine/Rosewine2.webp"
 <div class="flex flex-wrap gap-breadcrumbs-gap px-breadcrumbs-x py-breadcrumbs-y">
     <a href="#" class="overlineText">Shop</a>
     <p class="overlineText">/</p>
-    <a href="#" class="overlineText">Red wines</a>
+    <a href="#" class="overlineText">Rosé wines</a>
     <p class="overlineText">/</p>
-    <a href="#" class="overlineText border-b border-black">RENDEZ-VOUS SOUS LE CHÊNE ROUGE</a>
+    <a href="#" class="overlineText border-b border-black">Pinot Noir d'Une Nuit Rosé</a>
 </div>
 <section class="flex flex-col md:flex-row">
 <div class="md:w-[100vw] border-y-2 md:border-r border-rose-wine-secondary flex justify-center">
-    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y">
+    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y h-[30rem] md:h-[44rem]">
 </div> 
 <div class="flex flex-col md:border-t-2 md:border-l border-rose-wine-secondary md:w-[50vw]">
     <div class=" bg-rose-wine-primary  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-rose-wine-secondary text-rose-wine-secondary">
     <div class="flex flex-col gap-space-3xs">
-        <h4>Rendez-vous sous le chêne rouge</h4>
-        <p class="overlineText">France, Ventoux</p>
+        <h4>Pinot Noir d'Une Nuit Rosé</h4>
+        <p class="overlineText">France, Alsace</p>
     </div>
     <div class="">
         <p>A juicy, smooth and well-balanced wine, with cherry, black currant, black pepper and cocoa flavours. 
@@ -40,7 +40,7 @@ import Rosewine2 from "../images-wine/Rosewine2.webp"
         </p>
     </div>
     <div class="flex justify-between">
-        <h5>165 DKK</h5>
+        <h5>169 DKK</h5>
         <div class="flex flex-col md:flex-row gap-space-xs">
             <input type="number" min="1" name="quantity" value="1" inputmode="numeric" class="self-end text-black p-2 md:p-3 w-24 text-center border border-black">
             <Button2 text="Add to cart" />
@@ -48,22 +48,23 @@ import Rosewine2 from "../images-wine/Rosewine2.webp"
     </div>
     </div>
 <div class="flex">
-        <div class="md:w-[50vw] bg-rose-wine-primary text-rose-wine-secondary border-b-2 border-rose-wine-secondary flex flex-col gap-space-m px-body-padding-x md:px-space-m items-center py-space-l">
+        <div class="md:w-[50vw] bg-rose-wine-primary text-rose-wine-secondary border-b-2 border-rose-wine-secondary flex flex-col gap-space-m px-body-padding-x md:px-space-m py-space-l">
             <div class="flex md:flex-col gap-space-m md:gap-0">
                 <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
-                    <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Red</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>Le Domaine Du Grand Jacquet</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>Grenache noir, Syrah</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>15-17 degrees</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Rosé</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>François Lipp et Fils</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>100% Pinot Noir</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>9-12 degrees</p>
                 </div>
-                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
+                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full md:pt-space-2xs">
                     <p class="bodySmall"><span class="font-bold pr-1">Size:</span>75 cl</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>14%</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>13%
+                    </p>
                     <p class="bodySmall"><span class="font-bold pr-1">Winemaking:</span>Manual harvest</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Certified Organic, Biodynamic methods</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Certified Organic</p>
                 </div>
             </div>
-            <div class="flex gap-space-xs">
+            <div class="flex gap-space-xs justify-center">
                 <img src={Lamb} alt="Lamb icon">
                 <img src={Sweet} alt="Sweet icon">
                 <img src={Vegetable} alt="Vegetable icon">
@@ -71,7 +72,7 @@ import Rosewine2 from "../images-wine/Rosewine2.webp"
                 <img src={Beef} alt="Beef icon">
             </div>
         </div>
-        <img src={Rosewine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-rose-wine-secondary object-contain">
+        <img src={Rosewine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-rose-wine-secondary object-cover">
     </div>
 </div>
 </section>
@@ -87,7 +88,7 @@ import Rosewine2 from "../images-wine/Rosewine2.webp"
                     The Maria Thun Biodynamic Lunar Calendar is an approach to agriculture and horticulture which uses the waxing and waning of the moon and the position of the planets and constellations to determine when to sow and harvest.</p>
                     <p class="pb-space-xs">The grapes are harvested by hand, striving to hit the exact right time of maturity, which differs from one plot to the next. 
                         The grapes are then fermented individually with respect to each terroir as closely as possible. </p>
-                        <p class="pb-space-xs">The couple’s passionate, hard work shines through in the personality and quality of their wines. </p>
+                        <p class="pb-space-xs">The couple's passionate, hard work shines through in the personality and quality of their wines. </p>
     </div>
     <div class="w-[50vw] px-body-padding-x py-space-xl border-l border-rose-wine-secondary">
         <h4 class="pb-space-l">Shipping</h4>

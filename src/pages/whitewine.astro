@@ -4,7 +4,7 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Button2 from "../components/Button2.astro"
-import WinePic from "../images-wine/alsace-white.webp"
+import WinePic from "../img/white.webp"
 import Lamb from "../svg/wine-icons/white-mobile/sheep.svg"
 import Sweet from "../svg/wine-icons/white-mobile/sweet.svg"
 import Vegetable from "../svg/wine-icons/white-mobile/vegetable.svg"
@@ -19,18 +19,18 @@ import Whitewine2 from "../images-wine/Whitewine2.webp"
 <div class="flex flex-wrap gap-breadcrumbs-gap px-breadcrumbs-x py-breadcrumbs-y">
     <a href="#" class="overlineText">Shop</a>
     <p class="overlineText">/</p>
-    <a href="#" class="overlineText">Red wines</a>
+    <a href="#" class="overlineText">White wines</a>
     <p class="overlineText">/</p>
-    <a href="#" class="overlineText border-b border-black">RENDEZ-VOUS SOUS LE CHÊNE ROUGE</a>
+    <a href="#" class="overlineText border-b border-black">Le Domaine du Grand Jacquet Rende-vouz Sous le Chêne 2019</a>
 </div>
 <section class="flex flex-col md:flex-row">
 <div class=" md:w-[100vw] border-y-2 md:border-r border-white-wine-secondary flex justify-center">
-    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y">
+    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y h-[30rem] md:h-[44rem]">
 </div> 
 <div class="flex flex-col md:border-t-2 md:border-l border-white-wine-secondary md:w-[50vw]">
     <div class=" bg-white-wine-primary  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-white-wine-secondary text-white-wine-secondary">
     <div class="flex flex-col gap-space-3xs">
-        <h4>Rendez-vous sous le chêne rouge</h4>
+        <h4>Le Domaine du Grand Jacquet Rende-vouz Sous le Chêne 2019</h4>
         <p class="overlineText">France, Ventoux</p>
     </div>
     <div class="">
@@ -51,16 +51,16 @@ import Whitewine2 from "../images-wine/Whitewine2.webp"
         <div class="md:w-[50vw] bg-white-wine-primary text-white-wine-secondary border-b-2 border-white-wine-secondary flex flex-col gap-space-m px-body-padding-x md:px-space-m items-center py-space-l">
             <div class="flex md:flex-col gap-space-m md:gap-0">
                 <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
-                    <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Red</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Wite</p>
                     <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>Le Domaine Du Grand Jacquet</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>Grenache noir, Syrah</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>15-17 degrees</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>70% Grenache blanche, 30% Roussane</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>7-10 degrees</p>
                 </div>
-                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
+                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full md:pt-space-2xs">
                     <p class="bodySmall"><span class="font-bold pr-1">Size:</span>75 cl</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>14%</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>13,5%</p>
                     <p class="bodySmall"><span class="font-bold pr-1">Winemaking:</span>Manual harvest</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Certified Organic, Biodynamic methods</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Certified Organic with use of Biodynamic methods</p>
                 </div>
             </div>
             <div class="flex gap-space-xs">
@@ -71,7 +71,7 @@ import Whitewine2 from "../images-wine/Whitewine2.webp"
                 <img src={Beef} alt="Beef icon">
             </div>
         </div>
-        <img src={Whitewine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-white-wine-secondary object-contain">
+        <img src={Whitewine2} alt="Red wine and grapes" class="mobileNoShow w-[50%]  border-l-2  border-b-2 border-white-wine-secondary object-cover">
     </div>
 </div>
 </section>

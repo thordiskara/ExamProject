@@ -4,7 +4,7 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BurgerMenu from "../components/BurgerMenu.astro"
 import Button2 from "../components/Button2.astro"
-import WinePic from "../images-wine/LeDomaineDuGrandJacquet.webp"
+import WinePic from "../img/red.webp"
 import Lamb from "../svg/wine-icons/red-mobile/sheep.svg"
 import Sweet from "../svg/wine-icons/red-mobile/sweet.svg"
 import Vegetable from "../svg/wine-icons/red-mobile/vegetable.svg"
@@ -21,17 +21,17 @@ import RedWine2 from "../images-wine/redwine.webp"
     <p class="overlineText">/</p>
     <a href="#" class="overlineText">Red wines</a>
     <p class="overlineText">/</p>
-    <a href="#" class="overlineText border-b border-black">RENDEZ-VOUS SOUS LE CHÊNE ROUGE</a>
+    <a href="#" class="overlineText border-b border-black">Galia Villages 2014</a>
 </div>
 <section class="flex flex-col md:flex-row">
 <div class=" md:w-[100vw] border-y-2 md:border-r border-red-wine-primary flex justify-center">
-    <img src={WinePic} alt="Le Domaine Du Grand Jacquet" class=" py-wine-padding-y">
+    <img class="py-wine-padding-y h-[30rem] md:h-[44rem]" src={WinePic} alt="Galia">
 </div> 
 <div class="flex flex-col md:border-t-2 md:border-l border-red-wine-primary md:w-[50vw]">
     <div class=" bg-red-wine-secondary  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-red-wine-primary text-red-wine-primary">
     <div class="flex flex-col gap-space-3xs">
-        <h4>Rendez-vous sous le chêne rouge</h4>
-        <p class="overlineText">France, Ventoux</p>
+        <h4>Galia Villages 2014</h4>
+        <p class="overlineText">Spain, Ribera del Duero, Castilla y León</p>
     </div>
     <div class="">
         <p>A juicy, smooth and well-balanced wine, with cherry, black currant, black pepper and cocoa flavours. 
@@ -40,7 +40,7 @@ import RedWine2 from "../images-wine/redwine.webp"
         </p>
     </div>
     <div class="flex justify-between">
-        <h5>165 DKK</h5>
+        <h5>395 DKK</h5>
         <div class="flex flex-col md:flex-row gap-space-xs">
             <input type="number" min="1" name="quantity" value="1" inputmode="numeric" class="self-end text-black p-2 md:p-3 w-24 text-center border border-black">
             <Button2 text="Add to cart" />
@@ -52,18 +52,18 @@ import RedWine2 from "../images-wine/redwine.webp"
             <div class="flex md:flex-col gap-space-m md:gap-0">
                 <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
                     <p class="bodySmall"><span class="font-bold pr-1">Colour:</span>Red</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>Le Domaine Du Grand Jacquet</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>Grenache noir, Syrah</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>15-17 degrees</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Winery:</span>Jérôme Bougnaud & El Regajal</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Grapes:</span>93% Tempranillo 7% Garnacha</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Serving:</span>18 degrees</p>
                 </div>
-                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full">
+                <div class="flex flex-col gap-space-2xs w-[50%] md:w-full md:pt-space-2xs">
                     <p class="bodySmall"><span class="font-bold pr-1">Size:</span>75 cl</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span>14%</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Winemaking:</span>Manual harvest</p>
-                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Certified Organic, Biodynamic methods</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">ABV:</span> 15%</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Winemaking:</span>Fermentation with natural yeast in concrete vessels.</p>
+                    <p class="bodySmall"><span class="font-bold pr-1">Sustainable:</span>Organic and biodynamic (not certified)</p>
                 </div>
             </div>
-            <div class="flex gap-space-xs">
+            <div class="flex gap-space-xs justify-center">
                 <img src={Lamb} alt="Lamb icon">
                 <img src={Sweet} alt="Sweet icon">
                 <img src={Vegetable} alt="Vegetable icon">
@@ -87,7 +87,7 @@ import RedWine2 from "../images-wine/redwine.webp"
                     The Maria Thun Biodynamic Lunar Calendar is an approach to agriculture and horticulture which uses the waxing and waning of the moon and the position of the planets and constellations to determine when to sow and harvest.</p>
                     <p class="pb-space-xs">The grapes are harvested by hand, striving to hit the exact right time of maturity, which differs from one plot to the next. 
                         The grapes are then fermented individually with respect to each terroir as closely as possible. </p>
-                        <p class="pb-space-xs">The couple’s passionate, hard work shines through in the personality and quality of their wines. </p>
+                        <p class="pb-space-xs">The couple's passionate, hard work shines through in the personality and quality of their wines. </p>
     </div>
     <div class="w-[50vw] px-body-padding-x py-space-xl border-l border-red-wine-primary">
         <h4 class="pb-space-l">Shipping</h4>
