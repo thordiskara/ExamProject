@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
+import Arrow from "../svg/icons/Arrow-a.svg";
+import BgDeluxe from "../images-wine/bg-bubblesandcake.webp";
+import BgEdda from "../images-wine/bg-edda.webp";
+import Bg56 from "../images-wine/bg-56grader.webp";
+import BgExclusive from "../images-wine/bg-exclusive.webp";
+import BgExclusive1 from "../images-wine/bg-winetasting.webp";
+---
+
+<Layout />
+<Header />
+<section class="px-body-padding-x py-body-padding-y">
+    <h1 class="pb-padding-headers">Wine tastings</h1>
+    <p class="font-bold pb-padding-headers">Tailor made wine tastings for any occasion!</p>
+    <p class="pb-padding-paragraphs">Gather friends and colleagues for an intimate and relaxed gathering of wine, tasty tapas and small talk. 
+        The main aim of our wine tasting events is to give you a deeper knowledge about wine in a fun and informative way.
+    </p>
+    <p class="pb-padding-headers">See all our various wine tastings below!</p>
+    <h6 class="pb-padding-headers">Booking</h6>
+    <p class="pb-padding-paragraphs">Contact us by email <a href = "mailto: natalie@tgwe.dk" class="border-b border-black">natalie@tgwe.dk</a> or telephone <a href = "tel:004550128381" class="border-b border-black">+4550128381</a>
+         and we will be more than happy to tailor a bespoke wine tasting especially for you!
+    </p>
+</section>
+<section class="flex flex-col px-body-padding-x">
+    <div class="bg-background-blue px-body-padding-x py-space-m">
+        <h5 class="pb-padding-headers">Deluxe bubbles & cake experience</h5>
+        <p class="">The perfect choice for the customer who would like to explore pairings of delicious bubbles and exquisite pastries. </p>
+        <p class="pb-padding-paragraphs">The experience can be enjoyed either at a location of your choosing or at EDDA Studio, a Nordic design showroom located in Nordhavn.</p>
+        <div> <a href="/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+    </div>
+    <div class="flex">
+        <a href="/" class="bubbles1 h-16">
+        <h6 class="text-white">Your preferred location</h6>
+        </a>
+        <a href="/" class="bubbles2"></a>
+    </div>
+</section>
+<BurgerMenu />
+<Footer />
+
+<style>
+.hoverLink {
+    transition: all 500ms;
+}
+    
+.hoverLink:hover  {
+letter-spacing: 0.2rem;
+}
+
+.bubbles1 {
+    background-image: url("../images-wines/bg-bubblesandcake.webp");
+    background-size: cover;
+}
+
+</style>
