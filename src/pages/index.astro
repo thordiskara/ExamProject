@@ -6,6 +6,7 @@ import BurgerMenu from "../components/BurgerMenu.astro"
 import Button1 from "../components/Button1.astro"
 import WineTLeft from "../images-wine/wineTastingleft.webp"
 import Arrow from "../svg/icons/Arrow-a.svg"
+import ArrowWhite from "../svg/icons/arrow-a-white.svg"
 import HeroWine from "../images-wine/winebottlesmockup.webp"
 import HeroGlas from "../images-wine/heroimage1.webp"
 import RedWineCard from "../components/RedWineCard.astro"
@@ -80,7 +81,21 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
     </div>
 </section>
 <!-- Product section -->
-<section class="py-landing-padding-y px-body-padding-x border-b-2 border-line-checkout">
+<section class="py-landing-padding-y px-space-xl border-b-2 border-line-checkout grid justify-center gap-[8px]">
+    <div class=" gap-[8px] justify-center grid grid-cols-2 md:grid-cols-5">
+        <RedWineCard />
+        <div class="bg-burger-blue flex flex-col md:w-[16rem] h-auto min-h-[7%] justify-end p-productcard-p">
+            <h4>Top <br> Products</h4>
+        </div>
+        <WhiteWineCard />
+        <RoseWineCard />
+      <SparklingWineCard />
+        <RedWineCard />
+        <div class="wineSub flex flex-col h-[14rem] md:h-auto p-space-xs justify-between col-span-2">
+            <h5 class="text-white">We also have <br>wine subscriptions</h5>
+            <div class="self-end"> <a href="#" class="btn flex hoverLink text-white"><span class="pr-space-xs">read more </span><img src={ArrowWhite} alt="Arrow right"></a></div>
+        </div>
+    </div>
 </section>
 <!-- Wine club section -->
 <section class="flex flex-col md:flex-row min-h-screen">
@@ -126,7 +141,10 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
 
 
 <style>
-
+.wineSub{
+    background-image: url("../images-wine/bg-winesubscription.webp");
+    background-size: cover;
+}
 .hoverLink {
     transition: all 500ms;
 }
@@ -134,7 +152,18 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
 .hoverLink:hover  {
 letter-spacing: 0.2rem;
 }
-
+.benefits{
+    background-image: url("../images-wine/bg-WC.webp");
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.wineTright{
+    background-image: url("../images-wine/winebottlesrack.webp");
+    background-position: center;
+    background-size: cover;
+}
 button.btn{
         color:  var(--color-primary-button-blue);
         background-color: var(--color-primary-button-grey);

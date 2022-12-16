@@ -255,6 +255,11 @@ p {
   line-height: var(--line-height-body-small);
   letter-spacing: var(--letter-spacing-body-small);
 }
+.bodyNormal{
+  font-size: var(--font-size-body-btn);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+}
 .overlineText{
     font-size: var(--font-size-overline-mobile);
     line-height: var(--line-height-overline-mobile);
@@ -282,40 +287,6 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
-/* HERO */
-.heroSectionMobile{
-    height: 100%;
-    background-image: url("../images-wine/winebottlesmockup.webp");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-/* Background images */
-.benefits{
-    background-image: url("../images-wine/bg-WC.webp");
-    width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.wineTright{
-    background-image: url("../images-wine/winebottlesrack.webp");
-    background-position: center;
-    background-size: cover;
-}
-
-/* DETAILS PLUS MINUS */
-
-details > summary {
-    list-style-type: "+";
-  }
-
-  details[open] > summary {
-    list-style-type: "-";
-  }
 
 /* media queries */
  @media screen and (min-width: 928px){
