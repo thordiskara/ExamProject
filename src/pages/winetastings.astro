@@ -4,51 +4,115 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import BurgerMenu from "../components/BurgerMenu.astro";
 import Arrow from "../svg/icons/Arrow-a.svg";
+import Hero from "../images-wine/hero-wt.webp"
 
 ---
 
 <Layout />
 <Header />
-<section class="px-body-padding-x py-body-padding-y">
-    <h1 class="pb-padding-headers">Wine tastings</h1>
-    <p class="font-bold pb-padding-headers">Tailor made wine tastings for any occasion!</p>
-    <p class="pb-padding-paragraphs">Gather friends and colleagues for an intimate and relaxed gathering of wine, tasty tapas and small talk. 
-        The main aim of our wine tasting events is to give you a deeper knowledge about wine in a fun and informative way.
-    </p>
-    <p class="pb-padding-headers">See all our various wine tastings below!</p>
-    <h6 class="pb-padding-headers">Booking</h6>
-    <p class="pb-padding-paragraphs">Contact us by email <a href = "mailto: natalie@tgwe.dk" class="border-b border-black">natalie@tgwe.dk</a> or telephone <a href = "tel:004550128381" class="border-b border-black">+4550128381</a>
-         and we will be more than happy to tailor a bespoke wine tasting especially for you!
-    </p>
+<section class="px-body-padding-x md:pr-0 py-body-padding-y flex flex-col md:flex-row md:gap-space-3xl">
+   <div>
+        <h1 class="pb-padding-headers">Wine tastings</h1>
+        <p class="font-bold pb-padding-headers">Tailor made wine tastings for any occasion!</p>
+        <p class="pb-padding-paragraphs">Gather friends and colleagues for an intimate and relaxed gathering of wine, tasty tapas and small talk. 
+            The main aim of our wine tasting events is to give you a deeper knowledge about wine in a fun and informative way.
+        </p>
+        <p class="pb-padding-headers">See all our various wine tastings below!</p>
+        <h6 class="pb-padding-headers">Booking</h6>
+        <p class="pb-padding-paragraphs">Contact us by email <a href = "mailto: natalie@tgwe.dk" class="border-b border-black">natalie@tgwe.dk</a> or telephone <a href = "tel:004550128381" class="border-b border-black">+4550128381</a>
+             and we will be more than happy to tailor a bespoke wine tasting especially for you!
+        </p>
+   </div>
+   <div class="mobileNoShow">
+    <img src={Hero} alt="Glasses of wine" class="w-[100%]">
+</div>
 </section>
-<section class="flex flex-col gap-[8px] px-body-padding-x">
-    <div class="bg-background-blue px-body-padding-x py-space-m">
+<section class="flex flex-col lg:flex-row gap-[8px] px-body-padding-x">
+    <div class="bg-background-blue px-space-m py-space-m lg:w-[40%]">
         <h5 class="pb-padding-headers">Deluxe bubbles & cake experience</h5>
         <p class="">The perfect choice for the customer who would like to explore pairings of delicious bubbles and exquisite pastries. </p>
         <p class="pb-padding-paragraphs">The experience can be enjoyed either at a location of your choosing or at EDDA Studio, a Nordic design showroom located in Nordhavn.</p>
         <div> <a href="/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
     </div>
-    <div class="flex gap-[8px]">
-        <a href="/" class="deluxeL h-64 w-[50%] p-space-xs">
-            <h6 class="text-white text-right">your preferred location</h6>
+    <div class="flex gap-[8px] lg:w-[40%]">
+        <a href="/" class="deluxeL h-64 lg:h-auto w-[50%] p-space-xs">
+            <h6 class="text-white text-right">preferred location</h6>
         </a>
-        <a  href="/" class="deluxeR h-64 w-[50%] p-space-xs">
+        <a  href="/" class="deluxeR h-64 lg:h-auto w-[50%] p-space-xs">
             <h6 class="text-white text-right">Edda studio</h6> 
         </a>
     </div>
+</section>
+<section class="flex flex-col lg:flex-row-reverse  gap-[8px] px-body-padding-x pt-[16px]">
+    <div class="bg-burger-blue px-space-m py-space-m lg:w-[41%] ">
+        <h5 class="pb-padding-headers">Exclusive Wine Experiences</h5>
+        <p class="pb-padding-paragraphs">Whether you're interested in having the tasting at your own location, at the wonderful Nordic Design Showroom EDDA Studio, 
+            with a plate of tapas or at the gourmet restaurant Restaurant 56° with a three course meal, the exclusive wine experience has options that suit any occasion.</p>
+        <div> <a href="/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+    </div>
+    <div class="flex gap-[8px] lg:w-[40%]">
+        <a href="/" class="exclusiveL h-64 lg:h-auto w-[50%] p-space-xs">
+            <h6 class="text-white text-right">tasting with tapas</h6>
+        </a>
+        <a  href="/" class="exclusiveR h-64 lg:h-auto w-[50%] p-space-xs">
+            <h6 class="text-white text-right">restaurant 56°</h6> 
+        </a>
+    </div>
+    <a href="/" class="exclusiveB h-40 lg:h-auto w-[100%] lg:w-[20%] p-space-xs">
+        <h6 class="text-white text-right">preferred location</h6>
+    </a>
+</section>
+<div class="flex flex-col lg:flex-row justify-between">
+    <section class="px-body-padding-x pt-[16px] ">
+        <div class="bg-bespoke-blue px-space-m py-space-m lg:h-[20rem]">
+            <h5 class="pb-padding-headers">Bespoke Wine Experiences</h5>
+            <p class="pb-padding-paragraphs">Tailor Made Wine Tasting - the perfect way to enjoy an exclusive wine experience with your coworkers, clients, family or friends.
+                <br> Tasting can be accompanied with a pop-up wine bar and live jazz music at any locations.
+            </p>
+            <div> <a href="/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+        </div>
+    </section>
+    <section class="px-body-padding-x pt-[16px] ">
+        <div class="bg-virtual-blue px-space-m py-space-m  lg:h-[20rem]">
+            <h5 class="pb-padding-headers">Virtual wine tasting</h5>
+            <p class="pb-padding-paragraphs">Explore the wonderful world of wine with the guidance of Sommelier Natalie Noryd from the comfort of your own home.
+                <br>The tastings can be done in either English, Danish or in Swedish.
+            </p>
+            <div> <a href="/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+        </div>
+    </section>
+</div>
+<section class="py-body-padding-y px-body-padding-x">
+    <p class="pb-padding-paragraphs">Want to get a bit of a head start?</p>
+    <p>Check out Natalie’s <a href="https://www.youtube.com/watch?v=kbuq_twBY_s" target="_blank" class="border-b border-black">wine tasting videos</a> to discover all things wine, providing you with knowledge and techniques that will help you get the most enjoyment out of your wine.</p>
 </section>
 <BurgerMenu />
 <Footer />
 
 <style>
-
+.exclusiveB{
+    background-image: url("../images-wine/bg-winetasting.webp");
+    background-position: center;
+    background-size: cover;
+}
+.exclusiveL{
+    background-image: url("../images-wine/bg-exclusive.webp");
+    background-size: cover;
+}
+.exclusiveR{
+    background-image: url("../images-wine/bg-56grader.webp");
+    background-size: cover;
+    background-position: center;
+}
 .deluxeL{
     background-image: url("../images-wine/bg-bubblesandcake.webp");
     background-size: cover;
+    background-position: center;
 }
 .deluxeR{
     background-image: url("../images-wine/bg-edda.webp");
     background-size: cover;
+    background-position: bottom;
 }
 .hoverLink {
     transition: all 500ms;

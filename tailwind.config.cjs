@@ -78,8 +78,9 @@ module.exports = {
 				"line-checkout": "var( --color-accent-blue-500)",
         		"form-inputandlabel": "var(--form-inputandlabel)",
         		"background-blue": "var(--bg-blue)",
-				"vt-blue": "(--color-accent-blue-300)",
+				"vt-blue": "(--vt-blue)",
 				"bespoke-blue": "var(--bespoke-blue)",
+				"virtual-blue": "var(--color-accent-blue-300)"
 			},
 
 		},
