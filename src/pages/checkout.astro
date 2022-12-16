@@ -14,413 +14,444 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
 
 <Layout>
   <header>
-    <div class="language hidden absolute lg:flex right-4 top-4 gap-1">
-      <a href="">En</a>
-      <p>/</p>
-      <a href="">Da</a>
-    </div>
-
     <div
-      class="desktop-header hidden lg:flex lg:justify-between lg:w-full lg:items-center px-header-x py-header-y"
+      class="desktop-header lg:flex lg:justify-between lg:w-full lg:items-center px-header-x py-header-y"
     >
       <div class="pr-20">
         <a href="/"><img src={Logo} alt="logo" /></a>
       </div>
-
-      <div>
-        <nav>
-          <ul class="flex gap-10">
-            <li><a class="navigation" href="/productlist/">Shop</a></li>
-            <li>
-              <a class="navigation" href="WineTasting.astro">Wine Tastings</a>
-            </li>
-            <li>
-              <a class="navigation" href="WineSubscriptions.astro"
-                >Wine Subscription</a
-              >
-            </li>
-            <li><a class="navigation" href="About.astro">About</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <div
-      class="mobile-header lg:hidden flex justify-between w-full items-center px-header-x py-header-y"
-    >
-      <div>
-        <img src={LogoMobile} alt="logo mobile" />
-      </div>
-
       <a class="navigation underline uppercase" href="/productlist/"
         >Continue shopping</a
       >
     </div>
-  </header>
-
-  <section class="px-body-padding-x pt-body-padding-y">
-    <h3 class="border-b-2 border-line-checkout pb-2">checkout</h3>
 
     <div>
-      <h5 class="pt-space-m-l pb-space-review-order">order summary</h5>
       <div
-        class="border-t-2 border-line-checkout flex pt-space-m-l pb-space-review-order justify-between"
+        class="mobile-header lg:hidden flex justify-between w-full items-center px-header-x py-header-y"
       >
-        <p>Mompirone Barbera d’Ast Superiore</p>
-        <h6>200 DKK</h6>
+        <div>
+          <img src={LogoMobile} alt="logo mobile" />
+        </div>
+        <a class="navigation underline uppercase" href="/productlist/"
+          >Continue shopping</a
+        >
       </div>
-      <div class="flex pb-space-review-order justify-between">
-        <p>Mompirone Barbera d’Ast Superiore</p>
-        <h6>200 DKK</h6>
-      </div>
-      <div class="flex pb-space-review-order justify-between">
-        <h6>Shipping</h6>
-        <h6>59 dkk</h6>
-      </div>
-      <div
-        class="border-t-2 border-line-checkout flex pt-space-m-l justify-between"
-      >
-        <h6>total value</h6>
-        <h6>459 dkk</h6>
-      </div>
-      <p>INC. TAX</p>
     </div>
+  </header>
+  <div>
+    <section class="px-body-padding-x pt-[8.6rem] lg:grid lg:grid-cols-3">
+      <h3 class="border-b-2 border-line-checkout pb-2 lg:col-span-3">
+        checkout
+      </h3>
 
-    <div class="details flex justify-between border-b-2 border-line-checkout">
-      <h4 class="">1. shipping details</h4>
-      <img src={Minus} alt="minus" />
-    </div>
-
-    <form
-      action=""
-      autocomplete="on"
-      class="shipping-details px-body-padding-x"
-      onsubmit="signup(event)"
-    >
-      <div class="grid">
-        <label for="Fname"> First Name*</label>
-        <input
-          type="text"
-          name="firstname"
-          placeholder="Please enter first name"
-          required
-        />
-        <label for="Lname"> last Name*</label>
-        <input
-          type="text"
-          name="lastname"
-          placeholder="Please enter last name"
-          required
-        />
-        <label for="email"> e-mail*</label>
-        <input
-          type="text"
-          name="email"
-          placeholder="example@email.dk"
-          required
-        />
-
-        <label for="phone">phone (optional)</label>
-        <input type="tel" name="phone" placeholder="+45 00 00 00" />
-        <label for="address">address*</label>
-        <input type="text" name="adress" placeholder="Home address" />
-        <label for="address"> second address (optional)</label>
-        <input type="text" name="adress" placeholder="Floor, Apartment, etc." />
-        <label for="city">city*</label>
-        <input type="text" name="city" placeholder="Please enter your city" />
-        <label for="region">Region*</label>
-        <input
-          type="text"
-          name="region"
-          placeholder="Please enter your region"
-        />
-        <label for="postecode">Postcode*</label>
-        <input
-          type="text"
-          name="postcode"
-          pattern="[0-9]{4}"
-          maxlength="4"
-          placeholder="0000"
-          class="w-[50%]"
-        />
-        <label for="country">Country</label>
-        <input type="text" name="country" disabled placeholder="Denmark" />
-        <p>(We only ship within Denmark)</p>
-      </div>
-      <div class="grid place-content-center">
-        <input type="submit" value="Continue" class="btn continue-one" />
-      </div>
-    </form>
-  </section>
-
-  <section class="px-body-padding-x">
-    <div class="details flex justify-between border-b-2 border-line-checkout">
-      <h4 class="">2. payment</h4>
-      <img src={Plus} alt="plus" />
-    </div>
-    <form action="" autocomplete="on" class="payment px-body-padding-x hidden">
-      <div class="grid">
-        <label for="card">Card number*</label>
-        <input
-          type="text"
-          name="card"
-          maxlength="19"
-          inputmode="numeric"
-          pattern="[0-9\s]{13,19}"
-          placeholder="XXXX XXXX XXXX XXXX"
-          required
-        />
-        <label for="expdate">exp. date*</label>
-        <div class="exp-wrapper">
-          <input
-            autocomplete="off"
-            class="exp w-[20%]"
-            id="month"
-            maxlength="2"
-            pattern="[0-9]*"
-            inputmode="numerical"
-            placeholder="MM"
-            type="text"
-            data-pattern-validate
-          />
-          <input
-            autocomplete="off"
-            class="exp w-[20%]"
-            id="year"
-            maxlength="2"
-            pattern="[0-9]*"
-            inputmode="numerical"
-            placeholder="YY"
-            type="text"
-            data-pattern-validate
-          />
+      <div class="lg:col-start-3 lg:px-10">
+        <h5 class="pt-space-m-l pb-space-review-order lg:pt-space-xl lg:pb-1">
+          order summary
+        </h5>
+        <div
+          class="border-t-2 border-line-checkout flex pt-space-m-l pb-space-review-order justify-between"
+        >
+          <p>Mompirone Barbera d’Ast Superiore</p>
+          <h6>200 DKK</h6>
         </div>
-
-        <label for="ccv">ccv*</label>
-        <input
-          type="ccv"
-          name="CCV"
-          placeholder="CCV"
-          maxlength="3"
-          pattern="[0-9]*"
-          required
-          class="w-[50%]"
-        />
-        <label for="name">name on card*</label>
-        <input type="text" name="name" placeholder="Enter cardholder name" />
-        <div class="flex pt-space-xs">
-          <p class="text-form-inputandlabel pl-space-2xs pt-space-2xs">
-            Secure payment
-          </p>
-          <img class="pl-space-2xs pt-space-3xs" src={Lock} alt="lock" />
+        <div class="flex pb-space-review-order justify-between">
+          <p>Mompirone Barbera d’Ast Superiore</p>
+          <h6>200 DKK</h6>
         </div>
-        <label for="billingadd">billing address*</label>
-
-        <div class="flex pl-space-2xs pt-space-2xs">
-          <input
-            class="regular-checkbox"
-            type="checkbox"
-            checked="checked"
-            name="sameadr"
-          />
-          <p class="text-form-inputandlabel pl-3">
-            Shipping address same as billing
-          </p>
-        </div>
-      </div>
-      <div class="grid place-content-center">
-        <input type="submit" value="Continue" class="btn continue-two" />
-      </div>
-    </form>
-  </section>
-
-  <section class="px-body-padding-x pb-20">
-    <div class="details flex justify-between border-b-2 border-line-checkout">
-      <h4 class="">3. Review and order</h4>
-      <img src={Plus} alt="plus" />
-    </div>
-    <form action="" class="order px-body-padding-x hidden">
-      <div class="grid text-form-inputandlabel pt-space-m-l">
-        <div class="flex justify-between pb-space-review-order">
-          <h6>shipping details</h6>
-          <img src={Edit} alt="edit" />
-        </div>
-        <div class="[&_p]:pb-space-review-order">
-          <p>Full Name</p>
-          <p>Example@email.com</p>
-          <p>Phone number</p>
-        </div>
-        <div class="pb-space-m-l [&_p]:pb-space-review-order">
-          <p>Address,Apt.</p>
-          <p>Postcode,City</p>
-          <p>Denmark</p>
+        <div class="flex pb-space-review-order justify-between">
+          <h6>Shipping</h6>
+          <h6>59 dkk</h6>
         </div>
         <div
-          class="flex border-t-2 border-line-checkout pt-space-m-l justify-between pb-space-review-order"
+          class="border-t-2 border-line-checkout flex pt-space-m-l justify-between"
         >
-          <h6>payment details</h6>
-          <img src={Edit} alt="edit" />
+          <h6>total value</h6>
+          <h6>459 dkk</h6>
+        </div>
+        <p>INC. TAX</p>
+      </div>
+      <div class="lg:col-span-2 lg:row-start-2">
+        <div
+          class="details flex justify-between border-b-2 border-line-checkout"
+        >
+          <h4 class="">1. shipping details</h4>
+          <img src={Minus} alt="minus" />
+        </div>
+
+        <form
+          action=""
+          autocomplete="on"
+          class="shipping-details px-body-padding-x lg:px-20"
+          onsubmit="signup(event)"
+        >
+          <div class="grid">
+            <div class="lg:grid lg:grid-cols-2 gap-4">
+              <div class="flex flex-col">
+                <label for="Fname"> First Name*</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="Please enter first name"
+                  required
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="Lname"> last Name*</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Please enter last name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="lg:grid lg:grid-cols-2 lg:gap-4">
+              <div class="flex flex-col">
+                <label for="email"> e-mail*</label>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="example@email.dk"
+                  required
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="phone">phone (optional)</label>
+                <input type="tel" name="phone" placeholder="+45 00 00 00" />
+              </div>
+            </div>
+            <label for="address">address*</label>
+            <input type="text" name="adress" placeholder="Home address" />
+            <label for="address"> second address (optional)</label>
+            <input
+              type="text"
+              name="adress"
+              placeholder="Floor, Apartment, etc."
+            />
+            <div class="lg:grid lg:grid-cols-2 lg:gap-4">
+              <div class="flex flex-col">
+                <label for="city">city*</label>
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Please enter your city"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="postecode">Postcode*</label>
+                <input
+                  type="text"
+                  name="postcode"
+                  pattern="[0-9]{4}"
+                  maxlength="4"
+                  placeholder="0000"
+                  class="w-[50%]"
+                />
+              </div>
+            </div>
+            <label for="region">Region*</label>
+            <input
+              type="text"
+              name="region"
+              placeholder="Please enter your region"
+            />
+
+            <label for="country">Country</label>
+            <input type="text" name="country" disabled placeholder="Denmark" />
+            <p class="pt-space-3xs">(We only ship within Denmark)</p>
+          </div>
+          <div class="grid place-content-center lg:place-content-start">
+            <input type="submit" value="Continue" class="btn continue-one" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="px-body-padding-x lg:grid lg:grid-cols-3">
+      <div
+        class="details flex justify-between border-b-2 border-line-checkout lg:col-span-2"
+      >
+        <h4 class="">2. payment</h4>
+        <img src={Plus} alt="plus" />
+      </div>
+      <form
+        action=""
+        autocomplete="on"
+        class="payment hidden px-body-padding-x lg:col-span-2 lg:px-20"
+      >
+        <div class="grid">
+          <label for="card">Card number*</label>
+          <input
+            type="text"
+            name="card"
+            maxlength="19"
+            inputmode="numeric"
+            pattern="[0-9\s]{13,19}"
+            placeholder="XXXX XXXX XXXX XXXX"
+            required
+          />
+          <label for="expdate">exp. date*</label>
+          <div class="exp-wrapper">
+            <input
+              autocomplete="off"
+              class="exp w-[20%]"
+              id="month"
+              maxlength="2"
+              pattern="[0-9]*"
+              inputmode="numerical"
+              placeholder="MM"
+              type="text"
+              data-pattern-validate
+            />
+            <input
+              autocomplete="off"
+              class="exp w-[20%]"
+              id="year"
+              maxlength="2"
+              pattern="[0-9]*"
+              inputmode="numerical"
+              placeholder="YY"
+              type="text"
+              data-pattern-validate
+            />
+          </div>
+
+          <label for="ccv">ccv*</label>
+          <input
+            type="ccv"
+            name="CCV"
+            placeholder="CCV"
+            maxlength="3"
+            pattern="[0-9]*"
+            required
+            class="w-[50%]"
+          />
+          <label for="name">name on card*</label>
+          <input type="text" name="name" placeholder="Enter cardholder name" />
+          <div class="flex pt-space-xs">
+            <p class="text-form-inputandlabel pl-space-2xs pt-space-2xs">
+              Secure payment
+            </p>
+            <img class="pl-space-2xs pt-space-3xs" src={Lock} alt="lock" />
+          </div>
+          <label for="billingadd">billing address*</label>
+
+          <div class="flex pl-space-2xs pt-space-2xs">
+            <input
+              class="regular-checkbox"
+              type="checkbox"
+              checked="checked"
+              name="sameadr"
+            />
+            <p class="text-form-inputandlabel pl-3">
+              Shipping address same as billing
+            </p>
+          </div>
+        </div>
+        <div class="grid place-content-center lg:place-content-start">
+          <input type="submit" value="Continue" class="btn continue-two" />
+        </div>
+      </form>
+    </section>
+
+    <section class="px-body-padding-x pb-20 lg:grid lg:grid-cols-3">
+      <div
+        class="details flex justify-between border-b-2 border-line-checkout lg:col-span-2"
+      >
+        <h4>3. Review and order</h4>
+        <img src={Plus} alt="plus" />
+      </div>
+      <div class="order px-body-padding-x hidden col-span-2">
+        <div class="grid text-form-inputandlabel pt-space-m-l">
+          <div class="flex justify-between pb-space-review-order">
+            <h6>shipping details</h6>
+            <img src={Edit} alt="edit" />
+          </div>
+          <div class="[&_p]:pb-space-review-order">
+            <p>Full Name</p>
+            <p>Example@email.com</p>
+            <p>Phone number</p>
+          </div>
+          <div class="pb-space-m-l [&_p]:pb-space-review-order">
+            <p>Address,Apt.</p>
+            <p>Postcode,City</p>
+            <p>Denmark</p>
+          </div>
+          <div
+            class="flex border-t-2 border-line-checkout pt-space-m-l justify-between pb-space-review-order"
+          >
+            <h6>payment details</h6>
+            <img src={Edit} alt="edit" />
+          </div>
+          <div
+            class="[&_p]:pb-space-review-order border-b-2 pb-space-m-l border-line-checkout"
+          >
+            <p>Card: xxxx xxxx xx68</p>
+            <p>MM/YY</p>
+            <p>Cardholder name</p>
+          </div>
         </div>
         <div
-          class="[&_p]:pb-space-review-order border-b-2 pb-space-m-l border-line-checkout"
+          class="grid place-content-center pt-space-xl-2xl lg:place-content-start"
         >
-          <p>Card: xxxx xxxx xx68</p>
-          <p>MM/YY</p>
-          <p>Cardholder name</p>
+          <Button2 text="place order" link="/complete/" />
         </div>
       </div>
-    </form>
-    <div class="grid place-content-center pt-space-xl-2xl">
-      <Button2 text="place order" link="/complete/" />
-    </div>
-  </section>
-</Layout>
+    </section>
+  </div>
 
-<Footer />
-<BurgerMenu />
+  <Footer />
+  <BurgerMenu />
 
-<style>
-  .regular-checkbox {
-    -webkit-appearance: none;
-    background-color: white;
-    border: 1.5px solid black;
-    padding: 10px;
-    display: inline-block;
-    position: relative;
-    width: 5px;
-    height: 5px;
-  }
+  <style>
+    @media screen and (max-width: 1024px) {
+      .desktop-header {
+        display: none;
+      }
+    }
 
-  .regular-checkbox:checked {
-    background-color: var(--color-primary-button-blue);
-    border: 1.5px solid var(--color-primary-button-blue);
-  }
+    .regular-checkbox {
+      -webkit-appearance: none;
+      background-color: white;
+      border: 1.5px solid black;
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      width: 5px;
+      height: 5px;
+    }
 
-  .regular-checkbox:checked:after {
-    content: url("../svg/icons/checked.svg");
-    position: absolute;
-    bottom: 0px;
-    left: 4px;
-  }
-  label {
-    font-family: var(--heading-proxima-nova);
-    font-size: var(--font-size-h6);
-    text-transform: uppercase;
-    color: var(--form-inputandlabel);
-    padding-bottom: var(--space-3xs);
-    padding-top: var(--space-m-l);
-  }
-  input {
-    border: solid 2px;
-    border-color: var(--form-inputandlabel);
-    font-size: var(--font-size-body-small);
-    padding: var(--space-s);
-  }
-  input:focus {
-    outline: none;
-  }
-  .details {
-    padding-top: var(--space-xl);
-  }
-  .btn {
-    color: var(--color-white);
-    background-color: var(--color-button-dark-grey);
-    padding: var(--secondary-btn-x-padding) var(--secondary-btn-y-padding);
-    letter-spacing: var(--letter-spacing-button);
-    line-height: var(--line-height-button);
-    font-weight: var(--font-weight-button);
-    font-size: var(--font-size-body-btn);
-    cursor: pointer;
-    margin-top: var(--space-xl-2xl);
-  }
-  .btn:hover {
-    background-color: var(--color-black);
-    transition: 0.4s ease-in-out;
-  }
-  .hidden {
-    display: none;
-  }
-</style>
+    .regular-checkbox:checked {
+      background-color: var(--color-primary-button-blue);
+      border: 1.5px solid var(--color-primary-button-blue);
+    }
 
-<script is:inline>
-  /*document.addEventListener("DOMContentLoaded", check);
+    .regular-checkbox:checked:after {
+      content: url("../svg/icons/checked.svg");
+      position: absolute;
+      bottom: 0px;
+      left: 4px;
+    }
+    label {
+      font-family: var(--heading-proxima-nova);
+      font-size: var(--font-size-h6);
+      text-transform: uppercase;
+      color: var(--form-inputandlabel);
+      padding-bottom: var(--space-3xs);
+      padding-top: var(--space-s);
+    }
+    input {
+      border: solid 2px;
+      border-color: var(--form-inputandlabel);
+      font-size: var(--font-size-body-small);
+      padding: var(--space-2xs);
+    }
+    input:focus {
+      outline: none;
+    }
+    .details {
+      padding-top: var(--space-xl);
+    }
+    .btn {
+      color: var(--color-white);
+      background-color: var(--color-button-dark-grey);
+      padding: var(--secondary-btn-x-padding) var(--secondary-btn-y-padding);
+      letter-spacing: var(--letter-spacing-button);
+      line-height: var(--line-height-button);
+      font-weight: var(--font-weight-button);
+      font-size: var(--font-size-body-btn);
+      cursor: pointer;
+      margin-top: var(--space-xl-2xl);
+    }
+    .btn:hover {
+      background-color: var(--color-black);
+      transition: 0.4s ease-in-out;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+
+  <script is:inline>
+    /*document.addEventListener("DOMContentLoaded", check);
 
   function check(event) {
     event.preventDefault();
   }*/
 
-  document.querySelector(".continue-one").addEventListener("click", nextOne);
-  document.querySelector(".continue-two").addEventListener("click", nextTwo);
+    document.querySelector(".continue-one").addEventListener("click", nextOne);
+    document.querySelector(".continue-two").addEventListener("click", nextTwo);
 
-  function nextOne() {
-    document.querySelector(".payment").classList.remove("hidden");
-    document.querySelector(".shipping-details").classList.add("hidden");
-  }
-
-  function nextTwo() {
-    document.querySelector(".payment").classList.add("hidden");
-    document.querySelector(".order").classList.remove("hidden");
-  }
-  /*EXP DATE*/
-  const monthInput = document.querySelector("#month");
-  const yearInput = document.querySelector("#year");
-
-  const focusSibling = function (target, direction, callback) {
-    const nextTarget = target[direction];
-    nextTarget && nextTarget.focus();
-    // if callback is supplied we return the sibling target which has focus
-    callback && callback(nextTarget);
-  };
-
-  // input event only fires if there is space in the input for entry.
-  // If an input of x length has x characters, keyboard press will not fire this input event.
-  monthInput.addEventListener("input", (event) => {
-    const value = event.target.value.toString();
-    // adds 0 to month user input like 9 -> 09
-    if (value.length === 1 && value > 1) {
-      event.target.value = "0" + value;
+    function nextOne() {
+      document.querySelector(".payment").classList.remove("hidden");
+      document.querySelector(".shipping-details").classList.add("hidden");
     }
-    // bounds
-    if (value === "00") {
-      event.target.value = "01";
-    } else if (value > 12) {
-      event.target.value = "12";
+
+    function nextTwo() {
+      document.querySelector(".payment").classList.add("hidden");
+      document.querySelector(".order").classList.remove("hidden");
     }
-    // if we have a filled input we jump to the year input
-    2 <= event.target.value.length &&
-      focusSibling(event.target, "nextElementSibling");
-    event.stopImmediatePropagation();
-  });
+    /*EXP DATE*/
+    const monthInput = document.querySelector("#month");
+    const yearInput = document.querySelector("#year");
 
-  yearInput.addEventListener("keydown", (event) => {
-    // if the year is empty jump to the month input
-    if (event.key === "Backspace" && event.target.selectionStart === 0) {
-      focusSibling(event.target, "previousElementSibling");
-      event.stopImmediatePropagation();
-    }
-  });
+    const focusSibling = function (target, direction, callback) {
+      const nextTarget = target[direction];
+      nextTarget && nextTarget.focus();
+      // if callback is supplied we return the sibling target which has focus
+      callback && callback(nextTarget);
+    };
 
-  const inputMatchesPattern = function (e) {
-    const { value, selectionStart, selectionEnd, pattern } = e.target;
-
-    const character = String.fromCharCode(e.which);
-    const proposedEntry =
-      value.slice(0, selectionStart) + character + value.slice(selectionEnd);
-    const match = proposedEntry.match(pattern);
-
-    return (
-      e.metaKey || // cmd/ctrl
-      e.which <= 0 || // arrow keys
-      e.which == 8 || // delete key
-      (match && match["0"] === match.input)
-    ); // pattern regex isMatch - workaround for passing [0-9]* into RegExp
-  };
-
-  document.querySelectorAll("input[data-pattern-validate]").forEach((el) =>
-    el.addEventListener("keypress", (e) => {
-      if (!inputMatchesPattern(e)) {
-        return e.preventDefault();
+    // input event only fires if there is space in the input for entry.
+    // If an input of x length has x characters, keyboard press will not fire this input event.
+    monthInput.addEventListener("input", (event) => {
+      const value = event.target.value.toString();
+      // adds 0 to month user input like 9 -> 09
+      if (value.length === 1 && value > 1) {
+        event.target.value = "0" + value;
       }
-    })
-  );
-</script>
+      // bounds
+      if (value === "00") {
+        event.target.value = "01";
+      } else if (value > 12) {
+        event.target.value = "12";
+      }
+      // if we have a filled input we jump to the year input
+      2 <= event.target.value.length &&
+        focusSibling(event.target, "nextElementSibling");
+      event.stopImmediatePropagation();
+    });
+
+    yearInput.addEventListener("keydown", (event) => {
+      // if the year is empty jump to the month input
+      if (event.key === "Backspace" && event.target.selectionStart === 0) {
+        focusSibling(event.target, "previousElementSibling");
+        event.stopImmediatePropagation();
+      }
+    });
+
+    const inputMatchesPattern = function (e) {
+      const { value, selectionStart, selectionEnd, pattern } = e.target;
+
+      const character = String.fromCharCode(e.which);
+      const proposedEntry =
+        value.slice(0, selectionStart) + character + value.slice(selectionEnd);
+      const match = proposedEntry.match(pattern);
+
+      return (
+        e.metaKey || // cmd/ctrl
+        e.which <= 0 || // arrow keys
+        e.which == 8 || // delete key
+        (match && match["0"] === match.input)
+      ); // pattern regex isMatch - workaround for passing [0-9]* into RegExp
+    };
+
+    document.querySelectorAll("input[data-pattern-validate]").forEach((el) =>
+      el.addEventListener("keypress", (e) => {
+        if (!inputMatchesPattern(e)) {
+          return e.preventDefault();
+        }
+      })
+    );
+  </script>
+</Layout>

@@ -28,6 +28,7 @@ module.exports = {
         "space-review-order": "var(--space-2xs-xs)",
         "body-padding-y": "var(--body-padding-y)",
         "space-xl-2xl": "var(--space-xl-2xl)",
+        "space-3xl": "var(--space-3xl:)",
       },
 
       gridTemplateColumns: {
