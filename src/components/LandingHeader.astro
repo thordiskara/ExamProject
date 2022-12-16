@@ -1,0 +1,89 @@
+---
+import Logo from '../svg/logo/logo.svg'
+import Search from '../svg/header-icons/search.svg'
+import User from '../svg/header-icons/user.svg'
+import Cart from '../svg/header-icons/cart.svg'
+import "../styles/global.css"
+import LogoMobile from '../svg/logo/logo-mobile.svg'
+import Burger from '../svg/header-icons/burger.svg'
+import BurgerMenu from './BurgerMenu.astro'
+
+
+
+---
+<div class="relative">
+
+    <div class="language hidden absolute lg:flex right-4 top-4 gap-1">
+        <a href="">En</a>
+        <p>/</p>
+        <a href="">Da</a>
+    </div>
+
+    <div class="desktop-header hidden lg:flex lg:justify-between lg:w-full lg:items-center px-header-x py-header-y absolute">
+        <div class="pr-20">
+            <a href="/"><img src={Logo} alt="logo"/></a>
+        </div>
+    
+        <div>
+            <nav>
+                <ul class="flex gap-10">
+                    <li><a class="navigation" href="/productlist/">Shop</a></li>
+                    <li><a class="navigation"  href="/winetastings/">Wine Tastings</a></li>
+                    <li><a class="navigation"  href="/winesubscriptions/">Wine Subscription</a></li>
+                    <li><a class="navigation"  href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="header-icons flex gap-4">
+            <img class="w-[1.375rem]" src={Search} alt="search"/>
+            <img class="w-[2.5rem]" src={User} alt="user"/>
+            <img class="w-[1.875rem]" src={Cart} alt="cart"/>
+        </div>
+    </div>
+
+
+    <div class="relative">
+        <div class="mobile-header absolute lg:hidden flex justify-between w-full items-center px-header-x py-header-y">
+            <div>
+                <a href="/"><img src={Logo} alt="logo"/></a>
+            </div>
+    
+            <div class="header-icons flex">
+                <img class="w-[2.25rem] hamburger" src={Burger} alt="burger menu"/>
+            </div>
+        </div>
+        <BurgerMenu />
+    </div>
+</div>
+
+<script is:inline>
+
+    document.addEventListener("DOMContentLoaded", init)
+    
+    function init(){
+        console.log("hee")
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.burgerbox').classList.remove('hidden');
+        document.querySelector('.close').addEventListener('click', () => {
+                document.querySelector('.burgerbox').classList.add('hidden');
+              })
+          });
+      }   
+        </script>
+
+<style>
+    a{
+    color:var(--color-accent-red-500);
+    text-transform: uppercase;
+    font-size: var(--font-size-body);
+}
+
+a:hover{
+    border-bottom: var(--color-accent-red-500) 2px solid;
+}
+
+.language{
+    color:var(--color-accent-red-500);
+}
+</style>
