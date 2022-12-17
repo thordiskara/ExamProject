@@ -23,6 +23,10 @@ import Button1 from "../components/Button1.astro"
         <p class="overlineText">/</p>
         <a href="#" class="overlineText border-b border-black">All wines</a>
     </div>
+
+    <div class="sm:flex justify-end px-body-padding-x py-space-m hidden">
+        <Sort/>
+    </div>
     <div class="sm:hidden flex justify-between px-body-padding-x py-space-m ">
         <div class="filters flex gap-space-m items-start">
             <img class="w-[1.5rem]"src={FilterIcon} alt="filter"/>
