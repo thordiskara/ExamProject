@@ -31,30 +31,33 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
         <div>
           <img src={LogoMobile} alt="logo mobile" />
         </div>
-        <a class="navigation underline uppercase" href="/productlist/"
-          >Continue shopping</a
+        <a
+          class="navigation border-b-2 border-black uppercase"
+          href="/productlist/">Continue shopping</a
         >
       </div>
     </div>
   </header>
   <div>
-    <section class="px-body-padding-x lg:pt-[8.6rem] lg:grid lg:grid-cols-3">
+    <section
+      class="px-body-padding-x lg:pt-body-padding-y lg:grid lg:grid-cols-3"
+    >
       <h3 class="border-b-2 border-line-checkout pb-2 lg:col-span-3">
         checkout
       </h3>
 
-      <div class="lg:col-start-3 lg:px-10">
+      <aside class="lg:col-start-3 lg:pl-10">
         <h5 class="pt-space-m-l pb-space-review-order lg:pt-space-xl lg:pb-1">
           order summary
         </h5>
         <div
           class="border-t-2 border-line-checkout flex pt-space-m-l pb-space-review-order justify-between"
         >
-          <p>Mompirone Barbera d’Ast Superiore</p>
+          <p>Mompirone Barbera d’Ast</p>
           <h6>200 DKK</h6>
         </div>
         <div class="flex pb-space-review-order justify-between">
-          <p>Mompirone Barbera d’Ast Superiore</p>
+          <p>Mompirone Barbera d’Ast</p>
           <h6>200 DKK</h6>
         </div>
         <div class="flex pb-space-review-order justify-between">
@@ -68,13 +71,14 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
           <h6>459 dkk</h6>
         </div>
         <p>INC. TAX</p>
-      </div>
+      </aside>
       <div class="lg:col-span-2 lg:row-start-2">
         <div
           class="details flex justify-between border-b-2 border-line-checkout"
         >
           <h4 class="">1. shipping details</h4>
-          <img src={Minus} alt="minus" />
+          <img class="minus cursor-pointer" src={Minus} alt="minus" />
+          <img class="plus hidden cursor-pointer" src={Plus} alt="plus" />
         </div>
 
         <form
@@ -171,7 +175,8 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
         class="details flex justify-between border-b-2 border-line-checkout lg:col-span-2"
       >
         <h4 class="">2. payment</h4>
-        <img src={Plus} alt="plus" />
+        <img class="plus2 cursor-pointer" src={Plus} alt="plus" />
+        <img class="minus2 hidden cursor-pointer" src={Minus} alt="minus" />
       </div>
       <form
         action=""
@@ -223,7 +228,7 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
             maxlength="3"
             pattern="[0-9]*"
             required
-            class="w-[50%]"
+            class="w-[60%] lg:w-[40%]"
           />
           <label for="name">name on card*</label>
           <input type="text" name="name" placeholder="Enter cardholder name" />
@@ -258,7 +263,8 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
         class="details flex justify-between border-b-2 border-line-checkout lg:col-span-2"
       >
         <h4>3. Review and order</h4>
-        <img src={Plus} alt="plus" />
+        <img class="cursor-pointer plus3" src={Plus} alt="plus" />
+        <img class="minus3 hidden cursor-pointer" src={Minus} alt="minus" />
       </div>
       <div class="order px-body-padding-x hidden col-span-2">
         <div class="grid text-form-inputandlabel pt-space-m-l">
@@ -300,13 +306,47 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
   </div>
 
   <Footer />
-  <BurgerMenu />
 
   <style>
     @media screen and (max-width: 1024px) {
       .desktop-header {
         display: none;
       }
+    }
+    @media screen and (min-width: 1024px) {
+      .exp-wrapper {
+        width: 80%;
+      }
+    }
+
+    .exp-wrapper {
+      position: relative;
+      border: 2px solid;
+      border-color: var(--form-inputandlabel);
+      display: flex;
+      width: 60%;
+      justify-content: space-around;
+      height: 42px;
+      line-height: 36px;
+      font-size: 24px;
+    }
+
+    .exp-wrapper:after {
+      content: "/";
+      position: absolute;
+      left: 50%;
+      margin-left: -4px;
+      color: #aaa;
+    }
+
+    input.exp {
+      float: left;
+
+      border: 0;
+
+      outline: none;
+      appearance: none;
+      font-size: 14px;
     }
 
     .regular-checkbox {
@@ -361,6 +401,7 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
       font-size: var(--font-size-body-btn);
       cursor: pointer;
       margin-top: var(--space-xl-2xl);
+      border: none;
     }
     .btn:hover {
       background-color: var(--color-black);
@@ -381,15 +422,44 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
     document.querySelector(".continue-one").addEventListener("click", nextOne);
     document.querySelector(".continue-two").addEventListener("click", nextTwo);
 
+    document.querySelector(".plus").addEventListener("click", plusOne);
+    document.querySelector(".plus2").addEventListener("click", plusTwo);
+
     function nextOne() {
       document.querySelector(".payment").classList.remove("hidden");
       document.querySelector(".shipping-details").classList.add("hidden");
+      document.querySelector(".minus").classList.add("hidden");
+      document.querySelector(".plus").classList.remove("hidden");
+      document.querySelector(".minus2").classList.remove("hidden");
+      document.querySelector(".plus2").classList.add("hidden");
     }
 
     function nextTwo() {
       document.querySelector(".payment").classList.add("hidden");
       document.querySelector(".order").classList.remove("hidden");
+      document.querySelector(".minus2").classList.add("hidden");
+      document.querySelector(".plus2").classList.remove("hidden");
+      document.querySelector(".minus3").classList.remove("hidden");
+      document.querySelector(".plus3").classList.add("hidden");
     }
+
+    function plusOne() {
+      document.querySelector(".payment").classList.add("hidden");
+      document.querySelector(".shipping-details").classList.remove("hidden");
+      document.querySelector(".minus").classList.remove("hidden");
+      document.querySelector(".plus").classList.add("hidden");
+      document.querySelector(".minus2").classList.add("hidden");
+      document.querySelector(".plus2").classList.remove("hidden");
+    }
+    function plusTwo() {
+      document.querySelector(".payment").classList.remove("hidden");
+      document.querySelector(".order").classList.add("hidden");
+      document.querySelector(".minus2").classList.remove("hidden");
+      document.querySelector(".plus2").classList.add("hidden");
+      document.querySelector(".minus3").classList.add("hidden");
+      document.querySelector(".plus3").classList.remove("hidden");
+    }
+
     /*EXP DATE*/
     const monthInput = document.querySelector("#month");
     const yearInput = document.querySelector("#year");

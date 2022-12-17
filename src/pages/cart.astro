@@ -3,85 +3,165 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import BurgerMenu from "../components/BurgerMenu.astro";
-import Button2 from "../components/Button2.astro";
-import WineImg from "../img/wine1.png";
+import Button1 from "../components/Button1.astro";
+import WineImg from "../img/red.webp";
+import WineImgTwo from "../img/white.webp";
 ---
 
 <Layout>
   <Header />
-  <section class="px-body-padding-x">
-    <h5 class="border-b-2 border-line-checkout pb-space-2xs">cart (2)</h5>
-    <div class="grid grid-cols-2 border-b-2 border-line-checkout py-space-m-l">
-      <img
-        class="w-[8rem] h-[14rem] object-contain p-space-xs"
-        src={WineImg}
-        alt="red wine"
-      />
-      <div class="flex flex-col justify-between p-space-xs">
-        <h6>LE domaine du grand jacquet</h6>
-        <div>
-          <input
-            type="number"
-            min="1"
-            name="quantity"
-            value="1"
-            inputmode="numeric"
-            class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
-          />
-          <h6 class="pt-space-xs">200 dkk</h6>
+  <!--  <div
+    class="flex flex-wrap gap-breadcrumbs-gap px-breadcrumbs-x py-breadcrumbs-y"
+  >
+    <a href="/productlist/" class="overlineText">Shop</a>
+    <p class="overlineText">/</p>
+    <a href="#" class="overlineText border-b border-black">CART</a>
+  </div> -->
+  <div class="lg:grid lg:grid-cols-3 py-body-padding-y px-body-padding-x">
+    <section class="lg:col-span-2 lg:pr-space-2xl">
+      <h5 class="border-b-2 border-line-checkout pb-space-2xs">cart (2)</h5>
+      <div
+        class="grid grid-cols-2 border-b-2 border-line-checkout py-space-m-l"
+      >
+        <img
+          class="w-[8rem] h-[14rem] object-contain p-space-xs"
+          src={WineImg}
+          alt="red wine"
+        />
+        <div class="flex flex-col justify-between p-space-xs">
+          <h6>Galia du jacquet</h6>
+          <div>
+            <input
+              type="number"
+              min="1"
+              name="quantity"
+              value="1"
+              inputmode="numeric"
+              class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
+            />
+            <h6 class="pt-space-xs">200 dkk</h6>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="grid grid-cols-2 border-b-2 border-line-checkout py-space-m-l">
-      <img
-        class="w-[8rem] h-[14rem] object-contain p-space-xs"
-        src={WineImg}
-        alt="red wine"
-      />
-      <div class="flex flex-col justify-between p-space-xs">
-        <h6>LE domaine du grand jacquet</h6>
-        <div>
-          <input
-            type="number"
-            min="1"
-            name="quantity"
-            value="1"
-            inputmode="numeric"
-            class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
-          />
-          <h6 class="pt-space-xs">200 dkk</h6>
+      <div
+        class="grid grid-cols-2 border-b-2 border-line-checkout py-space-m-l"
+      >
+        <img
+          class="w-[8rem] h-[14rem] object-contain p-space-xs"
+          src={WineImgTwo}
+          alt="red wine"
+        />
+        <div class="flex flex-col justify-between p-space-xs">
+          <h6>LE domaine du grand jacquet</h6>
+          <div>
+            <input
+              type="number"
+              min="1"
+              name="quantity"
+              value="1"
+              inputmode="numeric"
+              class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
+            />
+            <h6 class="pt-space-xs">200 dkk</h6>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="py-space-xs">
-      <input type="text" placeholder="ADD A NOTE" />
-    </div>
-  </section>
-  <section>
-    <h5>order summary</h5>
-    <div>
-      <h6>order value</h6>
-      <h6>400 dkk</h6>
-    </div>
-    <input type="text" />
-    <div>
-      <h6>total value</h6>
-      <h6>400 dkk</h6>
-    </div>
-  </section>
-  <BurgerMenu />
-  <Footer />
+      <div class="pt-space-l pb-space-xs">
+        <input
+          class="addnote w-[340px] lg:w-fill"
+          type="text"
+          placeholder="ADD A NOTE"
+        />
+      </div>
+    </section>
+    <section
+      class="pt-space-m lg:pl-space-xs lg:row-start-1 lg:col-start-3 lg:pt-[600px]"
+    >
+      <h4>shipping</h4>
+      <p class="pt-space-xs">
+        We offer FREE SHIPPING in Denmark for purchases over 500 kr. For orders
+        under 500 kr the shipping costs 59 kr.
+      </p>
+      <h6 class="pt-space-m">click and collect</h6>
+      <p class="pt-space-xs">
+        You can choose to pick up your order in our wine store on Kompagnistræde
+        28 in Copenhagen. <br /> We will contact you by email or phone when your
+        order is ready to be picked up. Please wait for a notification before picking
+        up the order.
+      </p>
+    </section>
+
+    <section class="col-start-3 row-start-1 lg:pl-space-xs">
+      <h5
+        class="border-b-2 border-line-checkout pb-space-2xs pt-space-l lg:pt-0"
+      >
+        order summary
+      </h5>
+      <div class="flex flex-row justify-between pt-space-l">
+        <h6>order value</h6>
+        <h6>400 dkk</h6>
+      </div>
+      <div class="flex flex-row justify-between pt-space-m">
+        <form action="" class="flex flex-col">
+          <label class="pb-space-3xs text-size-h6">SHIPPING</label>
+          <select
+            name="shipping"
+            class="border-b-[1px] pr-1 border-black cursor-pointer"
+          >
+            <option value="standard">STANDARD SHIPPING</option>
+            <option value="clickandcollect">CLICK AND COLLECT</option>
+          </select>
+        </form>
+        <div class="flex items-end"><h6>59 dkk</h6></div>
+      </div>
+
+      <div
+        class="flex pt-space-l border-b-2 border-line-checkout pb-space-m lg:pb-space-m lg:pt-space-xl"
+      >
+        <input class="promo" type="text" placeholder="ADD PROMO CODE" />
+        <div
+          class="border-y-2 border-r-2 bg-button-gray hover:bg-white border-line-checkout px-space-m grid place-content-center cursor-pointer"
+        >
+          <h6>APPLY</h6>
+        </div>
+      </div>
+      <div class="flex flex-row justify-between pt-space-xs">
+        <div>
+          <h6>total value</h6>
+          <p class="text-gray-500">INC. TAX</p>
+        </div>
+
+        <h6>400 dkk</h6>
+      </div>
+      <div
+        class="pt-space-xl pb-space-l grid justify-center lg:border-b-2 lg:border-line-checkout"
+      >
+        <Button1 text="checkout" link="/checkout/" />
+      </div>
+    </section>
+  </div>
 </Layout>
+<BurgerMenu />
+<Footer />
 
 <style>
   input:focus {
     outline: none;
   }
+  select:focus {
+    outline: none;
+  }
 
-  input {
+  .addnote {
     border: solid 2px;
     border-color: var(--color-accent-blue-500);
     font-size: var(--font-size-body);
     padding: var(--space-l);
+  }
+  .promo {
+    border: solid 2px;
+    border-color: var(--color-accent-blue-500);
+    font-size: var(--font-size-body);
+    padding: var(--space-xs);
   }
 </style>
