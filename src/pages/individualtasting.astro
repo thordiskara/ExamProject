@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
+import Deluxe from "../images-wine/deluxetasting.webp"
+import Edda from "../images-wine/eddastudio.webp"
+---
+<Layout />
+<Header />
+<div class="flex flex-wrap gap-breadcrumbs-gap px-body-padding-x py-breadcrumbs-y">
+    <a href="/winetastings/" class="overlineText">Wine tastings</a>
+    <p class="overlineText">/</p>
+    <a href="/" class="overlineText border-b border-black">Deluxe bubbles & cake experience</a>
+</div>
+<section class="px-body-padding-x flex flex-col md:flex-row-reverse md:gap-8">
+    <div class="grid md:grid-cols-2 md:gap-[8px] md:ml-20">
+        <div class="h-[100%] mobileNoShow">
+            <img src={Edda} alt="Edda studio">
+        </div>
+       <div class="flex flex-col md:gap-[8px]">
+            <div class="p-space-m bg-product-list mobileNoShow">
+                <h6 class="pb-padding-headers">Edda studio</h6>
+                <p class="pb-padding-paragraphs bodySmall">Edda studio is a showroom located in Nordhavn, showcasing the best in Nordic design. 
+                </p>
+                <a href="https://www.eddastudio.dk/om-os?locale=en" class="border-b border-black bodySmall">www.eddastudio.dk</a>
+            </div>
+            <img src={Deluxe} alt="Glass of wine and cakes" class="">
+       </div>
+    </div>
+    <div class="pt-padding-headers">
+        <h1 class="pb-padding-headers">Deluxe bubbles and cake experience</h1>
+        <p class="font-bold pb-padding-paragraphs">The perfect choice for the customer who would like to explore pairings of delicious bubbles and exquisite pastries. </p>
+        <p class="pb-padding-paragraphs">The experience can be enjoyed either at a location of your choosing or at EDDA Studio, a Nordic design showroom located in Nordhavn.</p>
+        <h6 class="pb-padding-paragraphs">Whats included?</h6>
+        <p class="pb-padding-paragraphs">The package includes 7 kinds of bubbles from all over Europe - ranging from whites, rosés, champagne, Pet-nat and other sparkling wines. 
+            You will learn more about tasting notes, production methods and different expressions related to sparkling wines.</p>
+            <p class="pb-padding-paragraphs">Each of the wines will be paired with a delicious cake that compliments it perfectly, provided by Leckerbaer, a gourmet bakery and brainchild of Michelin trained chefs Gabi and Jakob Baer Mogensen.</p>
+            <h6 class="pb-padding-paragraphs">How to book</h6>
+            <p class="pb-padding-paragraphs">Book your wine tasting by contacting us via email <a href="mailto : natalie@tgwe.dk" class="border-b border-black">natalie@tgwe.dk</a> or telephone <a href = "tel:004550128381" class="border-b border-black">+4550128381</a></p>
+        </div>
+</section>
+<section class="px-body-padding-x flex flex-col pt-body-padding-y gap-[8px]">
+    <div class="flex flex-col bg-background-blue px-space-m py-space-m lg:w-[40%]">
+        <h6 class="pb-padding-headers">Deluxe Bubbles & Cake tasting at your preferred locations</h6>
+        <p class="pb-padding-paragraphs">We will set up in your preferred location with wine glasses and all you need for a great wine experience. 
+            We will taste 7 different wines paired with gourmet cakes from Leckerbaer.</p>
+            <ul class="pb-padding-paragraphs list-disc px-body-padding-x">
+                <li><p>Min. 10 people</p></li>
+                <li><p>Your preferred location</p></li>
+                <li><p>Duration 3 hours</p></li>
+            </ul>
+            <p><span class="font-bold">Price: </span>from DKK 695  per person</p>
+    </div>
+    <div class="bg-background-blue px-space-m py-space-m lg:w-[40%]">
+        <h6 class="pb-padding-headers">Deluxe Bubbles & Cake tasting at Nordic design showroom EDDA Studio</h6>
+        <p class="pb-padding-paragraphs">We meet at Edda Studio where we will have the entire place to ourselves and you are invited to experience the 250 sq m of art, craft and design furniture.
+            We will taste 7 different wines paired with gourmet cakes from Leckerbaer.</p>
+            <ul class="pb-padding-paragraphs list-disc px-body-padding-x">
+                <li><p>Min. 10 people</p></li>
+                <li><p>Edda Studio, Århusgade 131, 2150 Nordhavn</p></li>
+                <li><p>Duration 3 hours</p></li>
+            </ul>
+            <p><span class="font-bold">Price: </span>from DKK 695  per person</p>
+    </div>
+</section>
+<section class="md:hidden px-body-padding-x flex flex-col gap-[8px] py-body-padding-y">
+<div class="edda-bg h-[25rem]"></div>
+<div class="px-body-padding-x py-space-m bg-product-list">
+    <h6 class="pb-padding-headers">Edda studio</h6>
+    <p class="pb-padding-paragraphs">Edda studio is a showroom for Nordic design, located in Nordhavn in Copenhagen. 
+    </p>
+    <p class="pb-padding-headers">The showroom exhibits the best in Nordic design and is the perfect setting to enjoy a wine tasting session. </p>
+    <a href="https://www.eddastudio.dk/om-os?locale=en" class="border-b border-black">www.eddastudio.dk</a>
+</div>
+</section>
+<BurgerMenu />
+<Footer />
+
+
+<style>
+     a.overlineText:hover{
+        border-bottom: 1px solid black;
+        transition: 150ms ease-in-out;
+    }
+    .edda-bg{
+        background-image: url("../images-wine/eddastudio.webp");
+        background-size: cover;
+        background-position: bottom;
+    }
+</style>
