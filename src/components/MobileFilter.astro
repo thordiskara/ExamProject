@@ -1,6 +1,7 @@
 ---
 import Plus from '../svg/icons/plus.svg'
 import Close from '../svg/icons/close.svg'
+import Minus from '../svg/icons/minus.svg'
 ---
 <div class="filterbox flex-col gap-space-m hidden h-[300%] absolute w-full z-[20] bg-white top-0 px-body-padding-x pt-space-xl">
     <div class="flex justify-end pb-space-l"><img class="leave w-[2rem]" src={Close} alt="close"/></div>
@@ -8,7 +9,8 @@ import Close from '../svg/icons/close.svg'
     <details class="pb-space-l">
         <summary class="flex justify-between">
             <h6>Product Type</h6>
-            <img src={Plus} alt="plus"/>
+            <img class="plus" src={Plus} alt="plus"/>
+            <img class="minus hidden" src={Minus} alt="minus"/>
         </summary>
         <form>
             <label><input class="regular-checkbox" type="checkbox" name="type" value="all" id="all" /> All</label><br>
@@ -22,7 +24,8 @@ import Close from '../svg/icons/close.svg'
       <details class="pb-space-l">
         <summary class="flex justify-between">
             <h6>Country</h6>
-            <img src={Plus} alt="plus"/>
+            <img class="plus2" src={Plus} alt="plus"/>
+            <img class="minus2 hidden" src={Minus} alt="minus"/>
         </summary>
         <form>
             <label><input class="regular-checkbox" type="checkbox" name="country" value="France" id="france" /> France</label><br>
@@ -36,7 +39,8 @@ import Close from '../svg/icons/close.svg'
        <details class="pb-space-l">
             <summary class="flex justify-between">
                 <h6>Price</h6>
-                <img src={Plus} alt="plus"/>
+                <img class="plus3" src={Plus} alt="plus"/>
+                <img class="minus3 hidden" src={Minus} alt="minus"/>
             </summary>
             <div class="w-[14rem]">
                 <div class="flex justify-between">
@@ -66,7 +70,8 @@ import Close from '../svg/icons/close.svg'
       <details class="pb-space-l">
         <summary class="flex justify-between">
             <h6>Winery</h6>
-            <img src={Plus} alt="plus"/>
+            <img class="plus4" src={Plus} alt="plus"/>
+            <img class="minus4 hidden" src={Minus} alt="minus"/>
         </summary>
         <form>
             <label><input class="regular-checkbox" type="checkbox" name="fl-cont" value="africa" id="africa" /> Azienda Agraria Guerrieri </label><br>
@@ -228,14 +233,6 @@ input[type="range"]::-moz-range-thumb {
   -moz-appearance: none;
 }
 
-details > summary {
-    list-style-type: url(../svg/icons/plus.svg);
-}
-
-details[open] > summary {
-    list-style-type: url(../svg/icons/minus.svg);
-}
-
 </style>
 
 <script is:inline>
@@ -280,4 +277,57 @@ rangeInput.forEach((input) => {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", type)
+
+function type(){
+    document.querySelector('.plus').addEventListener('click', () => {
+        document.querySelector('.minus').classList.remove('hidden');
+        document.querySelector('.plus').classList.add('hidden');
+    document.querySelector('.minus').addEventListener('click', () => {
+            document.querySelector('.minus').classList.add('hidden')
+            document.querySelector('.plus').classList.remove('hidden');
+          })
+      });
+  }   
+
+  document.addEventListener("DOMContentLoaded", country)
+
+function country(){
+    document.querySelector('.plus2').addEventListener('click', () => {
+        document.querySelector('.minus2').classList.remove('hidden');
+        document.querySelector('.plus2').classList.add('hidden');
+    document.querySelector('.minus2').addEventListener('click', () => {
+            document.querySelector('.minus2').classList.add('hidden')
+            document.querySelector('.plus2').classList.remove('hidden');
+          })
+      });
+  }   
+
+  document.addEventListener("DOMContentLoaded", price)
+  function price(){
+    document.querySelector('.plus3').addEventListener('click', () => {
+        document.querySelector('.minus3').classList.remove('hidden');
+        document.querySelector('.plus3').classList.add('hidden');
+    document.querySelector('.minus3').addEventListener('click', () => {
+            document.querySelector('.minus3').classList.add('hidden')
+            document.querySelector('.plus3').classList.remove('hidden');
+          })
+      });
+  } 
+  
+  document.addEventListener("DOMContentLoaded", winery)
+  function winery(){
+    document.querySelector('.plus4').addEventListener('click', () => {
+        document.querySelector('.minus4').classList.remove('hidden');
+        document.querySelector('.plus4').classList.add('hidden');
+    document.querySelector('.minus4').addEventListener('click', () => {
+            document.querySelector('.minus4').classList.add('hidden')
+            document.querySelector('.plus4').classList.remove('hidden');
+          })
+      });
+  }  
+
+  
 </script>
