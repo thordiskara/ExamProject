@@ -32,6 +32,9 @@ module.exports = {
         "space-3xl": "var(--space-3xl)",
         "landing-padding-y": "var(--landing-padding-y)",
         "space-review-order": "var(--space-2xs-xs)",
+		"padding-headers": "var(--padding-headers",
+		"padding-headers": "var(--space-l)",
+		"padding-paragraphs": "var(--padding-paragraphs)",
       },
 
       gridTemplateColumns: {
@@ -74,8 +77,12 @@ module.exports = {
         "form-inputandlabel": "var(--form-inputandlabel)",
         "background-blue": "var(--bg-blue)",
         "button-gray": "var(--color-primary-button-grey)",
+		"vt-blue": "(--vt-blue)",
+		"bespoke-blue": "var(--bespoke-blue)",
+		"virtual-blue": "var(--color-accent-blue-300)"
       },
-    },
-  },
+
+		},
+	},
   plugins: [],
 };

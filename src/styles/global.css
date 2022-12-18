@@ -140,7 +140,11 @@
   --form-inputandlabel: var(--color-accent-blue-900);
   --landing-padding-y: var(--space-2xl-3xl);
   --alert-color: var(--color-accent-red-600);
-  --bg-blue: var( --color-accent-blue-200);
+  --bg-blue: var(--color-accent-blue-200);
+  --vt-blue: var(--color-accent-blue-300);
+  --bespoke-blue: var(--color-accent-blue-50);
+  --padding-headers: var(--space-l);
+  --padding-paragraphs: var(--space-m);
 
 
     /* CUSTOM SPACING */

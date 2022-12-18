@@ -17,26 +17,18 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
 
 <Layout>
     <LandingHeader/>
-    <!-- Hero section mobile -->
-<!-- <section class="mobileNoShow md:hidden bg-bg-grey h-[80vh] border-b-2 border-line-checkout">
-<div class="heroSectionMobile flex flex-col items-center justify-between pt-space-l pb-space-xl">
-    <h1 class="text-center text-display-blue">The great wine experience</h1>
-    <Button1 text="shop wine" />
-</div>
-</section> -->
-<!-- Hero section desktop -->
-<section class="md:flex md:min-h-screen border-b-2 border-line-checkout ">
-    <div class="mobileNoShow heroLeft w-[50vw] bg-form-bg- border-r border-line-checkout grid py-landing-padding-y">
+<section class="md:flex md:min-h-screen border-b-2 border-line-checkout">
+    <div class="mobileNoShow heroLeft w-[50vw] bg-form-bg- border-r border-line-checkout grid py-landing-padding-y md:pt-[10rem]">
         <h1 class="text-center justify-self-center text-display-blue pb-space-m">The great wine experience</h1>
         <img src={HeroGlas} alt="Wine glasses cheering" class="self-center justify-self-center w-[50%]">
         <p class="heroText text-center justify-self-center text-display-blue px-space-xl pt-space-m">
             We provide a wide selection of quality, eco-friendly wines and a variety of exciting and fun wine tasting experiences.
             <br> We also offer monthly wine subscription to help expand your wine palate.</p>
     </div>
-    <div class=" heroRight md:w-[50vw] bg-landing-grey md:border-l border-line-checkout grid py-landing-padding-y">
+    <div class=" heroRight md:w-[50vw] bg-landing-grey md:border-l border-line-checkout grid pb-landing-padding-y pt-[10rem]">
         <h1 class="text-center text-display-blue px-body-padding-x md:hidden">The great wine experience</h1>
         <img src={HeroWine} alt="Three wine bottles" class="self-center p-10" >
-      <div class="justify-self-center">  <Button1 text="shop wine" href="" /></div>
+      <div class="justify-self-center">  <Button1 link="/productlist/"  text="shop wine"/></div>
     </div>
 </section>
 <!-- Wine Tasting section mobile-->
@@ -54,7 +46,7 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
             We create a fun and highly informative experience for our customers that match their requirements as well as their budget.</p>
             <p class="px-body-padding-x pb-space-m">The wine tastings can take place at any preferred location or at our exquisite wine shop at Kompagnistræde 28 in central Copenhagen.</p>
             <p class="px-body-padding-x pb-space-xl">Wine tastings can also be combined with a whole dinner, gourmet cakes or with a pop-up wine bar with live jazz music at any location. </p>
-           <div class="px-body-padding-x"> <a href="#" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
+           <div class="px-body-padding-x"> <a href="/winetastings/" class="btn flex hoverLink justify-end"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
 </section>
 <!-- Wine tasting desktop -->
 <section class="mobileNoShow grid grid-cols-3  border-b-2 border-line-checkout">
@@ -72,10 +64,10 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
     <div class="col-span-2 row-start-2 row-span-2 flex">
         <img src={WineTLeft} alt="" class="w-[25vw] object-cover">
         <div class="flex flex-col pb-landing-padding-y">
-            <p class="px-body-padding-x pb-space-m">At The Great Wine Experience we offer a variety of different wine tastings led by Sommelier Natalie Noryd. 
+            <p class="px-body-padding-x pb-padding-paragraphs">At The Great Wine Experience we offer a variety of different wine tastings led by Sommelier Natalie Noryd. 
                 We create a fun and highly informative experience for our customers that match their requirements as well as their budget.</p>
-                <p class="px-body-padding-x pb-space-m">The wine tastings can take place at any preferred location or at our exquisite wine shop at Kompagnistræde 28 in central Copenhagen.</p>
-                <p class="px-body-padding-x pb-space-xl">Wine tastings can also be combined with a whole dinner, gourmet cakes or with a pop-up wine bar with live jazz music at any location. </p>
+                <p class="px-body-padding-x  pb-padding-paragraphs">The wine tastings can take place at any preferred location or at our exquisite wine shop at Kompagnistræde 28 in central Copenhagen.</p>
+                <p class="px-body-padding-x  pb-padding-headers">Wine tastings can also be combined with a whole dinner, gourmet cakes or with a pop-up wine bar with live jazz music at any location. </p>
                <div class="px-body-padding-x"> <a href="#" class="btn flex hoverLink"><span class="pr-space-xs">read more </span><img src={Arrow} alt="Arrow right"></a></div>
         </div>
     </div>
@@ -104,16 +96,16 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
     <div class="benefits py-landing-padding-y px-body-padding-x md:pl-space-3xl flex flex-col gap-space-xl lg:border-b-2 lg:border-r-2 border-line-checkout text-center md:text-left">
         <h2>Wine club benefits</h2>
        <div> 
-        <h4 class="pb-space-2xs">Free</h4>
+        <h4 class="pb-padding-paragraphs">Free</h4>
         <p>It's completely free of charge to join our wine club!</p>
     </div>
     <div> 
-        <h4 class="pb-space-2xs">Exclusive events</h4>
+        <h4 class="pb-padding-paragraphs">Exclusive events</h4>
         <p>Get invited to members-only wine tastings where you will get an insight into our delicious wines, 
             and the opportunity to buy wines at a discounted price.. The events will either cost a small fee or be completely FREE.</p>
     </div>
     <div> 
-        <h4 class="pb-space-2xs">Stay up to date</h4>
+        <h4 class="pb-padding-paragraphs">Stay up to date</h4>
         <p>Be the first to receive great offers, info about events, and other exciting news about The Great Wine Experience.
         </p>
     </div>
