@@ -90,8 +90,7 @@
         name="country"
         value="Germany"
         id="germany"
-      /> Germany</label
-    >
+      /> Germany</label>
   </form>
 
   <br />
@@ -102,19 +101,19 @@
       <p>Min</p>
       <p>Max</p>
     </div>
-    <div class="price-input">
+    <div class="price-input-desktop">
       <div class="field min">
         <input type="number" class="input-min" value="0" />
       </div>
-      <div class="separator">-</div>
+      <div class="separator-desktop">-</div>
       <div class="field max">
         <input type="number" class="input-max" value="1000" />
       </div>
     </div>
-    <div class="slider">
-      <div class="progress"></div>
+    <div class="slider-desktop">
+      <div class="progress-desktop"></div>
     </div>
-    <div class="range-input">
+    <div class="range-input-desktop">
       <input
         type="range"
         class="range-min"
@@ -133,7 +132,7 @@
       />
     </div>
   </div>
-</div>
+
 
 <br />
 
@@ -339,7 +338,7 @@
     /> Weingut Eymann</label
   ><br />
 </form>
-
+</div>
 <style>
   .regular-checkbox {
     -webkit-appearance: none;
@@ -376,12 +375,12 @@
 
   /* PRICE SLIDER */
 
-  .price-input {
+  .price-input-desktop {
     width: 100%;
     display: flex;
     margin: 0.5rem 0 2rem;
   }
-  .price-input .field {
+  .price-input-desktop .field {
     display: flex;
     width: 100%;
     height: 30px;
@@ -408,20 +407,20 @@
   input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
-  .price-input .separator {
+  .price-input-desktop .separator-desktop {
     width: 100px;
     display: flex;
     font-size: 19px;
     align-items: center;
     justify-content: center;
   }
-  .slider {
+  .slider-desktop {
     height: 5px;
     position: relative;
     background: #ddd;
     border-radius: 5px;
   }
-  .slider .progress {
+  .slider-desktop .progress-desktop {
     height: 100%;
     left: 1%;
     right: 1%;
@@ -429,10 +428,10 @@
     border-radius: 5px;
     background: var(--color-accent-red-500);
   }
-  .range-input {
+  .range-input-desktop {
     position: relative;
   }
-  .range-input input {
+  .range-input-desktop input {
     position: absolute;
     width: 100%;
     height: 5px;
@@ -464,9 +463,9 @@
 </style>
 
 <script is:inline>
-  const rangeInput = document.querySelectorAll(".range-input input"),
-    priceInput = document.querySelectorAll(".price-input input"),
-    range = document.querySelector(".slider .progress");
+  const rangeInput = document.querySelectorAll(".range-input-desktop input"),
+    priceInput = document.querySelectorAll(".price-input-desktop input"),
+    range = document.querySelector(".slider-desktop .progress-desktop");
   let priceGap = 100;
 
   priceInput.forEach((input) => {
