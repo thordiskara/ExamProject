@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import BurgerMenu from "../components/BurgerMenu.astro"
+import Button2 from "../components/Button2.astro"
+import WinePic from "../img/wine-subscription/winebox1.webp"
+
+import Lamb from "../svg/wine-icons/red-mobile/sheep.svg"
+import Sweet from "../svg/wine-icons/red-mobile/sweet.svg"
+import Vegetable from "../svg/wine-icons/red-mobile/vegetable.svg"
+import Pork from "../svg/wine-icons/red-mobile/pork.svg"
+import Beef from "../svg/wine-icons/red-mobile/beef.svg"
+import RedWine2 from "../images-wine/redwine.webp"
+---
+
+<Layout>
+<Header />
+<!-- breadcrumbs -->
+<div class="flex flex-wrap gap-breadcrumbs-gap px-body-padding-x py-breadcrumbs-y">
+    <a href="#" class="overlineText">Shop</a>
+    <p class="overlineText">/</p>
+    <a href="#" class="overlineText">Wine Subscriptions</a>
+    <p class="overlineText">/</p>
+    <a href="#" class="overlineText border-b border-black">The Deluxe</a>
+</div>
+<section class="flex flex-col md:flex-row">
+<div class=" md:w-[100vw] border-y-2 md:border-r border-display-blue flex justify-center">
+    <img class=" h-full w-auto object-cover" src={WinePic} alt="winebox">
+</div> 
+<div class="flex flex-col md:border-t-2 md:border-l border-display-blue md:w-[50vw]">
+    <div class=" bg-winebox-blue  flex flex-col gap-space-m py-space-l px-body-padding-x md:px-space-l border-b-2 border-b-display-blue text-display-blue">
+    <div class="flex flex-col gap-space-s">
+        <h4>THE deluxe</h4>
+        <p>This box contains 6 exclusive top-rated wines with price tags of between 150-450 DKK per bottle. 
+         </p>
+         <p>The wines differ month-to-month and the selection also changes in accordance with the seasons.
+        </p>
+        <p>You have the choice to tailor your selection to include all reds, all whites or a mix to suit your taste and upcoming occasions.</p>
+        <p class="font-bold">Make sure to indicate your choice below!</p>
+    </div>
+    </div>
+<div class="flex flex-col md:flex-row">
+        <div class="md:w-[50vw] bg-winebox-blue text-display-blue border-b-2 border-display-blue flex flex-col gap-space-m px-body-padding-x md:px-space-m md:items-center py-space-l">
+            <div class="flex flex-col">
+                <div class="flex flex-col gap-space-2xs md:w-full">
+                    <h5>Tailor your selection</h5>
+                </div>
+                <div class="radio">
+                    <fieldset>
+                        <div class="flex gap-space-s pt-space-l ">
+                          <input type="radio" id="Mixed" name="type" value="Mixed"
+                                 checked>
+                          <label for="Mixed"><h6>Mixed</h6></label>
+                        </div>
+                    
+                        <div class="flex gap-space-s pt-space-s">
+                          <input type="radio" id="reds" name="type" value="reds">
+                          <label for="reds"><h6>All Reds</h6></label>
+                        </div>
+                    
+                        <div class="flex gap-space-s pt-space-s">
+                          <input type="radio" id="whites" name="type" value="whites">
+                          <label for="whites"><h6>All Whites</h6></label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <!-- <img src={RedWine2} alt="Red wine and grapes" class=" md:w-[50%]  border-l-2  border-b-2 border-display-blue object-cover"> -->
+        <div class="md:w-[50vw] border-l-2  border-b-2 border-display-blue px-body-padding-x md:px-space-m  py-space-l bg-winebox-blue flex flex-col gap-space-s">
+            <div class="flex justify-end">
+                <h5>695 DKK</h5>
+            </div>
+            
+                <div class="flex flex-row md:flex-col xl:flex-row gap-space-s xl:gap-space-3xs justify-end items-center md:items-end xl:justify-between">
+                    <input type="number" min="1" name="quantity" value="1" inputmode="numeric" class="self-end text-black p-2.5 md:p-3 w-24 text-center border border-black">
+                    <Button2 link="/cart/" text="Add to cart" />
+                </div>
+                <div>
+                    <h5>Shipping</h5>
+                    <p>FREE SHIPPING across Denmark</p>
+                    <p>You can also choose to pick up your order in our store on Kompagnistræde 28 in Copenhagen.</p>
+                </div>
+        </div>
+    </div>
+</div>
+</section>
+<Footer />
+<BurgerMenu />
+</Layout>
+
+<style>
+input:where([type="radio"]){
+  -webkit-appearance : none;
+  appearance         : none;
+  width              : 22px;
+  height             : 22px;
+  margin             : calc(0.75em - 11px) 0.25rem 0 0;
+  vertical-align     : top;
+  border             : 2px solid var(--form-inputandlabel);
+  border-radius      : 4px;
+  background         : #fff no-repeat center center;
+}
+
+input[type="radio"]{
+  border-radius : 50%;
+}
+
+input:where([type="radio"]):where(:active:not(:disabled), :focus){
+  border-color : var(--color-primary-button-blue);
+  outline      : none;
+}
+
+input:where([type="radio"]):hover{
+    border-color : var(--color-primary-button-blue);
+}
+
+input[type="radio"]:checked{
+  background-image : url('../svg/icons/radio3.svg');
+}
+</style>
