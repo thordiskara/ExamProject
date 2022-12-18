@@ -145,6 +145,14 @@
   --bespoke-blue: var(--color-accent-blue-50);
   --padding-headers: var(--space-l);
   --padding-paragraphs: var(--space-m);
+  --red-wine-card-hover: var(--color-accent-red-400);
+  --white-wine-card-hover: var(--color-white-wine-primary);
+  --sparkling-wine-card-hover:var(--color-sparkling-wine-primary);
+  --rose-wine-card-hover:var(--color-rose-wine-primary);
+  --body-padding-x: var(--space-m-2xl);
+  --breadcrumbs-padding-x:var(--space-s-2xl);
+  --breadcrumbs-padding-y: var(--space-m-l);
+  --body-padding-y: var(--space-2xl-3xl);
 
 
     /* CUSTOM SPACING */
@@ -154,30 +162,6 @@
 
     /* BORDER */
     --line-width: 2px;
-
-    /* ALIASES */
-    --heading-gill-sans: var(--font-family-headings);
-    --heading-proxima-nova: var(--font-family-body);
-    --body-font: var(--font-family-body);
-    --footer-x-padding: var(--space-2xl-3xl);
-    --footer-y-padding: var(--space-xl-2xl);
-    --footer-h6-padding-bottom: var(--space-xs-s);
-    --footer-gaps: var(--space-m-l);
-    --header-x-padding: var(--space-s-m);
-    --header-y-padding: var(--space-m-l);
-    --primary-btn-x-padding: var(--space-xs-s);
-    --primary-btn-y-padding: var(--space-xl-2xl);
-    --secondary-btn-x-padding: var(--space-xs);
-    --secondary-btn-y-padding: var(--space-l);
-    --productlist-padding: var(--space-xs);
-    --red-wine-card-hover: var(--color-accent-red-400);
-    --white-wine-card-hover: var(--color-white-wine-primary);
-    --sparkling-wine-card-hover:var(--color-sparkling-wine-primary);
-    --rose-wine-card-hover:var(--color-rose-wine-primary);
-    --body-padding-x: var(--space-m-2xl);
-    --breadcrumbs-padding-x:var(--space-s-2xl);
-    --breadcrumbs-padding-y: var(--space-m-l);
-    --body-padding-y: var(--space-2xl-3xl);
     
     /* Single product view */
     --wine-padding-y: var(--space-2xl-3xl);
