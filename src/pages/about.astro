@@ -9,7 +9,7 @@ import Land from "../img/land.webp"
 <Layout>
     <Header />
 <div>
-    <h1 class="px-body-padding-x md:hidden">
+    <h1 class="px-body-padding-x md:hidden pt-body-padding-y">
         The Great Wine Experience
     </h1>
 
@@ -21,7 +21,7 @@ import Land from "../img/land.webp"
             />
     </div>
 
-    <div class="border-b-2 border-line-checkout px-body-padding-x flex flex-col gap-space-s pb-space-l pt-space-l md:hidden">
+    <div class="border-b-2 border-line-checkout px-body-padding-x flex flex-col gap-space-s pb-space-l pt-space-l md:hidden ">
         <p>My name is Natalie Noryd, and I am a Sommelier based in Copenhagen, Denmark, where I specialize in wine tastings and direct wine sales to corporate and private clients. My main focus as a Sommelier is to make wine as accessible as possible to all, whether you are a beginner or an experienced connoisseur.</p>
     
         <p>The Great Wine Experience is run by me and my Photographer and Graphic Designer partner Wilfred Gachau.</p>
@@ -30,20 +30,22 @@ import Land from "../img/land.webp"
         <p>The wineries we work with are proud to create wine with great respect for the environment, climate, nature and biodiversity, and thus our selection is all either sustainable, organic, biodynamic and in a few cases low-intervention/natural wines.</p>
     </div>
 
-    <div class="hidden md:grid md:grid-cols-2 border-b-2 border-line-checkout">
+    <div class="hidden md:grid md:grid-cols-2 border-b-2 border-line-checkout pt-body-padding-y">
     
-        <div class=" px-body-padding-x flex flex-col gap-space-s pb-space-l pt-space-l">
-            <h1>
+        <div class=" px-body-padding-x pb-space-l">
+            <h1 class="pb-padding-headers">
                 The Great Wine Experience
             </h1>
-            <p>My name is Natalie Noryd, and I am a Sommelier based in Copenhagen, Denmark, where I specialize in wine tastings and direct wine sales to corporate and private clients. My main focus as a Sommelier is to make wine as accessible as possible to all, whether you are a beginner or an experienced connoisseur.</p>
-        
-            <p>The Great Wine Experience is run by me and my Photographer and Graphic Designer partner Wilfred Gachau.</p>
-        
-            <p>We are not only a web shop but also have a physical wine store and wine-tasting local at Kompagnistræde 28 in central Copenhagen. Here you will discover our whole portfolio of wines, and we always have open bottles that you can taste.</p>
-            <p>The wineries we work with are proud to create wine with great respect for the environment, climate, nature and biodiversity, and thus our selection is all either sustainable, organic, biodynamic and in a few cases low-intervention/natural wines.</p>
+            <div class="flex flex-col gap-space-s">
+                <p>My name is Natalie Noryd, and I am a Sommelier based in Copenhagen, Denmark, where I specialize in wine tastings and direct wine sales to corporate and private clients. My main focus as a Sommelier is to make wine as accessible as possible to all, whether you are a beginner or an experienced connoisseur.</p>
+            
+                <p>The Great Wine Experience is run by me and my Photographer and Graphic Designer partner Wilfred Gachau.</p>
+            
+                <p>We are not only a web shop but also have a physical wine store and wine-tasting local at Kompagnistræde 28 in central Copenhagen. Here you will discover our whole portfolio of wines, and we always have open bottles that you can taste.</p>
+                <p>The wineries we work with are proud to create wine with great respect for the environment, climate, nature and biodiversity, and thus our selection is all either sustainable, organic, biodynamic and in a few cases low-intervention/natural wines.</p>
+            </div>
         </div>
-        <div class="h-[42rem] flex justify-end pt-space-xl">
+        <div class="h-[42rem] flex justify-end">
             <img
                   class="md:h-full md:w-auto lg:h-auto lg:w-[36rem] object-cover object-top"
                   src={Natalie}
