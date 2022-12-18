@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
+import Natalie from "../img/Natalie.webp"
+import Land from "../img/land.webp"
+---
+<Layout>
+    <Header />
+<div>
+    <h1 class="px-body-padding-x md:hidden">
+        The Great Wine Experience
+    </h1>
+
+    <div class="px-body-padding-x h-[30rem] flex justify-center pt-space-l md:hidden">
+        <img
+              class="h-full w-auto object-cover"
+              src={Natalie}
+              alt="natalie"
+            />
+    </div>
+
+    <div class="border-b-2 border-line-checkout px-body-padding-x flex flex-col gap-space-s pb-space-l pt-space-l md:hidden">
+        <p>My name is Natalie Noryd, and I am a Sommelier based in Copenhagen, Denmark, where I specialize in wine tastings and direct wine sales to corporate and private clients. My main focus as a Sommelier is to make wine as accessible as possible to all, whether you are a beginner or an experienced connoisseur.</p>
+    
+        <p>The Great Wine Experience is run by me and my Photographer and Graphic Designer partner Wilfred Gachau.</p>
+    
+        <p>We are not only a web shop but also have a physical wine store and wine-tasting local at Kompagnistræde 28 in central Copenhagen. Here you will discover our whole portfolio of wines, and we always have open bottles that you can taste.</p>
+        <p>The wineries we work with are proud to create wine with great respect for the environment, climate, nature and biodiversity, and thus our selection is all either sustainable, organic, biodynamic and in a few cases low-intervention/natural wines.</p>
+    </div>
+
+    <div class="hidden md:grid md:grid-cols-2 border-b-2 border-line-checkout">
+    
+        <div class=" px-body-padding-x flex flex-col gap-space-s pb-space-l pt-space-l">
+            <h1>
+                The Great Wine Experience
+            </h1>
+            <p>My name is Natalie Noryd, and I am a Sommelier based in Copenhagen, Denmark, where I specialize in wine tastings and direct wine sales to corporate and private clients. My main focus as a Sommelier is to make wine as accessible as possible to all, whether you are a beginner or an experienced connoisseur.</p>
+        
+            <p>The Great Wine Experience is run by me and my Photographer and Graphic Designer partner Wilfred Gachau.</p>
+        
+            <p>We are not only a web shop but also have a physical wine store and wine-tasting local at Kompagnistræde 28 in central Copenhagen. Here you will discover our whole portfolio of wines, and we always have open bottles that you can taste.</p>
+            <p>The wineries we work with are proud to create wine with great respect for the environment, climate, nature and biodiversity, and thus our selection is all either sustainable, organic, biodynamic and in a few cases low-intervention/natural wines.</p>
+        </div>
+        <div class="h-[42rem] flex justify-end pt-space-xl">
+            <img
+                  class="md:h-full md:w-auto lg:h-auto lg:w-[36rem] object-cover object-top"
+                  src={Natalie}
+                  alt="natalie"
+                />
+        </div>
+    </div>
+
+   <div class="w-full md:hidden ">
+        <img
+        class="w-full h-auto object-cover"
+        src={Land}
+        alt="land"
+      />
+   </div>
+
+  <div class=" pt-space-l px-body-padding-x flex flex-col gap-space-s pb-space-l md:hidden">
+    <h3>My backgound</h3>
+    <p>I originally hail from Jönköping in Sweden and moved to Copenhagen in Denmark to pursue a career as a professional contemporary dancer, attending The Danish National School of Performing Arts. After several years as a professional dancer, I got attracted to the wonderful world of wine and have since not looked back.</p>
+    <p>My background within the arts has availed me a certain approach to wine and wine tasting which is that it is above all a sensory experience. It is also about the story behind the coming-to-be of the wine and the talented, visionary people who make it all happen, whom I believe are true artists.</p>
+  </div>
+
+<div class="hidden md:grid md:grid-cols-2">
+    <div class="h-full">
+          <img
+          class="h-full w-auto object-cover"
+          src={Land}
+          alt="land"
+        />
+    </div>
+    
+    <div class=" pt-space-l px-body-padding-x flex flex-col gap-space-s pb-space-l justify-end">
+      <h3>My backgound</h3>
+      <p>I originally hail from Jönköping in Sweden and moved to Copenhagen in Denmark to pursue a career as a professional contemporary dancer, attending The Danish National School of Performing Arts. After several years as a professional dancer, I got attracted to the wonderful world of wine and have since not looked back.</p>
+      <p>My background within the arts has availed me a certain approach to wine and wine tasting which is that it is above all a sensory experience. It is also about the story behind the coming-to-be of the wine and the talented, visionary people who make it all happen, whom I believe are true artists.</p>
+    </div>
+    <div class="px-body-padding-x flex flex-col gap-space-s py-space-l">
+        <h4>I am here to make it easy for you</h4>
+        <p class="font-bold">Selecting just the right wine can at times be daunting. You are always welcome to contact me at natalie@tgwe.dk or call me on +4550128381 and I will be more than happy to assist you in selecting just the right wine for any occasion and/or food pairing.</p>
+    </div>
+</div>
+
+  <div class="border-b-2 border-line-checkout pt-space-l md:hidden">
+      <div class="px-body-padding-x flex flex-col gap-space-s pb-space-l">
+          <h4>I am here to make it easy for you</h4>
+          <p class="font-bold">Selecting just the right wine can at times be daunting. You are always welcome to contact me at natalie@tgwe.dk or call me on +4550128381 and I will be more than happy to assist you in selecting just the right wine for any occasion and/or food pairing.</p>
+      </div>
+  </div>
+
+</div>
+
+<Footer />
+  <BurgerMenu />
+</Layout>
