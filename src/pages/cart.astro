@@ -6,6 +6,8 @@ import BurgerMenu from "../components/BurgerMenu.astro";
 import Button1 from "../components/Button1.astro";
 import WineImg from "../img/red.webp";
 import WineImgTwo from "../img/white.webp";
+import Close from "../svg/icons/close.svg";
+import Delux from "../img/wine-subscription/winebox1.webp";
 ---
 
 <Layout>
@@ -29,17 +31,27 @@ import WineImgTwo from "../img/white.webp";
           alt="red wine"
         />
         <div class="flex flex-col justify-between p-space-xs">
-          <h6>Galia du jacquet</h6>
-          <div>
-            <input
-              type="number"
-              min="1"
-              name="quantity"
-              value="1"
-              inputmode="numeric"
-              class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
-            />
-            <h6 class="pt-space-xs">200 dkk</h6>
+          <div class="flex flex-row justify-between">
+            <h6>Galia du jacquet</h6>
+            <div>
+              <img class="closeTwo cursor-pointer" src={Close} alt="close" />
+            </div>
+          </div>
+          <div class="lg:flex lg:flex-row lg:justify-between">
+            <div class="flex flex-col gap-1">
+              <label for="qty">QTY</label>
+              <input
+                type="number"
+                min="1"
+                name="quantity"
+                value="1"
+                inputmode="numeric"
+                class="text-black p-2 md:p-3 w-16 text-center border border-black"
+              />
+            </div>
+            <div class="lg:flex lg:items-end">
+              <h6 class="pt-space-xs">200 dkk</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -47,22 +59,32 @@ import WineImgTwo from "../img/white.webp";
         class="grid grid-cols-2 border-b-2 border-line-checkout py-space-m-l"
       >
         <img
-          class="w-[8rem] h-[14rem] object-contain p-space-xs"
-          src={WineImgTwo}
+          class="w-[80%] object-contain p-space-xs"
+          src={Delux}
           alt="red wine"
         />
         <div class="flex flex-col justify-between p-space-xs">
-          <h6>LE domaine du grand jacquet</h6>
-          <div>
-            <input
-              type="number"
-              min="1"
-              name="quantity"
-              value="1"
-              inputmode="numeric"
-              class="self-end text-black p-2 md:p-3 w-24 text-center border border-black"
-            />
-            <h6 class="pt-space-xs">200 dkk</h6>
+          <div class="flex flex-row justify-between">
+            <h6>The delux</h6>
+            <div>
+              <img class="close cursor-pointer" src={Close} alt="close" />
+            </div>
+          </div>
+          <div class="lg:flex lg:flex-row lg:justify-between">
+            <div class="flex flex-col gap-1">
+              <label for="qty">QTY</label>
+              <input
+                type="number"
+                min="1"
+                name="quantity"
+                value="1"
+                inputmode="numeric"
+                class="text-black p-2 md:p-3 w-16 text-center border border-black"
+              />
+            </div>
+            <div class="lg:flex lg:items-end">
+              <h6 class="pt-space-xs">895 dkk</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -95,7 +117,7 @@ import WineImgTwo from "../img/white.webp";
       </h5>
       <div class="flex flex-row justify-between pt-space-l">
         <h6>order value</h6>
-        <h6>400 dkk</h6>
+        <h6>1095 dkk</h6>
       </div>
       <div class="flex flex-row justify-between pt-space-m">
         <form action="" class="flex flex-col">
@@ -108,7 +130,7 @@ import WineImgTwo from "../img/white.webp";
             <option value="clickandcollect">CLICK AND COLLECT</option>
           </select>
         </form>
-        <div class="flex items-end"><h6>59 dkk</h6></div>
+        <div class="flex items-end"><h6>Free</h6></div>
       </div>
 
       <div
@@ -127,7 +149,7 @@ import WineImgTwo from "../img/white.webp";
           <p class="text-gray-500">INC. TAX</p>
         </div>
 
-        <h6>400 dkk</h6>
+        <h6>1095 dkk</h6>
       </div>
       <div
         class="pt-space-xl pb-space-l grid justify-center lg:border-b-2 lg:border-line-checkout"
@@ -160,5 +182,6 @@ import WineImgTwo from "../img/white.webp";
     border-color: var(--color-accent-blue-500);
     font-size: var(--font-size-body);
     padding: var(--space-xs);
+    width: 100%;
   }
 </style>
