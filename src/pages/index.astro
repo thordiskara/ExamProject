@@ -54,10 +54,10 @@ import SparklingWineCard from "../components/SparklingWineCard.astro"
 <h2>wine tastings</h2>
 <p>Choose from any of your four different wine tasting experiences to best fit your pallet and desires.</p>
 <div class="flex gap-space-m  pb-space-xl">
-    <a href="#" class="overlineText border-b border-black">exclusive</a>
-    <a href="#" class="overlineText border-b border-black">deluxe</a>
-    <a href="#" class="overlineText border-b border-black">Bespoke</a>
-    <a href="#" class="overlineText border-b border-black">virtual</a>
+    <a href="#" class="btn border-b-2 hover:border-b-0 tasting border-black">exclusive</a>
+    <a href="#" class="btn border-b-2 hover:border-b-0 tasting border-black">deluxe</a>
+    <a href="#" class="btn border-b-2 hover:border-b-0 tasting border-black">Bespoke</a>
+    <a href="#" class="btn border-b-2 hover:border-b-0 tasting border-black">virtual</a>
 </div>
     </div>
     <div class="wineTright row-span-2 col-start-3"></div>
@@ -173,5 +173,25 @@ button.btn{
         outline-color: var(--color-primary-button-blue);
         outline-style: solid;
         border-color: var(--color-primary-button-blue);
+    }
+
+    .tasting{
+        position: relative;
+    }
+    .tasting:hover:after{
+        transition: 400ms ease-in-out;
+        transform: scaleX(1);
+        transform-origin: bottom center;
+    }
+
+    .tasting:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
     }
 </style>

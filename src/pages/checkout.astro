@@ -12,21 +12,16 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
 
 <Layout>
   <header>
-    <div
-      class="desktop-header lg:flex lg:justify-between lg:w-full lg:items-center px-header-x py-header-y"
-    >
+    <div class="desktop-header lg:flex lg:justify-between lg:w-full lg:items-center px-header-x py-header-y">
       <div class="pr-20">
         <a href="/"><img src={Logo} alt="logo" /></a>
       </div>
-      <a class="navigation underline uppercase" href="/productlist/"
-        >Continue shopping</a
-      >
+      <a class="navigation border-b-2 hover:border-b-0 border-black" href="/productlist/"> Continue shopping</a>
     </div>
-
     <div>
       <div
         class="mobile-header lg:hidden flex justify-between w-full items-center px-header-x py-header-y"
-      >
+        >
         <div>
           <img src={LogoMobile} alt="logo mobile" />
         </div>
@@ -317,7 +312,32 @@ import LogoMobile from "../svg/logo/logo-mobile.svg";
         width: 80%;
       }
     }
+.navigation{
+  letter-spacing: var(--letter-spacing-button);
+    line-height: var(--line-height-button);
+    font-weight: var(--font-weight-button);
+    font-size: var(--font-size-body-btn);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+    .navigation:hover:after{
+        transition: 400ms ease-in-out;
+        transform: scaleX(1);
+        transform-origin: bottom center;
+    }
 
+    .navigation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: black;
+    }
     .exp-wrapper {
       position: relative;
       border: 2px solid;
