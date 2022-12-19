@@ -28,7 +28,7 @@ import Grapes from "../img/wine-subscription/grapes.webp"
     <div class="bg-product-list px-body-padding-x py-space-m">
         <h6 class="pb-space-s">Six bottles for 895 DKK per month</h6>
         <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
-        <a class="btn" href="/subscriptionbox/">View box</a>
+        <a class="btn box border-b-2 hover:border-b-0 border-black" href="/subscriptionbox/">View box</a>
     </div>
 </div>
 
@@ -36,7 +36,7 @@ import Grapes from "../img/wine-subscription/grapes.webp"
     <div class="bg-product-list px-body-padding-x py-space-m">
         <h6 class="pb-space-s">Six bottles for 695 DKK per month</h6>
         <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
-        <a class="btn" href="/subscriptionbox/">View box</a>
+        <a class="btn box border-b-2 hover:border-b-0 border-black" href="/subscriptionbox/">View box</a>
     </div>
 
     <div class="premium">
@@ -61,14 +61,14 @@ import Grapes from "../img/wine-subscription/grapes.webp"
             <div class="bg-product-list px-space-m py-space-m">
                 <h6 class="pb-space-s">Six bottles for 895 DKK per month</h6>
                 <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
-                <a class="btn" href="/subscriptionbox/">View box</a>
+                <a class="btn box border-b-2 hover:border-b-0 border-black" href="/subscriptionbox/">View box</a>
             </div>
         </div>
         <div class="grid grid-cols-premium gap-2 mb-space-2xl">
             <div class="bg-product-list px-space-m py-space-m">
                 <h6 class="pb-space-s">Six bottles for 695 DKK per month</h6>
                 <p class="pb-space-l">A wide selection of quality wines, priced between 100-250 DKK per bottle</p>
-                <a class="btn" href="/subscriptionbox/">View box</a>
+                <a class="btn box border-b-2 hover:border-b-0 border-black" href="/subscriptionbox/">View box</a>
             </div>
             <div class="premium">
                 <h5 class="px-space-m py-space-m">The Premium</h5>
@@ -235,9 +235,25 @@ import Grapes from "../img/wine-subscription/grapes.webp"
     background-image: linear-gradient(rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.23)), url("../img/wine-subscription/grapes.webp");
  }
 
- a{
-    border-bottom: black solid 2px;
- }
+ .box{
+        position: relative;
+    }
+    .box:hover:after{
+        transition: 400ms ease-in-out;
+        transform: scaleX(1);
+        transform-origin: bottom center;
+    }
+
+    .box:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: black;
+    }
 
 
 </style>
