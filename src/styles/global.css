@@ -52,8 +52,8 @@
   --color-accent-blue-50: #f4f7fa;
 
   /* FONTS */
-  --font-family-headings: "Gill Sans";
-  --font-family-body: "Proxima Nova";
+  --font-family-headings: gill-sans-nova, sans-serif;
+  --font-family-body: proxima-nova, sans-serif;
 
     /* FONT SIZES */
     --font-size-overline-mobile: clamp(0.65rem, calc(0.72rem + -0.09vw), 0.70rem);
