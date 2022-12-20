@@ -39,13 +39,13 @@ module.exports = {
 
       gridTemplateColumns: {
         "burger-grid": "5fr 1fr",
-        productlist: "1fr 6fr",
+        "productlist": "1fr 6fr",
         "winesubscriptions-deluxe": "1fr 1.3fr",
         "winesubscriptions-premium": "1.3fr 1fr",
-        winemakers: "5fr 10fr 7fr",
-        included: "8.5fr 10fr",
-        deluxe: "3fr 2fr",
-        premium: "2fr 3fr",
+        "winemakers": "5fr 10fr 7fr",
+        "included": "8.5fr 10fr",
+        "deluxe": "3fr 2fr",
+        "x": "2fr 3fr",
         "included-top": "5fr 4fr",
         "included-bottom": "4fr 5fr",
       },
